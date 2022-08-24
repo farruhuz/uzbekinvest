@@ -1,0 +1,104 @@
+.Tempus {
+  margin-bottom: 100px;
+}
+
+.tempus {
+  border-bottom: 1px solid #848488;
+  margin-bottom: 30px;
+}
+.tempus-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  color: #171b1e;
+  max-width: 621px;
+  margin-bottom: 43px;
+}
+
+.tempus-info {
+  display: flex;
+  padding: 30px 0;
+  border-top: 1px solid #848488;
+  gap: 30px;
+}
+
+.tempus-info__card-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  max-width: 377px;
+  color: #13976e;
+  margin-bottom: 15px;
+}
+
+.tempus-info__card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #171b1e;
+  margin-bottom: 142px;
+}
+
+.tempus-info__card-btn {
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #848488;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ea5942;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+@media (max-width: 1530px) {
+  .tempus-info {
+    gap: 10px;
+  }
+  .tempus-info__img {
+    width: 62.5%;
+  }
+  .tempus-info__card {
+    width: 37%;
+  }
+}
+
+@media (max-width: 1081px) {
+  .tempus-info {
+    display: block;
+    gap: 10px;
+  }
+  .tempus-info__img {
+    width: 100%;
+  }
+  .tempus-info__card {
+    width: 100%;
+  }
+  .tempus-info__card-text {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 577px) {
+  .tempus-title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 414px) {
+  .tempus-title {
+    font-size: 44px;
+  }
+}
+

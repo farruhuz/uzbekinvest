@@ -1,0 +1,72 @@
+.swiper{
+  margin-bottom: 200px;
+  
+}
+
+.slider{
+  border-top: 1px solid #13976E;
+  border-bottom: 1px solid #13976E;
+  margin-bottom: 200px;
+}
+
+
+.mySwiper{
+  display: flex;
+  height: 200px;
+  padding: 140px 0px 0 0;  
+  
+  align-items: center;
+}
+
+.swiper-info{
+  width: 1440px;
+  margin: 0 auto;
+  /* margin-bottom: 30px; */
+}
+
+.swiper-title{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  color: #171B1E;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  
+}
+
+.slide-page{
+  margin-top: 40px;
+}
+
+
+
+.swiper-button-prev::after{
+  display: none;
+}
+
+.swiper-button-next::after{
+  display: none;
+}
+
+.swiper-button-prev::before {
+  position: absolute;
+  content: url('../Images//slider-left-arrow.png');
+  left: 1150px;
+  top: -135px;
+
+}
+
+.swiper-button-next::before {
+  position: absolute;
+  right: 30px;
+  content: url('../Images//slider-right-arrow.png');
+  top: -135px;
+}
+
+.swiper-initialized, .swiper {
+  overflow: visible !important; 
+}
+

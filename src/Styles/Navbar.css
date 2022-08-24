@@ -1,0 +1,177 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-right: 60px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  gap: 59px;
+  align-items: center;
+}
+
+.navbar-info {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navbar-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #292929;
+}
+
+.navbar-link:hover {
+  color: #13976e;
+}
+
+.exit {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ea5942;
+}
+
+.language {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #292929;
+  border: none;
+  outline: none;
+}
+
+.navbar-info__language {
+  border: none;
+  margin-top: 3px;
+}
+
+.navbar-info__language:focus-visible {
+  border: none;
+  outline: none;
+}
+.false {
+  display: none;
+}
+
+/* laptop width hp for 1440px */
+@media (max-width: 1441px) {
+  .navbar-list {
+    gap: 49px;
+  }
+}
+/* laptop width Acer Aspire for 1366px */
+@media (max-width: 1367px) {
+  .navbar-list {
+    gap: 39px;
+  }
+}
+/* laptop width Grid Bootstrap 1200px */
+@media (max-width: 1201px) {
+
+  .navbar-list li {
+    display: none;
+  }
+  .false {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .navbar-info {
+    gap: 500px;
+  }
+}
+/* laptop width NEST HUB 1024px */
+@media (max-width: 1025px) {
+  .navbar-info {
+    gap: 400px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 993px) {
+  .navbar-info {
+    gap: 300px;
+  }
+}
+/* laptop width iPAD AIR 820px */
+@media (max-width: 821px) {
+  .navbar-info {
+    gap: 200px;
+  }
+}
+/* laptop width iPAD MINI 768px */
+@media (max-width: 769px) {
+  .navbar-info {
+    gap: 100px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 577px) {
+  .navbar-info {
+    gap: 50px;
+  }
+}
+/* laptop width SURFACE DUO 540px */
+@media (max-width: 541px) {
+  .navbar-info {
+    gap: 10px;
+  }
+  .nav-bar{
+    gap: .9375rem;
+  }
+}
+/* laptop width (IPHONE XR) 414px */
+@media (max-width: 415px) {
+  .navbar-info {
+    gap: 1px;
+  }
+  .nav-bar{
+    gap: 1px;
+  }
+  .navbar-logo{
+    margin: 0px;
+  }
+}
+/* laptop width (IPHONE 12 PRO) 390px */
+@media (max-width: 391px) {
+  .navbar-logo{
+    width: 100px;
+    height: 100px;
+  }
+  .nav-bar{
+    align-items: center;
+  }
+  .exit {
+    font-size: 12px;
+  }
+  .navbar-info__language{
+    font-size: 12px;
+  }
+  .language {
+    font-size: 12px;
+  }
+  .navbar-info {
+    gap: 10px;
+  }
+}
+

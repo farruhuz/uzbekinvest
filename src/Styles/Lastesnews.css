@@ -1,0 +1,187 @@
+.Lastesnews{
+  padding-top: 25px;
+  padding-bottom: 200px;
+}
+
+.lastes-title{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 140%;
+  color: #171B1E;
+  margin-bottom: 24px;
+}
+
+.lastes-news{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 45px;
+}
+
+.lastes-news-img1{
+  margin-bottom: 43px;
+}
+
+.lastes-info__texts{
+  height: 249px;
+  width: 460px;
+  border-bottom: 1px solid #848488;
+}
+
+.lastes-info__data{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #13976E;
+}
+
+.lastes-info__title{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 140%;
+  color: #171B1E;
+  max-width: 459px;
+}
+
+.lastes-info__info{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #171B1E;
+  max-width: 459px;
+}
+
+.lastes-news-img2{
+  margin-bottom: 32px;
+}
+
+.mb-106{
+  margin-bottom: 106px;
+}
+
+.mb-81{
+  margin-bottom: 81px;
+}
+
+.lastes-news-img3{
+  margin-bottom: 22px;
+}
+
+.view-more-btn{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  color: #EA5942;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #EA5942;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1530px){ 
+  .lastes-news{
+    display: block;
+  }
+  .lastes-news-img1{
+    width: 100%;
+    height: 400px;
+  }
+  .lastes-news-img2{
+    width: 100%;
+    height: 400px;
+  }
+  .lastes-news-img3{
+    width: 100%;
+    height: 400px;
+  }
+  .lastes-info__texts{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #848488;
+    padding-bottom: 1rem !important;
+  }
+  .lastes-info__data{
+    text-align: end;
+  }
+  .lastes-info__title{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .lastes-info__info{
+    max-width: 100%;
+    text-align: center;
+  }
+  .view-more-btn{
+    font-size: 28px;
+  }
+}
+
+/* laptop width HDTV 1080px */
+@media (max-width: 1081px){
+  .lastes-info__texts{
+    height: 300px;
+  }
+  .lastes-info__texts{
+    padding-top: 2rem;
+  }
+  .lastes-info__data{
+    margin-bottom: 1rem;
+  }
+  .lastes-info__info{
+    padding-bottom: 1rem;
+  }
+ }
+/* laptop width SURFACE DUO 540px */
+@media (max-width: 541px){
+  .lastes-info__texts{
+    height: 350px;
+  }
+}
+/* laptop width (IPHONE XR) 414px */
+@media (max-width: 415px){
+  .lastes-info__texts{
+    height: 400px;
+  }
+ }
+/* laptop width (PIXEL 5) 393px */
+@media (max-width: 394px){ 
+  .lastes-info__texts{
+    height: 450px;
+  }
+  .lastes-title{
+    font-size: 50px;
+  }
+}
+/* laptop width (IPHONE SE) 375px */
+@media (max-width: 376px){
+  .lastes-info__texts{
+    height: 500px;
+  }
+  .lastes-title{
+    font-size: 45px;
+  }
+ }
+/* laptop width Galaxy FOLD 280px */
+@media (max-width: 281px){ 
+  .lastes-info__texts{
+    height: 550px;
+  }
+  .lastes-title{
+    font-size: 40px;
+  }
+}

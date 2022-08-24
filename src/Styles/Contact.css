@@ -1,0 +1,141 @@
+.Contact {
+  margin-bottom: 100px;
+}
+.contact-map {
+  width: 720px;
+  height: 635px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-texts {
+  padding: 20px;
+  border: 1px solid #848488;
+  width: 720px;
+}
+
+.contact-info__info-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  color: #171b1e;
+}
+
+.contact-info__info-text {
+  width: 486px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 75px;
+}
+
+.contact-contact {
+  display: flex;
+}
+
+.contact-adddres-info {
+  padding: 20px;
+  width: 360px;
+  height: 178px;
+  border: #848488 1px solid;
+}
+
+.contact-addres-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #13976e;
+  margin-bottom: 10px;
+}
+
+.contact-addres-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  color: #171b1e;
+}
+
+/* laptop width HDTV 1080px */
+@media (max-width: 1081px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info__info {
+    width: 100%;
+  }
+  .contact-map {
+    width: 100%;
+  }
+  .contact-texts {
+    width: 100%;
+  }
+  .contact-adddres-info {
+    width: 50%;
+    height: 178px;
+  }
+}
+/* laptop width iPAD MINI 768px */
+@media (max-width: 769px) {
+  .contact-texts {
+    width: 100%;
+  }
+
+  .contact-adddres-info {
+    width: 50%;
+  }
+  .contact-map {
+    height: 500px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 577px) {
+  .contact-texts {
+    width: 100%;
+  }
+  .contact-contact {
+    display: block;
+  }
+  .contact-adddres-info {
+    width: 100%;
+  }
+  .contact-map {
+    height: 400px;
+  }
+  .contact-info__info-text {
+    width: 100%;
+  }
+}
+/* laptop width (IPHONE SE) 375px */
+@media (max-width: 376px) {
+  .contact-info__info-title {
+    width: 100%;
+    font-size: 50px;
+  }
+  .contact-adddres-info {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/* laptop width Galaxy FOLD 280px */
+@media (max-width: 281px) {
+  .contact-info__info-title {
+    width: 100%;
+    font-size: 50px;
+  }
+  .contact-adddres-info {
+    width: 100%;
+    padding: 10px;
+  }
+}
