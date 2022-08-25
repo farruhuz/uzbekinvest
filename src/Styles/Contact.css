@@ -1,19 +1,22 @@
 .Contact {
   margin-bottom: 100px;
 }
-.contact-map {
-  width: 720px;
-  height: 635px;
-}
-
 .contact-info {
   display: flex;
+  gap: 0px;
 }
-
+.contact-map {
+  width: 50%;
+}
+.contact-info__info{
+  width: 50%;
+}
+.contact-contact{
+  width: 100%;
+}
 .contact-texts {
   padding: 20px;
-  border: 1px solid #848488;
-  width: 720px;
+  width: 100%;
 }
 
 .contact-info__info-title {
@@ -33,20 +36,32 @@
   font-size: 18px;
   line-height: 25px;
   color: #000000;
-  margin-bottom: 75px;
+  padding-bottom: 75px;
 }
 
 .contact-contact {
   display: flex;
 }
-
-.contact-adddres-info {
-  padding: 20px;
-  width: 360px;
-  height: 178px;
+.contact-info__info{
   border: #848488 1px solid;
 }
 
+.contact-adddres-info {
+  padding: 20px;
+  width: 50%;
+  height: 178px;
+  border-left: #848488 1px solid;
+  border-bottom: #848488 1px solid;
+  border-top: #848488 1px solid;
+}
+.contact-adddres-info:nth-child(1){
+  border-left: none;
+  border-bottom: none;
+}
+.contact-adddres-info:nth-child(2){
+  border-right: none;
+  border-bottom: none;
+}
 .contact-addres-title {
   font-family: "Open Sans";
   font-style: normal;
@@ -56,7 +71,6 @@
   color: #13976e;
   margin-bottom: 10px;
 }
-
 .contact-addres-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -77,6 +91,7 @@
   }
   .contact-map {
     width: 100%;
+    height: 500px;
   }
   .contact-texts {
     width: 100%;
@@ -88,15 +103,9 @@
 }
 /* laptop width iPAD MINI 768px */
 @media (max-width: 769px) {
-  .contact-texts {
-    width: 100%;
-  }
-
-  .contact-adddres-info {
-    width: 50%;
-  }
   .contact-map {
-    height: 500px;
+    width: 100%;
+    height: 350px;
   }
 }
 /* laptop width Grid Bootstrap 992px */

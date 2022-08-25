@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import Sliderimage from "../../Images/slider-img.jpg";
 import { Navigation } from "swiper";
 
-export default function Slider() {
+const Slider = ()=> {
   return (
     <div className="slider">
       <div className="container">
@@ -78,3 +78,5 @@ export default function Slider() {
     </div>
   );
 }
+
+export default Slider

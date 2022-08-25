@@ -1,12 +1,11 @@
 footer{
   background: #13976E;
-  width: 100%;
-  height: 452px;
+  padding-bottom: 78px;
 }
 
 .footer-info{
   display: flex;
-  gap: 219px;
+  justify-content: space-between;
 }
 
 .footer-text{
@@ -46,10 +45,7 @@ footer{
   justify-content: space-between;
   padding-bottom: 15px;
   border-bottom: 1px solid #fff;
-  
 }
-
-
 
 .footer-link{
   font-family: 'Open Sans';

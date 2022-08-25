@@ -22,7 +22,7 @@ export default function Navbar() {
           <ul className="navbar-list">
             <img className="navbar-logo" src={NavbarLogo} alt="" />
             <li className="navbar-item">
-              <Link to="/basic" className="navbar-link">Главная</Link>
+              <Link to="/" className="navbar-link">Главная</Link>
             </li>
             <li className="navbar-item">
               <Link to="/news" className="navbar-link">Новости</Link>

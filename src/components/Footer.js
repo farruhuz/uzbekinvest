@@ -8,7 +8,6 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className='footer-info'>
-
           <div>
             <img src={Footerlogo} alt="" />
             <p className='footer-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique fermentum, montes, non sodales posuere ut porttitor. </p>
@@ -36,12 +35,12 @@ export default function Footer() {
               </ul>
 
               <ul className="footer-list">
+              <li className="footer-item"><a href="#" className="footer-link">Отделы</a></li>
                 <li className="footer-item"><a href="#" className="footer-link">Помощь</a></li>
               </ul>
             </div>
             <p className='footer-info-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem maecenas.</p>
           </div>
-
         </div>
       </div>
     </footer>

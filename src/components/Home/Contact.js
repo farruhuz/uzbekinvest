@@ -17,12 +17,10 @@ export default function Contact() {
                 <p className='contact-addres-title'>Adress</p>
                 <p className='contact-addres-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               </div>
-
               <div className='contact-adddres-info'>
                 <p className='contact-addres-title'>Adress</p>
                 <p className='contact-addres-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               </div>
-
             </div>
             <div className='contact-contact'>
               <div className='contact-adddres-info'>
