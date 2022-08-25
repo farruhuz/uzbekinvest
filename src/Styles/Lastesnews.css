@@ -22,11 +22,12 @@
 .lastes-news-img1{
   margin-bottom: 43px;
 }
-
+.lastes-info{
+  border-bottom: 1px solid #848488;
+}
 .lastes-info__texts{
   height: 249px;
   width: 460px;
-  border-bottom: 1px solid #848488;
 }
 
 .lastes-info__data{

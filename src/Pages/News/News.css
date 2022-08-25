@@ -1,19 +1,90 @@
+.news__box{
+  margin-bottom: 200px;
+}
+.news__box .container h2 {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: #13976e;
+  margin-top: 50px;
+}
 .news {
-    margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.new {
+  width: 32%;
+  padding-bottom: 79px;
+  padding-top: 50px;
+  border-bottom: 1px solid  #D9D9D9;
+  cursor: pointer;
+}
+.new:nth-child(7){
+  border-bottom: none;
+}
+.new:nth-child(8){
+  border-bottom: none;
+}
+.new:nth-child(9){
+  border-bottom: none;
+}
+.new_img {
+  height: 500px;
+  margin-bottom: 30px;
+}
+.new_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #d9d9d9;
 }
 
-.news__img {
+.new_info_date {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #13976e;
+}
+.new_info_title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 39px;
+  color: #171b1e;
+  margin-bottom: 5px;
+}
+.new_info_info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+}
+
+.cards {
+  margin-bottom: 200px;
+}
+.card__img {
   width: 1440px;
   height: 675px;
   display: block;
   background-color: #d9d9d9;
   margin-bottom: 45px;
 }
-.news__info {
+.card__info {
   width: 804px;
   margin: 0 auto;
 }
-.news__info h2 {
+.card__info h2 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 600;
@@ -22,7 +93,7 @@
   text-align: center;
   color: #13976e;
 }
-.news__info h4 {
+.card__info h4 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -31,12 +102,11 @@
   color: #000000;
   margin-bottom: 30px;
 }
-.news__info p {
+.card__info p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
   color: #000000;
-
 }

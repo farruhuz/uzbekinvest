@@ -11,7 +11,7 @@ export default function Lastesnews() {
         <h2 className='lastes-title'>Lastes news</h2>
         <div className="lastes-news">
           <div className='lastes-info'>
-            <img className='lastes-news-img1' src={Card1} alt="" />
+            <img className='lastes-news-img1 lastes-news-img' src={Card1} alt="" />
           
             <div className='lastes-info__texts'>
               <p className='lastes-info__data'>August 9,2022 </p>
@@ -21,7 +21,7 @@ export default function Lastesnews() {
           </div>
 
           <div className='lastes-info'>
-            <img className='lastes-news-img2' src={Card2} alt="" />
+            <img className='lastes-news-img2 lastes-news-img' src={Card2} alt="" />
 
             <div className='lastes-info__texts mb-106'>
               <p className='lastes-info__data'>August 9,2022  </p>
@@ -43,14 +43,13 @@ export default function Lastesnews() {
               <p className='lastes-info__info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis bibendum non eget fermentum purus tristique arcu enim enim. Volutpat a neque, ornare nisl tincidunt enim facilisis eros. Natoque nulla vel faucibus sed. </p>
             </div>
 
-            <img className='lastes-news-img3' src={Card3} alt="" />
+            <img className='lastes-news-img3 lastes-news-img' src={Card3} alt="" />
 
             <div className='lastes-info__texts'>
               <p className='lastes-info__data'>August 9,2022  </p>
               <h3 className='lastes-info__title'>Posuere ac at at mi sed. </h3>
               <p className='lastes-info__info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet viverra tincidunt luctus morbi dui. Volutpat sollicitudin adipiscing quam egestas tempus ut. Sollicitudin sem facilisis vel urna amet dui nibh ipsum.</p>
             </div>
-          
           </div>
         </div>
         <button className='view-more-btn'>View more</button>
