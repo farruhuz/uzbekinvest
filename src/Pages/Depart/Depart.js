@@ -12,19 +12,21 @@ const Depart = () => {
   }, [pathname]);
   return (
     <div className="depart">
-      <div className="affair__hero">
-        <div className="affair__hero__box1">
-          <h2 className="affair__lectus-title">
-            Lectus elit odio nisl nec sit proin.
+      <div className="affair__hero__depart">
+        <div className="affair__hero__box1__depart">
+          <h2 className="affair__lectus-title__depart">
+            Lectus elit odio <br/> nisl nec sit proin.
           </h2>
-          <p className="affair__lectus-info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            ullamcorper ultrices ante imperdiet a in amet, et nibh. Rutrum
-            dictumst ultricies consectetur dictumst quisque.
-          </p>
-          <button className="affair__lectus-btn">Adipiscing elit</button>
+          <div>
+            <p className="affair__lectus-info__depart">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              ullamcorper ultrices ante imperdiet a in amet, et nibh. Rutrum
+              dictumst ultricies consectetur dictumst quisque.
+            </p>
+            <button className="affair__lectus-btn__depart">Adipiscing elit</button>
+          </div>
         </div>
-        <div className="affair__hero__box2"></div>
+        <div className="affair__hero__box2__depart"></div>
       </div>
       {/*  */}
       <div className="med__affiar__depart">
@@ -34,14 +36,19 @@ const Depart = () => {
             <p>
               Отдел международного сотрудничества ООО «Узбекинвест Ассистанс»
               отвечает за организацию международных связей общества и
-              обеспечение преемственности отношений.<br/><br/> Помимо налаживания
-              сотрудничества с новыми партнерами, в обязанности отдела также
-              входит организация оказания необходимой помощи туристам,
-              прибывающим на территорию Республики Узбекистан с туристическим
-              полисом.<br/><br/> Сотрудничаем со 127 медицинскими учреждениями во всех
+              обеспечение преемственности отношений.
+              <br />
+              <br /> Помимо налаживания сотрудничества с новыми партнерами, в
+              обязанности отдела также входит организация оказания необходимой
+              помощи туристам, прибывающим на территорию Республики Узбекистан с
+              туристическим полисом.
+              <br />
+              <br /> Сотрудничаем со 127 медицинскими учреждениями во всех
               областных центрах и отдаленных районах Республики Узбекистан.
               Среди них самые крупные больницы: «“SHOX MED CENTRE”, “EMU
-              Clinic”, “MDS Servis”, “Doktor-D”, “Azimed Hospital” “Star med”.<br/><br/>    
+              Clinic”, “MDS Servis”, “Doktor-D”, “Azimed Hospital” “Star med”.
+              <br />
+              <br />
               Нашими зарубежными партнерами являются Euroasia Assistance, Inter
               Assist, Missadena, Jiang Tai Global Assistance, VMA LLC, AP
               Companies Ltd, Global Voyager Assistance, Remed Assistance и Balt
@@ -331,7 +338,7 @@ const Depart = () => {
             </div>
             <div className="departments__box2__child__depart">
               <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p"> 
+              <p className="departments__box2__child__depart__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ullamcorper senectus gravida amet.
               </p>

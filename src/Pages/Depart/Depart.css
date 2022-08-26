@@ -1,5 +1,50 @@
-.med__affiar__depart {
+.affair__hero__depart {
+  width: 1440px;
+  margin: 0 auto;
 }
+.affair__hero__box1__depart {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.affair__hero__box1__depart div {
+  width: 50%;
+}
+.affair__lectus-title__depart {
+  width: 50%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: #171b1e;
+}
+.affair__lectus-info__depart {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+  padding-right: 230px;
+}
+.affair__lectus-btn__depart {
+  padding: 18px 98px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ea5942;
+  background-color: transparent;
+  border: 1px solid #848488;
+  cursor: pointer;
+}
+.affair__hero__box2__depart {
+  height: 650px;
+  background-color: #171b1e;
+}
+
 .med__affiar__depart > .container {
   display: flex;
   border-top: 1px solid #848488;
@@ -78,6 +123,6 @@
   color: #fff;
 }
 .departments__box2__child__depart:hover div img {
-    content: url("../../Images/link_white_arrow.png");
-    width: 27px;
-  }
+  content: url("../../Images/link_white_arrow.png");
+  width: 27px;
+}
