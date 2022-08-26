@@ -1,0 +1,49 @@
+/* Service */
+.servic {
+ 
+}
+.servic__box {
+  padding-top: 50px;
+  margin-bottom: 250px;
+}
+.servic__box h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  color: #13976e;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.servic__box__child {
+  display: flex;
+  gap: 40px;
+}
+.servic__box__child1 {
+  width: 48.6%;
+}
+.servic__box__child1 img {
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 850px;
+}
+.servic__box__child2 {
+  width: 48.5%;
+}
+.servic__box__child2 h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  color: #171b1e;
+}
+.servic__box__child2 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+}

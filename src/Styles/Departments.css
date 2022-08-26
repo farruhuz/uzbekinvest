@@ -1,0 +1,107 @@
+.departments {
+}  
+.departments__con {
+  border-top: 1px solid #848488;
+  border-bottom: 1px solid #848488;
+  display: flex;
+  padding-top: 30px;
+}
+.departments__box1 {
+  width: 50%;
+}
+.departments__box1 h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  color: #171b1e;
+  margin-bottom: 30px;
+}
+.departments__box1 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+  padding-right: 320px;
+}
+
+.departments__box2 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.departments__box2__child:hover {
+  border: 0.6875px solid #13976e;
+  background-color: #13976e;
+}
+.departments__box2__child:hover h4 {
+  color: #fff;
+}
+.departments__box2__child:hover p {
+  color: #fff;
+}
+.departments__box2__child:hover div .link{
+  color: #fff;
+}
+.departments__box2__child:hover div img {
+  content: url("../Images/link_white_arrow.png");
+  width: 27px;
+}
+.departments__box2__child {
+  border: 0.6875px solid #171b1e;
+  width: 48%;
+  padding: 30px 18.25px 9px 8px;
+  margin-bottom: 20px;
+}
+.departments__box2__child h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #13976e;
+}
+.departments__box2__child p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 140px;
+}
+.departments__box2__child div .link{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ea5942;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.departments__btn {
+    margin-top: 43px;
+    margin-bottom: 100px;
+}   
+.departments__btn button {
+  width: 100%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 45px;
+  color: #ea5942;
+  border: none;
+  border: 1px solid #EA5942;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  background-color: transparent;
+  cursor: pointer;
+}

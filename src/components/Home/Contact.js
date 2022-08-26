@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../Styles/Contact.css';
 
-export default function Contact() {
+const Contact = ()=> {
   return (
     <section className='Contact'>
       <div className="container">
@@ -41,3 +41,5 @@ export default function Contact() {
     </section>
   )
 }
+
+export default Contact

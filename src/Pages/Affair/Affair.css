@@ -1,0 +1,142 @@
+.affair__hero {
+  margin-bottom: 50px;
+  display: flex;
+}
+.affair__hero__box1 {
+  width: 50%;
+  padding-top: 178px;
+  padding-left: 241px;
+  padding-bottom: 328px;
+}
+
+.affair__lectus-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  color: #3f3f3f;
+  max-width: 539px;
+  margin-bottom: 38px;
+}
+
+.affair__lectus-info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #3f3f3f;
+  max-width: 411px;
+  margin-bottom: 38px;
+}
+
+.affair__lectus-btn {
+  width: 350px;
+  height: 70px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #13976e;
+  border: none;
+  cursor: pointer;
+}
+.affair__hero__box2 {
+  width: 50%;
+  background-color: #3f3f3f;
+}
+.affair__slider {
+  margin-top: 200px;
+}
+
+/* MED affair */
+.med__affiar {
+}
+.med__affiar > .container {
+  display: flex;
+  border-top: 1px solid #848488;
+  border-bottom: 1px solid #848488;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.med__affiar__name {
+  width: 30%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 62px;
+  color: #171b1e;
+}
+.med__affiar__cards {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.med__affiar__cards > .departments__box2__child {
+  width: 32%;
+}
+.med__affiar__cards > .departments__box2__child > div > .link{
+  color: #EA5942;
+}
+.med__affiar__cards > .departments__box2__child:hover > div > .link{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

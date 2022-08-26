@@ -55,7 +55,9 @@
   line-height: 140%;
   color: #ffffff;
 }
-
+.est-info__blogs2 img{
+  height: 486px;
+}
 .est-info__blogs2-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -210,6 +212,7 @@
   }
   .est-info__blogs2 img {
     width: 100%;
+    height: 456px;
   }
   .voluputate-info__blog > img {
     width: 50%;

@@ -1,0 +1,83 @@
+.med__affiar__depart {
+}
+.med__affiar__depart > .container {
+  display: flex;
+  border-top: 1px solid #848488;
+  border-bottom: 1px solid #848488;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.med__affiar__name__depart {
+  width: 50%;
+}
+.med__affiar__name__depart h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 62px;
+  color: #171b1e;
+  margin-bottom: 40px;
+}
+.med__affiar__name__depart p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-right: 50px;
+}
+.med__affiar__cards__depart {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.departments__box2__child__depart {
+  border: 1px solid #848488;
+  width: 48%;
+  height: 350px;
+  padding: 30px 18.25px 9px 8px;
+  margin-bottom: 20px;
+}
+.departments__box2__child__depart h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #13976e;
+}
+.departments__box2__child__depart__p {
+  padding-bottom: 140px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.departments__box2__child__depart:hover {
+  background-color: #13976e;
+  border: #13976e;
+}
+.departments__box2__child__depart:hover h4 {
+  color: #fff;
+}
+.departments__box2__child__depart:hover p {
+  color: #fff;
+}
+.departments__box2__child__depart > div > .link {
+  color: #ea5942;
+}
+.med__affiar__cards__depart
+  > .departments__box2__child__depart:hover
+  > div
+  > .link {
+  color: #fff;
+}
+.departments__box2__child__depart:hover div img {
+    content: url("../../Images/link_white_arrow.png");
+    width: 27px;
+  }
