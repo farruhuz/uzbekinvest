@@ -1,0 +1,126 @@
+.about {
+}
+/* Founders */
+.founders {
+  margin-left: 240px;
+  margin-top: 135px;
+  width: 1040px;
+  gap: 118px;
+  display: flex;
+}
+.founders h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #606060;
+}
+.founders p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+}
+/* Stories */
+.stories {
+  margin-bottom: 55px;
+  gap: 185px;
+}
+/* Stoires__IMAGE */
+.stories__image {
+  margin-bottom: 155px;
+}
+.stories__image img {
+  height: 100%;
+}
+/* Partners */
+.parners {
+  margin-bottom: 200px;
+}
+.parners div p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171b1e;
+}
+.parners div span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ea5942;
+  cursor: pointer;
+}
+.parners__images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+/* Slider */
+.slider__about {
+  border-top: none;
+  border-bottom: none;
+  margin-bottom: 200px;
+  margin-top: 30px;
+}
+.swiper__about {
+  padding-bottom: 50px;
+  width: 1250px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+.mySwiper__about {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.swiper-title__about {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  color: #171b1e;
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.slide-page__about img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev__about::after {
+  display: none;
+}
+
+.swiper-button-next__about::after {
+  display: none;
+}
+
+.swiper__about .swiper-button-prev::before {
+  position: absolute;
+  content: url("../../Images/arrow__2.png");
+  left: 0px;
+  top: 200px;
+}
+
+.swiper__about .swiper-button-next::before {
+  position: absolute;
+
+  content: url("../../Images/arrow__1.png");
+  top: 200px;
+  right: 1050px;
+}
+
+.swiper__about {
+  overflow: hidden !important;
+}

@@ -3,7 +3,7 @@ import "../../Styles/Est.css";
 import Arrow from "../../Images/link_white_arrow.png";
 import Img1 from "../../Images/est/1.png";
 import Red from "../../Images/link_red_arrow.png";
-import Img2 from "../../Images/est/2.jpg";
+import Img2 from "../../Images/partners/part.png";
 
 export default function Est() {
   return (
@@ -42,9 +42,7 @@ export default function Est() {
           </div>
 
           <div className="est-info__blog middle_esst-info__blog">
-            <div className="est-info__blogs3">
-              Партнерам
-            </div>
+            <div className="est-info__blogs3">Партнерам</div>
 
             <div className="est-info__blogs4">
               <h3 className="est-info__blogs4-title">
@@ -55,41 +53,20 @@ export default function Est() {
 
           <div className="voluputate-info__blog">
             <img src={Img2} alt="" className="voluputate-info__blog__img" />
-
-            <div className="voluputate-info__blogs">
-              <div className="voluputate">
-                <h3 className="voluputate-title">
-                  Vulputate cursus non id dolor
-                </h3>
-                <p className="voluputate-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Habitant est aliquam, sit nisi vulputate odio. Justo bibendum
-                  mi feugiat eros, ipsum, diam. Id varius odio suspendisse proin
-                  pulvinar dignissim sed. Vulputate cursus non id dolor, tortor
-                  eleifend congue.{" "}
-                </p>
-                <div className="est-info__blogs-info__links">
-                  <a className="est-info__blogs-info__link2" href="#">
-                    Lorem ipsum{" "}
-                  </a>
-                  <img src={Red} alt="" />
-                </div>
-              </div>
-
-              <div className="etiam">
-                <h3 className="etiam-title">Etiam ultrices blandit ac sit.</h3>
-                <p className="etiam-text">
-                  Ultrices arcu nibh consequat vitae facilisis molestie
-                  lobortis. Libero nunc nisi, mauris risus. Id in vel nulla
-                  praesent enim. Nunc, mattis tristique feugiat viverra id sed
-                  sit. Urna aliquet quis sit duis elit et.{" "}
-                </p>
-                <div className="est-info__blogs-info__links">
-                  <a className="est-info__blogs-info__link" href="#">
-                    Lorem ipsum{" "}
-                  </a>
-                  <img src={Arrow} alt="" />
-                </div>
+            <div className="voluputate-info__blogs etiam">
+              <ul>
+                <li>• Более чем 21-летний опыт работы в сфере предоставления услуг ассистанс - технической, медицинской и юридической помощи.</li>
+                <li>• Круглосуточный диспетчерский центр, оснащенный IP-телефонией, интегрированной с уникальной базой данных, запись телефонных разговоров. </li>
+                <li>• Работа ведется круглосуточно, без перерывов, выходных и праздничных дней.</li>
+                <li>• Профессионально подготовленный кадровый состав, включая высококвалифицированных врачей и юристов. </li>
+                <li>• Организация госпитализации. </li>
+                <li>• Организация репатриации.</li>
+              </ul>
+              <div className="est-info__blogs-info__links">
+                <a className="est-info__blogs-info__link" href="#">
+                  Lorem ipsum{" "}
+                </a>
+                <img src={Arrow} alt="" />
               </div>
             </div>
           </div>

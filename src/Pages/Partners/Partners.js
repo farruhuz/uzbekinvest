@@ -3,6 +3,7 @@ import Slider from "../../components/Home/Slider";
 import "./Partners.css";
 import arrowRed from "../../Images/link_red_arrow.png";
 import ArrowRed from "../../Images/arrow__RED.png";
+import partners from "../../Images/partners/part.png"
 const Partners = () => {
   return (
     <div className="partners">
@@ -38,7 +39,7 @@ const Partners = () => {
               </ul>
             </div>
             <div className="partners__box__1__img">
-              <img src="" alt="" />
+              <img src={partners} alt="" />
             </div>
           </div>
         </div>

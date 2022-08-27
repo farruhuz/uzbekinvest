@@ -109,15 +109,13 @@
 
 .voluputate-info__blog {
   display: flex;
-  justify-content: space-between;
-  border-top: #848488 1px solid;
 }
 .voluputate-info__blog__img {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
 }
 .voluputate-info__blogs {
-  border-left: 1px solid #848488;
+  width: 50%;
 }
 
 .voluputate {
@@ -126,34 +124,22 @@
   width: 100%;
 }
 
-.voluputate-title {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 140.02%;
-  color: #171b1e;
-  margin-bottom: 20px;
-}
-
-.voluputate-text {
-  max-width: 576px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140.02%;
-  color: #171b1e;
-  margin-bottom: 25px;
-}
-
 .etiam {
-  height: 426px;
   background: #13976e;
   padding: 60px 25px;
-  width: 718px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+.etiam ul li {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 .etiam-title {
   font-family: "Playfair Display";
   font-style: normal;
@@ -164,16 +150,6 @@
   margin-bottom: 20px;
 }
 
-.etiam-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140.02%;
-  color: #ffffff;
-  margin-bottom: 25px;
-  width: 576px;
-}
 .est-info__blogs2 {
   display: flex;
   flex-direction: column;

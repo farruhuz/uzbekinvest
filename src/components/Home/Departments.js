@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "../../Styles/Departments.css";
 import { Link } from "react-router-dom";
+
 const Departments = () => {
-  const [changeArrow, setChangeArrow] = useState(false);
+
   return (
     <div className="departments">
       <div className="container">
@@ -68,9 +69,9 @@ const Departments = () => {
             </div>
           </div>
         </div>
-        <div className="departments__btn">
+        <Link to="/depart" className="departments__btn">
             <button>View more</button>
-        </div>
+        </Link>
     </div>
 </div>
   );

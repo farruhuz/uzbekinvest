@@ -1,10 +1,10 @@
 import React from "react";
 import "../../Styles/Tempus.css";
 import {Link} from "react-router-dom"
-import firstImg from "../../Images/tempus/med.jpg";
-import secondImg from "../../Images/tempus/yur.jpg";
-import thirdtImg from "../../Images/tempus/images.jpg";
-import fourImg from "../../Images/tempus/4.jpg";
+import firstImg from "../../Images/tempus/med.png";
+import secondImg from "../../Images/tempus/yur.png";
+import thirdtImg from "../../Images/tempus/images.png";
+import fourImg from "../../Images/tempus/4.png";
 
 const tempus = [
   {
@@ -38,7 +38,7 @@ export default function Tempus() {
     <section className="Tempus">
       <div className="container">
         <div className="tempus">
-          <h2 className="tempus-title">Услуги.</h2>
+          <h2 className="tempus-title">Услуги ассистанс</h2>
           {tempus.map((element) => {
             return (
               <div className="tempus-info" key={element.id}>

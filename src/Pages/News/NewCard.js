@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
-
+import invest from "../../Images/news/invest.png"
 const NewCard = () => {
   const {pathname} = useLocation();
   useEffect(() => {
@@ -11,7 +11,7 @@ const NewCard = () => {
     <div className="cards">
       <div className="container">
         <div className="card">
-        <img className="card__img" src="" alt="" />
+        <img className="card__img" src={invest} alt="" />
         <div className="card__info">
           <h2>
             Enim, quis cras condimentum fermentum consectetur arcu aliquet.{" "}

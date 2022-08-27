@@ -70,6 +70,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 180px;
+  border-bottom: 1px solid #606060;
+}
+.partners__div:nth-child(1){
+  border-top: 1px solid #606060;
 }
 .partners__div h3 {
   font-family: "Open Sans";
@@ -86,6 +90,7 @@
   font-size: 18px;
   line-height: 25px;
   color: #606060;
+
 }
 .partners__div div img {
     cursor: pointer;

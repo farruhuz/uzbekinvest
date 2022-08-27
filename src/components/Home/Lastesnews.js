@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../Styles/Lastesnews.css'
-import Card1 from '../../Images/img/glavni.jpeg'
+import Card1 from '../../Images/img/123.png'
 import Card2 from '../../Images/img/146.jpg'
-import Card3 from '../../Images/img/maxresdefault.jpg';
+import Card3 from '../../Images/news/invest.png';
 
 export default function Lastesnews() {
   return (

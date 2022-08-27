@@ -60,12 +60,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: transparent;
+}
+.tempus-info__card-btn:hover{
+  background-color: #ea5942;
+  color: #fff;
+  border: 1px solid #ea5942;
 }
 .tempus-info__img{
   width: 900px;
   height: 400px;
   object-fit: cover;
+}
+.view-more-btn{
+  background-color: transparent;
+}
+.view-more-btn:hover{
+  background-color: #ea5942;
+  color: #fff;
 }
 @media (max-width: 1530px) {
   .tempus-info {
