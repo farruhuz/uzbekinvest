@@ -1,6 +1,7 @@
 .map {
   margin-top: 100px;
   margin-bottom: 200px;
+
 }
 .contact-texts__map p {
   font-family: "Open Sans";
@@ -35,6 +36,8 @@
 }
 .contact-contact__map {
   width: 100%;
+
+  /* border: 1px solid red; */
 }
 .contact-texts__map {
   padding: 20px;
@@ -66,11 +69,12 @@
 
 .contact-contact__map {
   display: flex;
+  height: 50%;
+  flex-wrap: wrap;
 }
 .contact-adddres-info__map {
   padding: 20px;
   width: 50%;
-  height: 178px;
   border-left: #848488 1px solid;
   border-bottom: #848488 1px solid;
   border-top: #848488 1px solid;
@@ -99,4 +103,12 @@
   font-size: 21px;
   line-height: 29px;
   color: #171b1e;
+}
+.contact-addres-text__map__links div{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+.contact-addres-text__map__links{
+  /* display: flex; */
 }

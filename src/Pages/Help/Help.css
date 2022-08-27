@@ -25,24 +25,22 @@
 }
 .accordion-title {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
   transition: all 0.5s linear;
   padding: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .accordion-content_1 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 35px;
   color: #171b1e;
-  margin-bottom: 24px;
 }
 .accordion-content {
-  transition: all 0.5s linear;
-  cursor: pointer;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -50,7 +48,10 @@
   line-height: 25px;
   color: #606060;
   padding-right: 580px;
-  margin-bottom: 119px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 700px) {

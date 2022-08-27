@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../Styles/Lastesnews.css'
-import Card1 from '../../Images/lastes-news1.png'
-import Card2 from '../../Images/lastes-news2.png'
-import Card3 from '../../Images/lastes-news3.png'
+import Card1 from '../../Images/img/glavni.jpeg'
+import Card2 from '../../Images/img/146.jpg'
+import Card3 from '../../Images/img/maxresdefault.jpg';
 
 export default function Lastesnews() {
   return (
@@ -12,7 +12,6 @@ export default function Lastesnews() {
         <div className="lastes-news">
           <div className='lastes-info'>
             <img className='lastes-news-img1 lastes-news-img' src={Card1} alt="" />
-          
             <div className='lastes-info__texts'>
               <p className='lastes-info__data'>August 9,2022 </p>
               <h3 className='lastes-info__title'>Dolor sit amet, consectetur adipiscing elit. </h3>

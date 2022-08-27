@@ -18,8 +18,8 @@ const Contact = ()=> {
                 <p className='contact-addres-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               </div>
               <div className='contact-adddres-info'>
-                <p className='contact-addres-title'>Adress</p>
-                <p className='contact-addres-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className='contact-addres-title'>Phone</p>
+                <p className='contact-addres-text'>+998 90 3279955</p>
               </div>
             </div>
             <div className='contact-contact'>
@@ -29,8 +29,8 @@ const Contact = ()=> {
               </div>
 
               <div className='contact-adddres-info'>
-                <p className='contact-addres-title'>Adress</p>
-                <p className='contact-addres-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className='contact-addres-title'>Email</p>
+                <p className='contact-addres-text'>assist@uzbekinvest.uz</p>
               </div>
               
             </div>

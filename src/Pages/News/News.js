@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import "./News.css";
-import { useLocation, useNavigate} from "react-router-dom";
-
+import { useNavigate} from "react-router-dom";
+import news1 from "../../Images/news/news1.jpg";
+import news2 from "../../Images/news/news2.jpg";
+import news3 from "../../Images/news/news3.png";
+import news4 from "../../Images/news/news4.png";
+import news5 from "../../Images/news/news5.jpg";
 const news = [
   {
     id: 1,
-    image: "",
+    image: news1,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -17,7 +21,7 @@ const news = [
   },
   {
     id: 2,
-    image: "",
+    image: news2,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -29,7 +33,7 @@ const news = [
   },
   {
     id: 3,
-    image: "",
+    image: news3,
     title: "Santa Monica",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -41,7 +45,7 @@ const news = [
   },
   {
     id: 4,
-    image: "",
+    image: news4,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -53,7 +57,7 @@ const news = [
   },
   {
     id: 5,
-    image: "",
+    image: news5,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -65,7 +69,7 @@ const news = [
   },
   {
     id: 6,
-    image: "",
+    image: news1,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -77,7 +81,7 @@ const news = [
   },
   {
     id: 7,
-    image: "",
+    image: news2,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -89,7 +93,7 @@ const news = [
   },
   {
     id: 8,
-    image: "",
+    image: news3,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -101,7 +105,7 @@ const news = [
   },
   {
     id: 9,
-    image: "",
+    image: news4,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
     info: `Lorem ipsum dolor sit amet, 
     consectetur adipiscing elit. 
@@ -134,7 +138,7 @@ const News = () => {
                 onClick={() => changeLocal(element.id)}
               >
                 <div className="new_img">
-                  <img src="" alt="new_img" />
+                  <img src={element.image} alt="new_img" />
                 </div>
                 <div className="new_info">
                   <div className="new_info_date">{element.due}</div>

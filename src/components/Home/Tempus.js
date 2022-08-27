@@ -1,30 +1,34 @@
 import React from "react";
 import "../../Styles/Tempus.css";
-import InfoImg from "../../Images/tempus-info.png";
 import {Link} from "react-router-dom"
+import firstImg from "../../Images/tempus/med.jpg";
+import secondImg from "../../Images/tempus/yur.jpg";
+import thirdtImg from "../../Images/tempus/images.jpg";
+import fourImg from "../../Images/tempus/4.jpg";
+
 const tempus = [
   {
     id: 1,
-    image: "",
+    image: firstImg,
     title: "Медицинский ассистанс",
     info: "",
   },
   {
     id: 2,
-    image: "Юридический ассистанс",
-    title: "",
+    image: secondImg,
+    title: "Юридический ассистанс",
     info: "",
   },
   {
     id: 3,
-    image: "Технический ассистанс",
-    title: "",
+    image: thirdtImg,
+    title: "Технический ассистанс",
     info: "",
   },
   {
     id: 4,
-    image: "Персоналный ассистанс",
-    title: "",
+    image: fourImg,
+    title: "Персоналный ассистанс",
     info: "",
   },
 ];
@@ -38,7 +42,9 @@ export default function Tempus() {
           {tempus.map((element) => {
             return (
               <div className="tempus-info" key={element.id}>
-                <img className="tempus-info__img" src={InfoImg} alt="" />
+                <div>
+                  <img className="tempus-info__img" src={element.image} alt="" />
+                </div>
                 <div className="tempus-info__card">
                   <div>
                     <h3 className="tempus-info__card-title">{element.title}</h3>

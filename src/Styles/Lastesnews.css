@@ -20,6 +20,9 @@
 }
 
 .lastes-news-img1{
+  width: 460px;
+  height: 700px;
+  object-fit: cover;
   margin-bottom: 43px;
 }
 .lastes-info{
@@ -60,6 +63,9 @@
 }
 
 .lastes-news-img2{
+  width: 456px;
+  height: 355px;
+  object-fit: cover;
   margin-bottom: 32px;
 }
 
@@ -72,6 +78,9 @@
 }
 
 .lastes-news-img3{
+  width: 460px;
+  height: 390px;
+  object-fit: cover;
   margin-bottom: 22px;
 }
 

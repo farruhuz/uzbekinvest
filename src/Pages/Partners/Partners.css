@@ -10,7 +10,7 @@
   line-height: 64px;
   color: #13976e;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -29,6 +29,7 @@
   font-size: 36px;
   line-height: 49px;
   color: #171b1e;
+  padding-right: 100px;
 }
 .partners__box__1__info ul {
   padding-right: 150px;
@@ -56,4 +57,36 @@
   height: 670px;
   object-fit: cover;
   background-color: #d9d9d9;
+}
+
+.partners__box__div {
+  margin-bottom: 200px;
+}
+
+.partners__div {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 180px;
+}
+.partners__div h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 53px;
+  color: #000000;
+}
+.partners__div p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #606060;
+}
+.partners__div div img {
+    cursor: pointer;
 }

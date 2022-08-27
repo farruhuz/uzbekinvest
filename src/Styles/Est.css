@@ -25,9 +25,10 @@
 }
 
 .est-info__blogs-info {
+  margin-top: 70px;
   width: 720px;
   height: 481px;
-  padding: 132px 24px;
+  padding: 50px 50px;
   background: #13976e;
 }
 
@@ -55,8 +56,9 @@
   line-height: 140%;
   color: #ffffff;
 }
-.est-info__blogs2 img{
+.est-info__blogs2 img {
   height: 486px;
+  object-fit: cover;
 }
 .est-info__blogs2-text {
   font-family: "Open Sans";
@@ -74,16 +76,12 @@
   padding-left: 24px;
   width: 514px;
   border-right: #848488 1px solid;
-}
-.est-info__blogs3-text {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 140.02%;
+  font-size: 64px;
+  line-height: 70px;
   color: #171b1e;
-  margin-bottom: 25px;
-  max-width: 453px;
 }
 
 .est-info__blogs-info__link2 {
@@ -111,9 +109,13 @@
 
 .voluputate-info__blog {
   display: flex;
+  justify-content: space-between;
   border-top: #848488 1px solid;
 }
-
+.voluputate-info__blog__img {
+  width: 100%;
+  object-fit: cover;
+}
 .voluputate-info__blogs {
   border-left: 1px solid #848488;
 }
@@ -172,20 +174,20 @@
   margin-bottom: 25px;
   width: 576px;
 }
-.est-info__blogs2{
+.est-info__blogs2 {
   display: flex;
   flex-direction: column;
 }
-.est-info__blogs2 img{
+.est-info__blogs2 img {
   width: 100%;
 }
-.est-info__blogs2-text{
+.est-info__blogs2-text {
   padding-bottom: 28px;
 }
-.est-info__blog-title{
+.est-info__blog-title {
   padding-bottom: 12px;
 }
-.est-info__blogs-info{
+.est-info__blogs-info {
   height: 486px;
 }
 
@@ -246,16 +248,13 @@
     padding-right: 10px;
     width: 100%;
   }
-  .est-info__blogs3-text {
-    max-width: 100%;
-  }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     height: 470px;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     padding-bottom: 0px;
   }
-  .est-info__blog-title{
+  .est-info__blog-title {
     padding-bottom: 17.5px;
   }
 }
@@ -263,16 +262,16 @@
   .container {
     width: 1080px;
   }
-  .etiam-text{
+  .etiam-text {
     width: 100%;
   }
   .est-info__blogs2-text {
     padding-bottom: 0px;
   }
-  .est-info__blog-title{
+  .est-info__blog-title {
     padding-bottom: 50px;
   }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     height: 450px;
   }
 }
@@ -280,22 +279,22 @@
   .container {
     width: 90%;
   }
-  .top_esst-info__blog{
+  .top_esst-info__blog {
     display: block;
   }
-  .est-info__blogs{
+  .est-info__blogs {
     width: 100%;
   }
-  .est-info__blogs2{
+  .est-info__blogs2 {
     width: 100%;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
 }
@@ -303,49 +302,49 @@
   .container {
     width: 90%;
   }
-  .top_esst-info__blog{
+  .top_esst-info__blog {
     display: block;
   }
-  .est-info__blogs{
+  .est-info__blogs {
     width: 100%;
   }
-  .est-info__blogs2{
+  .est-info__blogs2 {
     width: 100%;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
-  .voluputate-info__blog{
+  .voluputate-info__blog {
     display: block;
   }
-  .voluputate-info__blog img{
+  .voluputate-info__blog img {
     width: 100%;
     height: 480px;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     display: flex;
     gap: 0px;
     width: 100%;
     margin: 0px;
     padding: 0px;
   }
-  .voluputate{
+  .voluputate {
     width: 50%;
   }
-  .voluputate img{
+  .voluputate img {
     width: 40px;
     height: 10px;
   }
-  .etiam{
+  .etiam {
     width: 50%;
   }
-  .etiam img{
+  .etiam img {
     width: 40px;
     height: 10px;
   }
@@ -354,31 +353,26 @@
   .container {
     width: 90%;
   }
-  .est-info__blogs3-text{
-    font-family: "Open Sans";
-    line-height: 40px;
-    font-size: 24px;
-  }
-  .est-info__blogs4{
+  .est-info__blogs4 {
     padding: 22px;
   }
   .est-info__blogs4-title {
     font-size: 36px;
     line-height: 100%;
   }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     padding: 34px 24px;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
-  .voluputate{
+  .voluputate {
     margin-bottom: 5rem;
   }
 }
@@ -386,31 +380,26 @@
   .container {
     width: 96%;
   }
-  .est-info__blogs3-text{
-    font-family: "Open Sans";
-    line-height: 40px;
-    font-size: 24px;
-  }
-  .est-info__blogs4{
+  .est-info__blogs4 {
     padding: 22px;
   }
   .est-info__blogs4-title {
     font-size: 36px;
     line-height: 100%;
   }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     padding: 24px 24px;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .voluputate{
+  .voluputate {
     margin-bottom: 5rem;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
 }
@@ -418,23 +407,23 @@
   .container {
     width: 96%;
   }
-  .est-info__blog-title{
+  .est-info__blog-title {
     font-size: 44px;
     max-width: 100%;
   }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     padding: 24px 24px;
   }
-  .voluputate{
+  .voluputate {
     margin-bottom: 5rem;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
 }
@@ -442,23 +431,23 @@
   .container {
     width: 96%;
   }
-  .est-info__blog-title{
+  .est-info__blog-title {
     font-size: 44px;
     max-width: 100%;
   }
-  .est-info__blogs-info{
+  .est-info__blogs-info {
     padding: 24px 24px;
   }
-  .voluputate{
+  .voluputate {
     margin-bottom: 5rem;
   }
-  .est-info__blogs3{
+  .est-info__blogs3 {
     border: none;
   }
-  .voluputate-info__blogs{
+  .voluputate-info__blogs {
     border: none;
   }
-  .est-info__blogs2-text{
+  .est-info__blogs2-text {
     border: none;
   }
 }

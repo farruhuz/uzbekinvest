@@ -62,7 +62,11 @@
   align-items: center;
   background: #fff;
 }
-
+.tempus-info__img{
+  width: 900px;
+  height: 400px;
+  object-fit: cover;
+}
 @media (max-width: 1530px) {
   .tempus-info {
     gap: 10px;

@@ -49,7 +49,11 @@
 }
 .affair__hero__box2 {
   width: 50%;
-  background-color: #3f3f3f;
+}
+.affair__hero__box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .affair__slider {
   margin-top: 200px;

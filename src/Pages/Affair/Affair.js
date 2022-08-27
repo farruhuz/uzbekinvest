@@ -4,7 +4,7 @@ import Slider from "../../components/Home/Slider";
 import "./Affair.css";
 import arrowRed from "../../Images/link_red_arrow.png";
 import { Link } from "react-router-dom";
-
+import uslug from "../../Images/uslug/uslug.png"
 const Affair = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -24,7 +24,9 @@ const Affair = () => {
           </p>
           <button className="affair__lectus-btn">Adipiscing elit</button>
         </div>
-        <div className="affair__hero__box2"></div>
+        <div className="affair__hero__box2">
+          <img src={uslug} alt="" />
+        </div>
       </div>
       {/*  */}
       <div className="med__affiar">
