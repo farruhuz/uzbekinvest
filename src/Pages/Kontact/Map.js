@@ -31,15 +31,15 @@ const Map = () => {
               </div>
               <div className="contact-contact__map">
                 <div className="contact-adddres-info__map">
-                  <p className="contact-addres-title__map">Follow us</p>
+                  <p className="contact-addres-title__map">Подписывайтесь на нас</p>
                   <p className="contact-addres-text__map contact-addres-text__map__links">
                     <div>
-                      <a href="#">ingtagramm</a>
-                      <a href="#">telegramm</a>
+                      <a href="https://www.instagram.com/uzbekinvest_/">Instagram</a>
+                      <a href="https://t.me/uzbekinvest">Telegramm</a>
                     </div>
                     <div>
-                      <a href="#">facebook</a>
-                      <a href="#">youtube</a>
+                      <a href="https://www.facebook.com/Uzbekinvest">Facebook</a>
+                      <a href="https://www.youtube.com/channel/UC6hHH4wLKLutWTNZPjx_zew">YouTube</a>
                     </div>
                   </p>
                 </div>

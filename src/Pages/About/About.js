@@ -11,26 +11,23 @@ import arrowRed from "../../Images/link_red_arrow.png";
 const About = () => {
   return (
     <div className="about">
+      <h2 className="about__about__title">О нас</h2>
       <div className="founders">
-        <h2>Founders</h2>
+        <h2>Основатели</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum
-          ipsum eu massa nullam. Sed commodo elementum mauris non mauris sem
-          duis. Odio dictum viverra purus volutpat. Quis in quisque semper
-          volutpat tellus vulputate egestas magna dignissim. Quis netus dui nec,
-          ante diam sit etiam duis lobortis. Orci tincidunt vulputate
-          scelerisque eu id. Quisque quam id sagittis integer vel tortor. Ut in
-          neque, condimentum lectus non nec. Sed ultrices velit, dolor nunc
-          gravida donec facilisi dolor. Fames morbi adipiscing sem cursus arcu,
-          maecenas vitae tristique lectus. Neque gravida magna turpis eget ac
-          bibendum amet convallis dignissim. Neque, faucibus diam accumsan nisl.
-          In lectus libero lacinia ut sapien sed. Sagittis amet at euismod nibh
-          iaculis in. Platea amet lacus, fermentum pulvinar cras tortor.
+          Основанное в 2000 году, ООО «Узбекинвест Ассистанс» является одним из
+          главных ассистанс компании в Республике Узбекистан. Кроме
+          отечественного рынка ООО «Узбекинвест Ассистанс» оказывает услуги и
+          зарубежным ассистанс компаниям. На сегодняшний день нашими партнёрами
+          являются такие ассистанс компании как: Euroasia Assistance, Inter
+          Assist, Мissadena, Jiang Tai Global Assistance, VMA LLC, AP Companies
+          Ltd, Global Voyadger Assistance, Remed Assistance, и Balt Assistance и
+          др.
         </p>
       </div>
       <SliderImg />
       <div className="founders stories">
-        <h2>Stories</h2>
+        <h2>Рассказы</h2>
         <p>
           Enim, quis cras condimentum fermentum consectetur arcu aliquet.
           Consequat risus aenean euismod facilisis integer arcu molestie. Eget
@@ -63,7 +60,7 @@ const About = () => {
         <img src={stories} alt="" />
       </div>
       <div className="founders parners">
-        <h2>Partners</h2>
+        <h2>Партнеры</h2>
         <div>
           <p>
             A, posuere ultrices pretium ac. Diam tortor quis etiam a. Velit
@@ -75,7 +72,9 @@ const About = () => {
             Vulputate ornare in sapien lectus non sed. Risus ultricies
             pellentesque tincidunt lorem consequat massa.
           </p>
-          <span>Lorem ipsum <img src={arrowRed} alt="" /></span>
+          <span>
+            Lorem ipsum <img src={arrowRed} alt="" />
+          </span>
           <div className="parners__images">
             <img src={stories1} alt="" />
             <img src={stories2} alt="" />

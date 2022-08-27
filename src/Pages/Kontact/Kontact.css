@@ -1,7 +1,6 @@
 .map {
   margin-top: 100px;
   margin-bottom: 200px;
-
 }
 .contact-texts__map p {
   font-family: "Open Sans";
@@ -104,11 +103,16 @@
   line-height: 29px;
   color: #171b1e;
 }
-.contact-addres-text__map__links div{
+.contact-addres-text__map__links div {
   display: flex;
   gap: 20px;
   margin-bottom: 12px;
 }
-.contact-addres-text__map__links{
-  /* display: flex; */
+.contact-addres-text__map__links div a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  color: #171b1e;
 }
