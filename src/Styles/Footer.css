@@ -1,3 +1,4 @@
+
 footer{
   background: #13976E;
   padding-bottom: 78px;
@@ -15,30 +16,67 @@ footer{
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+footer {
+  background: #13976e;
+  padding-bottom: 78px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info__box1 {
+  width: 50%;
+}
+.footer-info__box2 {
+  width: 50%;
+  padding-top: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
   width: 361px;
   margin-bottom: 33px;
 }
-
-.footer-sedcras-link{
-  font-family: 'Inter';
+.footer-sedcras-link {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #fff;
+  background-color: #13976e;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
 }
-
-.footer-links{
-  padding-top: 109px;
+.footer-sedcras-link::placeholder {
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}
+.footer-links {
   display: flex;
   gap: 79px;
 }
-
-.footer-item{
+.footer-item {
   margin-bottom: 47px;
 }
 
-.footer-sedcras-links{
+.footer-sedcras-links {
   display: flex;
   align-items: center;
   width: 500px;
@@ -46,22 +84,112 @@ footer{
   padding-bottom: 15px;
   border-bottom: 1px solid #fff;
 }
-
-.footer-link{
-  font-family: 'Open Sans';
+.footer-link {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
   line-height: 29px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.footer-link:hover {
+  color: #fff;
 }
 
-.footer-info-text{
+.footer-info-text {
   margin-top: 127px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+/* laptop width Acer Aspire for 1366px */
+@media (max-width: 1367px) {
+  footer .container{
+    width: 98%;
+    border: 1px solid red;
+  }
+  .footer-info {
+    display: block;
+  }
+  .footer-info__box1 {
+    width: 100%;
+  }
+  .footer-info__box2 {
+    width: 100%;
+    padding-top: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+/* laptop width NEST HUB MAX 1280px */
+@media (max-width: 1281px) {
+}
+/* laptop width Grid Bootstrap 1200px */
+@media (max-width: 1201px) {
+}
+/* laptop width HDTV 1080px */
+@media (max-width: 1081px) {
+}
+/* laptop width NEST HUB 1024px */
+@media (max-width: 1025px) {
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 993px) {
+}
+/* laptop width SURFACE DUO PRO 912px */
+@media (max-width: 913px) {
+}
+/* laptop width iPAD AIR 820px */
+@media (max-width: 821px) {
+}
+/* laptop width iPAD MINI 768px */
+@media (max-width: 769px) {
+  .footer-links {
+    display: flex;
+    gap: 50px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 577px) {
+  footer .container{
+    border: 1px solid red;
+    width: 98%;
+  }
+  .footer-info {
+    display: block;
+  }
+  .footer-info__box1 {
+    width: 100%;
+  }
+  .footer-info__box2 {
+    width: 100%;
+    padding-top: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footer-sedcras-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+  }
+}
+/* laptop width (IPHONE SE) 375px */
+@media (max-width: 376px) {
+  
+}
+/* laptop width Galaxy FOLD 280px */
+@media (max-width: 281px) {
 }

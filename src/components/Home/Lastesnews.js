@@ -3,12 +3,13 @@ import '../../Styles/Lastesnews.css'
 import Card1 from '../../Images/img/123.png'
 import Card2 from '../../Images/img/146.jpg'
 import Card3 from '../../Images/news/invest.png';
+import { Link } from 'react-router-dom';
 
 export default function Lastesnews() {
   return (
     <section className='Lastesnews'>
       <div className="container">
-        <h2 className='lastes-title'>Lastes news</h2>
+        <h2 className='lastes-title'>Последние новости</h2>
         <div className="lastes-news">
           <div className='lastes-info'>
             <img className='lastes-news-img1 lastes-news-img' src={Card1} alt="" />
@@ -51,7 +52,9 @@ export default function Lastesnews() {
             </div>
           </div>
         </div>
-        <button className='view-more-btn'>View more</button>
+        <Link to='/news'>
+          <button className='view-more-btn'>View more</button>
+        </Link>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Tempus.css";
-import {Link} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import firstImg from "../../Images/tempus/med.png";
 import secondImg from "../../Images/tempus/yur.png";
 import thirdtImg from "../../Images/tempus/images.png";
@@ -33,7 +33,10 @@ const tempus = [
   },
 ];
 export default function Tempus() {
-  const changeLocation = () => {};
+  const {pathname} = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
   return (
     <section className="Tempus">
       <div className="container">
@@ -42,8 +45,8 @@ export default function Tempus() {
           {tempus.map((element) => {
             return (
               <div className="tempus-info" key={element.id}>
-                <div>
-                  <img className="tempus-info__img" src={element.image} alt="" />
+                <div className="tempus-info__img">
+                  <img src={element.image} alt="" />
                 </div>
                 <div className="tempus-info__card">
                   <div>

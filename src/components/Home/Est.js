@@ -2,8 +2,8 @@ import React from "react";
 import "../../Styles/Est.css";
 import Arrow from "../../Images/link_white_arrow.png";
 import Img1 from "../../Images/est/1.png";
-import Red from "../../Images/link_red_arrow.png";
 import Img2 from "../../Images/partners/part.png";
+import { Link } from "react-router-dom";
 
 export default function Est() {
   return (
@@ -13,7 +13,6 @@ export default function Est() {
           <div className="est-info__blog top_esst-info__blog">
             <div className="est-info__blogs">
               <h3 className="est-info__blog-title">О нас </h3>
-
               <div className="est-info__blogs-info">
                 <p className="est-info__blogs-info__text">
                   Кроме отечественного рынка ООО «Узбекинвест Ассистанс»
@@ -24,9 +23,9 @@ export default function Est() {
                   Voyadger Assistance, Remed Assistance, и Balt Assistance и др.
                 </p>
                 <div className="est-info__blogs-info__links">
-                  <a className="est-info__blogs-info__link" href="#">
+                  <Link className="est-info__blogs-info__link" to="/about">
                     Lorem ipsum{" "}
-                  </a>
+                  </Link>
                   <img src={Arrow} alt="" />
                 </div>
               </div>
@@ -63,9 +62,9 @@ export default function Est() {
                 <li>• Организация репатриации.</li>
               </ul>
               <div className="est-info__blogs-info__links">
-                <a className="est-info__blogs-info__link" href="#">
+                <Link className="est-info__blogs-info__link" to='/partners'>
                   Lorem ipsum{" "}
-                </a>
+                </Link>
                 <img src={Arrow} alt="" />
               </div>
             </div>

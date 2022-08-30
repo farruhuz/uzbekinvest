@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "../../components/Home/Slider";
 import "./Partners.css";
 import arrowRed from "../../Images/link_red_arrow.png";
 import ArrowRed from "../../Images/arrow__RED.png";
 import partners from "../../Images/partners/part.png"
+import { useLocation } from "react-router-dom";
+
 const Partners = () => {
+  const {pathname} = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
   return (
     <div className="partners">
       <div className="container">

@@ -13,5 +13,17 @@
   background-color: #f6f6f6;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;         
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;    
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #848488;   
+}
+
 
 

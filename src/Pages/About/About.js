@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Contact from "../../components/Home/Contact";
 import Slider from "../../components/Home/Slider";
 import "./About.css";
@@ -9,6 +10,10 @@ import stories2 from "../../Images/about/stories2.png";
 import arrowRed from "../../Images/link_red_arrow.png";
 
 const About = () => {
+  const {pathname} = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
   return (
     <div className="about">
       <h2 className="about__about__title">О нас</h2>

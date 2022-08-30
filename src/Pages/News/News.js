@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import "./News.css";
 import { useNavigate} from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import news1 from "../../Images/news/news1.jpg";
 import news2 from "../../Images/news/news2.jpg";
 import news3 from "../../Images/news/news3.png";
 import news4 from "../../Images/news/news4.png";
 import news5 from "../../Images/news/news5.jpg";
+
+
 const news = [
   {
     id: 1,
@@ -119,12 +122,14 @@ const news = [
 
 const News = () => {
   const navigate = useNavigate();
-  
+  const {pathname} = useLocation();
   const changeLocal = (id) => {
     console.log(id);
     navigate(`/news/${id}`);
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
   return (
     <div className="news__box">
       <div className="container">

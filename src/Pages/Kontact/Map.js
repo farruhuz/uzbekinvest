@@ -53,11 +53,7 @@ const Map = () => {
               </div>
             </div>
           </div>
-          <iframe
-            className="contact-map__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5823.4391687421585!2d69.30665471328076!3d41.30800517387095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c8f1bb33a3%3A0xa193c5c2e7c5a340!2sKoko%20Digital%20Agency!5e0!3m2!1sru!2s!4v1660646813473!5m2!1sru!2s"
-            frameborder="0"
-          ></iframe>
+          <iframe  className="contact-map__map"  frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1682.660160057668!2d69.20915560486982!3d41.28363127017464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b36a50c9793%3A0x995b33e6f8b66565!2s%22Uzbekinvest%22%20Export-Import%20Insurance%20Company!5e0!3m2!1sen!2s!4v1661850027544!5m2!1sen!2s"referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>

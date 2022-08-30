@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useLocation} from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "../../Styles/Departments.css";
 import { Link } from "react-router-dom";
 
 const Departments = () => {
-
   return (
     <div className="departments">
       <div className="container">
