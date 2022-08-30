@@ -5,8 +5,11 @@ import "./Affair.css";
 import arrowRed from "../../Images/link_red_arrow.png";
 import { Link } from "react-router-dom";
 import uslug from "../../Images/uslug/uslug.png"
+import { useTranslation } from "react-i18next";
+
 const Affair = () => {
   const { pathname } = useLocation();
+  const {t} = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -22,7 +25,7 @@ const Affair = () => {
             ullamcorper ultrices ante imperdiet a in amet, et nibh. Rutrum
             dictumst ultricies consectetur dictumst quisque.
           </p>
-          <button className="affair__lectus-btn">Adipiscing elit</button>
+          <button className="affair__lectus-btn">{t('view__more__btn')}</button>
         </div>
         <div className="affair__hero__box2">
           <img src={uslug} alt="" />
@@ -31,7 +34,7 @@ const Affair = () => {
       {/*  */}
       <div className="med__affiar">
         <div className="container">
-          <div className="med__affiar__name">Медицинский ассистанс</div>
+          <div className="med__affiar__name">{t('medical__assistance')}</div>
           <div className="med__affiar__cards">
             <div className="departments__box2__child">
               <h4>Diam hac nulla vulputate vivamus</h4>
@@ -111,7 +114,7 @@ const Affair = () => {
       {/*  */}
       <div className="med__affiar">
         <div className="container">
-          <div className="med__affiar__name">Юридический ассистанс</div>
+          <div className="med__affiar__name">{t('legal__assistance')}</div>
           <div className="med__affiar__cards">
             <div className="departments__box2__child">
               <h4>Diam hac nulla vulputate vivamus</h4>
@@ -191,7 +194,7 @@ const Affair = () => {
       {/*  */}
       <div className="med__affiar">
         <div className="container">
-          <div className="med__affiar__name">Технический ассистанс</div>
+          <div className="med__affiar__name">{t('technical__assistance')}</div>
           <div className="med__affiar__cards">
             <div className="departments__box2__child">
               <h4>Diam hac nulla vulputate vivamus</h4>
@@ -271,7 +274,7 @@ const Affair = () => {
       {/*  */}
       <div className="med__affiar">
         <div className="container">
-          <div className="med__affiar__name">Персоналный ассистанс</div>
+          <div className="med__affiar__name">{t('personal__assistance')}</div>
           <div className="med__affiar__cards">
             <div className="departments__box2__child">
               <h4>Diam hac nulla vulputate vivamus</h4>

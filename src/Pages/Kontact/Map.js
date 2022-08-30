@@ -1,29 +1,29 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Map = () => {
+  const {t} = useTranslation()
   return (
     <section className="Contact__map">
       <div className="container">
         <div className="contact-info__map">
           <div className="contact-info__info__map">
             <div className="contact-texts__map">
-              <h3 className="contact-info__info-title__map">Контакты</h3>
-              <p id="contact-info__info-text__map">Прямой контактный номер</p>
+              <h3 className="contact-info__info-title__map">{t('contact')}</h3>
+              <p id="contact-info__info-text__map">{t('direct__number')}</p>
               <h5>+998 90 008 11 60</h5>
               <h5>+998 90 004 11 60</h5>
-              <p id="contact-info__info-text__map">Короткий номер</p>
+              <p id="contact-info__info-text__map">{t('short__number')}</p>
               <span>11 60</span>
             </div>
             <div className="contact-texts__map__2">
               <div className="contact-contact__map">
                 <div className="contact-adddres-info__map">
-                  <p className="contact-addres-title__map">Адресс</p>
-                  <p className="contact-addres-text__map">
-                    Республика Узбекистан, г. Ташкент, 100017, ул. Чупон ота, 6.
-                  </p>
+                  <p className="contact-addres-title__map">{t('adress__map')}</p>
+                  <p className="contact-addres-text__map">{t('adress')}</p>
                 </div>
                 <div className="contact-adddres-info__map">
-                  <p className="contact-addres-title__map">Телефон</p>
+                  <p className="contact-addres-title__map">{t('phone__map')}</p>
                   <p className="contact-addres-text__map">
                     (+998 71) 207-60-00
                   </p>
@@ -31,7 +31,7 @@ const Map = () => {
               </div>
               <div className="contact-contact__map">
                 <div className="contact-adddres-info__map">
-                  <p className="contact-addres-title__map">Подписывайтесь на нас</p>
+                  <p className="contact-addres-title__map">{t('follow_us__map')}</p>
                   <p className="contact-addres-text__map contact-addres-text__map__links">
                     <div>
                       <a href="https://www.instagram.com/uzbekinvest_/">Instagram</a>
@@ -45,7 +45,7 @@ const Map = () => {
                 </div>
 
                 <div className="contact-adddres-info__map">
-                  <p className="contact-addres-title__map">Почта</p>
+                  <p className="contact-addres-title__map">{t('email__map')}</p>
                   <p className="contact-addres-text__map">
                     assist@uzbekinvest.uz
                   </p>

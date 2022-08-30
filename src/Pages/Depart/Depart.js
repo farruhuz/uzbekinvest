@@ -4,9 +4,11 @@ import Slider from "../../components/Home/Slider";
 import { Link } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "./Depart.css";
+import { useTranslation } from "react-i18next";
 
 const Depart = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation()
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -23,7 +25,7 @@ const Depart = () => {
               ullamcorper ultrices ante imperdiet a in amet, et nibh. Rutrum
               dictumst ultricies consectetur dictumst quisque.
             </p>
-            <button className="affair__lectus-btn__depart">Adipiscing elit</button>
+            <button className="affair__lectus-btn__depart">{t('view__more__btn')}</button>
           </div>
         </div>
         <div className="affair__hero__box2__depart"></div>
@@ -32,27 +34,12 @@ const Depart = () => {
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
-            <h3>Отдел международного сотрудничества</h3>
+            <h3>{t('depart__international')}</h3>
             <p>
-              Отдел международного сотрудничества ООО «Узбекинвест Ассистанс»
-              отвечает за организацию международных связей общества и
-              обеспечение преемственности отношений.
-              <br />
-              <br /> Помимо налаживания сотрудничества с новыми партнерами, в
-              обязанности отдела также входит организация оказания необходимой
-              помощи туристам, прибывающим на территорию Республики Узбекистан с
-              туристическим полисом.
-              <br />
-              <br /> Сотрудничаем со 127 медицинскими учреждениями во всех
-              областных центрах и отдаленных районах Республики Узбекистан.
-              Среди них самые крупные больницы: «“SHOX MED CENTRE”, “EMU
-              Clinic”, “MDS Servis”, “Doktor-D”, “Azimed Hospital” “Star med”.
-              <br />
-              <br />
-              Нашими зарубежными партнерами являются Euroasia Assistance, Inter
-              Assist, Missadena, Jiang Tai Global Assistance, VMA LLC, AP
-              Companies Ltd, Global Voyager Assistance, Remed Assistance и Balt
-              Assistance.
+              {t('depart__international__1')}<br/><br/> 
+              {t('depart__international__2')}<br/><br/> 
+              {t('depart__international__3')}<br/><br/>
+              {t('depart__international__4')}
             </p>
           </div>
           <div className="med__affiar__cards__depart">
@@ -111,27 +98,8 @@ const Depart = () => {
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
-            <h3>
-              Отдел рассмотрения претензий по видам обязательного
-              автострахования
-            </h3>
-            <p>
-              По информации Колл-центра компании, необходимо выехать
-              непосредственно на место дорожно-транспортного происшествия,
-              изучить обстоятельства, повлекшие за собой наступление страхового
-              случая, добровольно оформить Извещение (Европротокол в на родном
-              языке) вместе с водителями проверить состояние транспортных
-              средств, поврежденных в результате дорожно-транспортного
-              происшествия, или сделать фото (видео), прием заявлений
-              страхователей (водителей) о наступлении страхового случая,
-              расследование страхового случая, в том числе проверка
-              обоснованности представленного акта оценки, получение заключения
-              комиссии о признании или непризнании страхового случая, сбор
-              необходимых документов для получения полное страховое возмещение
-              виновным и потерпевшим оказать помощь. <br />
-              <br /> Составление ежедневных, еженедельных и ежемесячных отчетов
-              о выполненных работах и ​​предоставление их директору общества.
-            </p>
+            <h3>{t('depart__car')}</h3>
+            <p>{t('depart__car__1')}<br/><br/>{t('depart__car__2')}</p>
           </div>
           <div className="med__affiar__cards__depart">
             <div className="departments__box2__child__depart">
@@ -189,37 +157,15 @@ const Depart = () => {
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
-            <h3>
-              Отдел рассмотрения претензий по видам обязательного
-              автострахования
-            </h3>
+            <h3>{t('depart__may')}</h3>
             <p>
-              На основании заявки, поступивший с Колл-центра Компании, Отдел по
-              рассмотрению претензионных дел обеспечивает немедленный выезд на
-              место ДТП, осуществляет видео-фотофиксацию поврежденных
-              автомобилей и документов, организацию услуг эвакуатора при
-              необходимости, техпомощь автомобилям, осуществляет услуги «трезвый
-              водитель» и другие необходимые услуги. <br /> <br /> Организация
-              первичной оценки поврежденных транспортных средств на месте ДТП.{" "}
-              <br /> <br />
-              Осуществление и организация технической поддержки автомобилей по
-              заявкам местных и иностранных страховых и ассистанс компаний.
-              <br /> <br />
-              Рассмотрение поступивших обращений и выдача заключения по
-              добровольным видам страхования транспортных средств.
-              <br /> <br /> Осуществляет контроль за процессом ремонта
-              поврежденных автомобилей путем выезда непосредственно в
-              автомастерские, обеспечивает оформление 3-х стороннего акта
-              приема-передачи в присутствии автовладельца и представителя
-              автомастерской. <br /> <br />
-              Готовить ежедневные, еженедельные и ежемесячные отчеты о
-              выполненных работах и ​​представлять их директору общества.
-              <br /> <br /> На сегодняшний день мы сотрудничаем с качественными
-              техническими мастерскими в центре всех областей Республики
-              Узбекистан и в городе Ташкенте. Это такие автомастерские, как ООО
-              “JM-AVTO”, ООО “FORSAJ LYUKS AVTO”, YATT SHAYUNUSOV B.R, ООО “PIT
-              STOP MOTORS” (Avtoritet), ООО MAJOR BUSINESS GROUP (CARBOX) и ООО
-              « AVTOTEXXIZMAT»
+              {t('depart__may__1')}<br/><br/> 
+              {t('depart__may__2')}<br/><br/>
+              {t('depart__may__3')}<br/><br/>
+              {t('depart__may__4')}<br/><br/> 
+              {t('depart__may__5')}<br/><br/>
+              {t('depart__may__6')}<br/><br/>
+              {t('depart__may__7')}
             </p>
           </div>
           <div className="med__affiar__cards__depart">

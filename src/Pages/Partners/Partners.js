@@ -5,17 +5,19 @@ import arrowRed from "../../Images/link_red_arrow.png";
 import ArrowRed from "../../Images/arrow__RED.png";
 import partners from "../../Images/partners/part.png"
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Partners = () => {
   const {pathname} = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname])
+  const {t} = useTranslation()
   return (
     <div className="partners">
       <div className="container">
         <div className="partners__box">
-          <h2 className="partners__h2">Партнерам</h2>
+          <h2 className="partners__h2">{t('partners')}</h2>
           <div className="partners__box__1">
             <div className="partners__box__1__info">
               <h3>Основными преимуществами компании являются</h3>

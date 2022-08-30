@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="footer-info__box1">
             <img src={Footerlogo} alt="" />
             <p className="footer-text">
-              Республика Узбекистан, г. Ташкент, 100017, ул. Чупон ота, 6.
+              {t('adress')}
             </p>
             <div className="footer-sedcras-links">
               <input className="footer-sedcras-link" placeholder="Send message"/>

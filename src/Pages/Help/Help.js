@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Contact from "../../components/Home/Contact";
 import Slider from "../../components/Home/Slider";
 import Accardion from "./Accardion";
@@ -163,11 +164,12 @@ const accordionData = [
   }
 ];
 const Help = () => {
+  const {t} = useTranslation();
   return (
     <>
       <div className="help">
         <div className="container">
-          <h2>Помощь</h2>
+          <h2>{t('help')}</h2>
           <div className="accordion">
             {accordionData.map(({ title, content }) => (
               <Accardion title={title} content={content} />

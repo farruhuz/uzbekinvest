@@ -1,38 +1,36 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Contact.css";
 
 const Contact = () => {
+  const {t} = useTranslation()
   return (
     <section className="Contact">
       <div className="container">
         <div className="contact-info">
           <div className="contact-info__info">
             <div className="contact-texts">
-              <h3 className="contact-info__info-title">Contact</h3>
+              <h3 className="contact-info__info-title">{t('contact')}</h3>
               <p className="contact-info__info-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
-                vitae volutpat, ultricies justo cursus. Vel, vitae, commodo
-                bibendum tellus, et laoreet.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
+                  vitae volutpat, ultricies justo cursus. Vel, vitae, commodo
+                  bibendum tellus, et laoreet.
               </p>
             </div>
 
             <div className="contact-contact">
               <div className="contact-adddres-info">
-                <p className="contact-addres-title">Adress</p>
-                <p className="contact-addres-text">
-                  Республика Узбекистан, г. Ташкент, 100017, ул. Чупон ота, 6.
-                </p>
+                <p className="contact-addres-title">{t('adress__map')}</p>
+                <p className="contact-addres-text">{t('adress')}</p>
               </div>
               <div className="contact-adddres-info">
-                <p className="contact-addres-title">Phone</p>
+                <p className="contact-addres-title">{t('phone__map')}</p>
                 <p className="contact-addres-text">+998 90 3279955</p>
               </div>
             </div>
             <div className="contact-contact">
               <div className="contact-adddres-info">
-                <p className="contact-addres-title__map">
-                  Подписывайтесь на нас
-                </p>
+                <p className="contact-addres-title__map">{t('follow_us__map')}</p>
                 <p className="contact-addres-text__map contact-addres-text__map__links">
                   <div>
                     <a target="_blank" href="https://www.instagram.com/assistance.uzb/?igshid=YmMyMTA2M2Y%3D">
@@ -50,7 +48,7 @@ const Contact = () => {
               </div>
 
               <div className="contact-adddres-info">
-                <p className="contact-addres-title">Email</p>
+                <p className="contact-addres-title">{t('email__map')}</p>
                 <p className="contact-addres-text">assist@uzbekinvest.uz</p>
               </div>
             </div>

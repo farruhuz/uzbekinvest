@@ -7,6 +7,7 @@ import news2 from "../../Images/news/news2.jpg";
 import news3 from "../../Images/news/news3.png";
 import news4 from "../../Images/news/news4.png";
 import news5 from "../../Images/news/news5.jpg";
+import { useTranslation } from "react-i18next";
 
 
 const news = [
@@ -123,8 +124,8 @@ const news = [
 const News = () => {
   const navigate = useNavigate();
   const {pathname} = useLocation();
+  const { t } = useTranslation()
   const changeLocal = (id) => {
-    console.log(id);
     navigate(`/news/${id}`);
   }
   useEffect(() => {
@@ -133,7 +134,7 @@ const News = () => {
   return (
     <div className="news__box">
       <div className="container">
-        <h2>Все новости</h2>
+        <h2>{t('news')}</h2>
         <div className="news">
           {news.map((element) => {
             return (

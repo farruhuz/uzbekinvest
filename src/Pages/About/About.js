@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Contact from "../../components/Home/Contact";
 import Slider from "../../components/Home/Slider";
 import "./About.css";
@@ -8,31 +8,24 @@ import stories from "../../Images/about/stories.png";
 import stories1 from "../../Images/about/stories1.png";
 import stories2 from "../../Images/about/stories2.png";
 import arrowRed from "../../Images/link_red_arrow.png";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const {pathname} = useLocation();
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname])
   return (
     <div className="about">
-      <h2 className="about__about__title">О нас</h2>
+      <h2 className="about__about__title">{t('about')}</h2>
       <div className="founders">
-        <h2>Основатели</h2>
-        <p>
-          Основанное в 2000 году, ООО «Узбекинвест Ассистанс» является одним из
-          главных ассистанс компании в Республике Узбекистан. Кроме
-          отечественного рынка ООО «Узбекинвест Ассистанс» оказывает услуги и
-          зарубежным ассистанс компаниям. На сегодняшний день нашими партнёрами
-          являются такие ассистанс компании как: Euroasia Assistance, Inter
-          Assist, Мissadena, Jiang Tai Global Assistance, VMA LLC, AP Companies
-          Ltd, Global Voyadger Assistance, Remed Assistance, и Balt Assistance и
-          др.
-        </p>
+        <h2>{t('founders')}</h2>
+        <p>{t('founders__1')} <br/><br/> {t('founders__2')}</p>
       </div>
       <SliderImg />
       <div className="founders stories">
-        <h2>Рассказы</h2>
+        <h2>{t('founders__3')}</h2>
         <p>
           Enim, quis cras condimentum fermentum consectetur arcu aliquet.
           Consequat risus aenean euismod facilisis integer arcu molestie. Eget
@@ -65,7 +58,7 @@ const About = () => {
         <img src={stories} alt="" />
       </div>
       <div className="founders parners">
-        <h2>Партнеры</h2>
+        <h2>{t('founders__4')}</h2>
         <div>
           <p>
             A, posuere ultrices pretium ac. Diam tortor quis etiam a. Velit
@@ -77,9 +70,9 @@ const About = () => {
             Vulputate ornare in sapien lectus non sed. Risus ultricies
             pellentesque tincidunt lorem consequat massa.
           </p>
-          <span>
-            Lorem ipsum <img src={arrowRed} alt="" />
-          </span>
+          <Link className="lorem" to='/partners'>
+            {t('read__more__btn')} <img src={arrowRed} alt="arrow" />
+          </Link>
           <div className="parners__images">
             <img src={stories1} alt="" />
             <img src={stories2} alt="" />
