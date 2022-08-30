@@ -4,27 +4,22 @@ import Arrow from "../../Images/link_white_arrow.png";
 import Img1 from "../../Images/est/1.png";
 import Img2 from "../../Images/partners/part.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Est() {
+  const { t } = useTranslation();
   return (
     <section className="Est">
       <div className="container">
         <div className="est-info">
           <div className="est-info__blog top_esst-info__blog">
             <div className="est-info__blogs">
-              <h3 className="est-info__blog-title">О нас </h3>
+              <h3 className="est-info__blog-title">{t("about")}</h3>
               <div className="est-info__blogs-info">
-                <p className="est-info__blogs-info__text">
-                  Кроме отечественного рынка ООО «Узбекинвест Ассистанс»
-                  оказывает услуги и зарубежным ассистанс компаниям. На
-                  сегодняшний день нашими партнёрами являются такие ассистанс
-                  компании как: Euroasia Assistance, Inter Assist, Мissadena,
-                  Jiang Tai Global Assistance, VMA LLC, AP Companies Ltd, Global
-                  Voyadger Assistance, Remed Assistance, и Balt Assistance и др.
-                </p>
+                <p className="est-info__blogs-info__text">{t("about__1")}</p>
                 <div className="est-info__blogs-info__links">
                   <Link className="est-info__blogs-info__link" to="/about">
-                    Lorem ipsum{" "}
+                    {t('read__more__btn')}
                   </Link>
                   <img src={Arrow} alt="" />
                 </div>
@@ -32,10 +27,7 @@ export default function Est() {
             </div>
 
             <div className="est-info__blogs2">
-              <p className="est-info__blogs2-text">
-                Основанное в 2000 году, ООО «Узбекинвест Ассистанс» является
-                одним из главных ассистанс компании в Республике Узбекистан.
-              </p>
+              <p className="est-info__blogs2-text">{t("about__2")}</p>
               <img src={Img1} alt="" />
             </div>
           </div>
@@ -54,16 +46,29 @@ export default function Est() {
             <img src={Img2} alt="" className="voluputate-info__blog__img" />
             <div className="voluputate-info__blogs etiam">
               <ul>
-                <li>• Более чем 21-летний опыт работы в сфере предоставления услуг ассистанс - технической, медицинской и юридической помощи.</li>
-                <li>• Круглосуточный диспетчерский центр, оснащенный IP-телефонией, интегрированной с уникальной базой данных, запись телефонных разговоров. </li>
-                <li>• Работа ведется круглосуточно, без перерывов, выходных и праздничных дней.</li>
-                <li>• Профессионально подготовленный кадровый состав, включая высококвалифицированных врачей и юристов. </li>
+                <li>
+                  • Более чем 21-летний опыт работы в сфере предоставления услуг
+                  ассистанс - технической, медицинской и юридической помощи.
+                </li>
+                <li>
+                  • Круглосуточный диспетчерский центр, оснащенный
+                  IP-телефонией, интегрированной с уникальной базой данных,
+                  запись телефонных разговоров.{" "}
+                </li>
+                <li>
+                  • Работа ведется круглосуточно, без перерывов, выходных и
+                  праздничных дней.
+                </li>
+                <li>
+                  • Профессионально подготовленный кадровый состав, включая
+                  высококвалифицированных врачей и юристов.{" "}
+                </li>
                 <li>• Организация госпитализации. </li>
                 <li>• Организация репатриации.</li>
               </ul>
               <div className="est-info__blogs-info__links">
-                <Link className="est-info__blogs-info__link" to='/partners'>
-                  Lorem ipsum{" "}
+                <Link className="est-info__blogs-info__link" to="/partners">
+                  {t('read__more__btn')}
                 </Link>
                 <img src={Arrow} alt="" />
               </div>

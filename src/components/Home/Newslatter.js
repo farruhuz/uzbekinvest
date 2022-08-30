@@ -1,9 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import '../../Styles/Newslatter.css'
 
 export default function Newslatter() {
+  const { t } = useTranslation(); 
   return (
-    
     <section className='Newsletter'>
       <div className="container">
         <div className='newsletter-info'>
@@ -15,7 +16,7 @@ export default function Newslatter() {
           </div>
           <div className='newsletter-info__send'>
             <input className='newsletter-info__input' type="email" name="" id="" placeholder='Your Email' />
-            <button className='newsletter-info__btn'>Send</button>
+            <button className='newsletter-info__btn'>{t('send')}</button>
           </div>
         </div>
       </div>

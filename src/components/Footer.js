@@ -3,8 +3,10 @@ import "../Styles/Footer.css";
 import Footerlogo from "../Images/footer-logo.png";
 import Footerarrow from "../Images/footer-arrow.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation()
   return (
     <footer>
       <div className="container">
@@ -26,60 +28,41 @@ export default function Footer() {
             <div className="footer-links">
               <ul className="footer-list">
                 <li className="footer-item">
-                  <Link to="/" className="footer-link">
-                    Главная
-                  </Link>
+                  <Link to="/" className="footer-link">{t('home')}</Link>
                 </li>
                 <li className="footer-item">
-                  <Link to="/about" className="footer-link">
-                    О нас
-                  </Link>
+                  <Link to="/about" className="footer-link">{t('about')}</Link>
                 </li>
               </ul>
 
               <ul className="footer-list">
                 <li className="footer-item">
-                  <Link to="/news" className="footer-link">
-                    Новости
-                  </Link>
+                  <Link to="/news" className="footer-link">{t('news')}</Link>
                 </li>
                 <li className="footer-item">
-                  <Link to="/contact" className="footer-link">
-                    Контакты
-                  </Link>
+                  <Link to="/contact" className="footer-link">{t('contact')}</Link>
                 </li>
               </ul>
 
               <ul className="footer-list">
                 <li className="footer-item">
-                  <Link to="/services" className="footer-link">
-                    Услуги
-                  </Link>
+                  <Link to="/services" className="footer-link">{t('services')}</Link>
                 </li>
                 <li className="footer-item">
-                  <Link to="/partners" className="footer-link">
-                    Партнерам
-                  </Link>
+                  <Link to="/partners" className="footer-link">{t('partners')}</Link>
                 </li>
               </ul>
 
               <ul className="footer-list">
                 <li className="footer-item">
-                  <Link to="/depart" className="footer-link">
-                    Отделы
-                  </Link>
+                  <Link to="/depart" className="footer-link">{t('depart')}</Link>
                 </li>
                 <li className="footer-item">
-                  <Link to="/help" className="footer-link">
-                    Помощь
-                  </Link>
+                  <Link to="/help" className="footer-link">{t('help')}</Link>
                 </li>
               </ul>
             </div>
-            <p className="footer-info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              maecenas.
-            </p>
+            <p className="footer-info-text">{t('adress')}</p>
           </div>
         </div>
       </div>

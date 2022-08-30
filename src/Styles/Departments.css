@@ -56,6 +56,9 @@
   width: 48%;
   padding: 30px 18.25px 9px 8px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .departments__box2__child h4 {
   font-family: "Playfair Display";
@@ -72,9 +75,10 @@
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 .departments__box2__child div .link {
+  height: 50%;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;

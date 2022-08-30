@@ -14,12 +14,28 @@ import NewCard from "./Pages/News/NewCard";
 import Partner from "./Pages/Partners/Partner";
 import Servic from "./Pages/Affair/Servic";
 import Depart from "./Pages/Depart/Depart";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationsRu from "./locale/translationsRu";
+import translationsUz from "./locale/translationsUz";
+
+
+i18n.use(initReactI18next).init({
+  resources: {
+    ru: { translation: translationsRu },
+    uz: { translation: translationsUz },
+  },
+  lng: "ru",
+  fallbackLng: "ru",
+});
 
 function App() {
+  const changeLang = (value)=>{
+    i18n.changeLanguage(value) 
+  }
   return (
     <>
-    {/* <ScrollToTop/> */}
-      <Navbar />
+      <Navbar changeLang={changeLang} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="news" element={<News />}/>

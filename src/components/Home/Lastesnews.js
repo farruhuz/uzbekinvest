@@ -4,12 +4,14 @@ import Card1 from '../../Images/img/123.png'
 import Card2 from '../../Images/img/146.jpg'
 import Card3 from '../../Images/news/invest.png';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function Lastesnews() {
+  const {t} = useTranslation()
   return (
     <section className='Lastesnews'>
       <div className="container">
-        <h2 className='lastes-title'>Последние новости</h2>
+        <h2 className='lastes-title'>{t('last__news')}</h2>
         <div className="lastes-news">
           <div className='lastes-info'>
             <img className='lastes-news-img1 lastes-news-img' src={Card1} alt="" />
@@ -53,7 +55,7 @@ export default function Lastesnews() {
           </div>
         </div>
         <Link to='/news'>
-          <button className='view-more-btn'>View more</button>
+          <button className='view-more-btn'>{t('view__more__btn')}</button>
         </Link>
       </div>
     </section>
