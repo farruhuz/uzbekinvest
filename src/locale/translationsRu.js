@@ -13,6 +13,8 @@ const translationsRu = {
     view__more__btn:"посмотреть больше",
     read__more__btn:"читать далее",
     send:"Отправить",
+    // USEFULL links
+    useFull__links:"Полезные ссылки",
     // Lasted Components
     last__news :"Последние новости",
     // Tempus
@@ -52,6 +54,7 @@ const translationsRu = {
     Voyadger Assistance, Remed Assistance, и Balt Assistance и др.`,
     about__2:`Основанное в 2000 году, ООО «Узбекинвест Ассистанс» является
     одним из главных ассистанс компании в Республике Узбекистан.`,
+    about__3:`Основными преимуществами компании являются `,
     //Footer component
     adress:"Республика Узбекистан, г. Ташкент, 100017, ул. Чупон ота, 6.",
     // Kontakt page
@@ -67,5 +70,12 @@ const translationsRu = {
     founders__2:`Кроме отечественного рынка ООО «Узбекинвест Ассистанс» оказывает услуги и зарубежным ассистанс компаниям. На сегодняшний день нашими партнёрами являются такие ассистанс компании как: Euroasia Assistance, Inter Assist, Мissadena, Jiang Tai Global Assistance, VMA LLC, AP Companies Ltd, Global Voyadger Assistance, Remed Assistance, и Balt Assistance и др`,
     founders__3:"Рассказы",
     founders__4:"Партнеры",
+    // PARTNERS Page
+    partners__title__1:`• Более чем 21-летний опыт работы в сфере предоставления услуг ассистанс - технической, медицинской и юридической помощи.`,
+    partners__title__2:`• Круглосуточный диспетчерский центр, оснащенный IP-телефонией, интегрированной с уникальной базой данных, запись телефонных разговоров. `,
+    partners__title__3:`• Работа ведется круглосуточно, без перерывов, выходных и праздничных дней.`,
+    partners__title__4:`• Профессионально подготовленный кадровый состав, включая высококвалифицированных врачей и юристов.`,
+    partners__title__5:`• Организация госпитализации.`,
+    partners__title__6:`• Организация репатриации.`,
 }
 export default translationsRu

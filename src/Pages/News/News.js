@@ -1,159 +1,79 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./News.css";
-import { useNavigate} from "react-router-dom";
-import { useLocation} from "react-router-dom";
-import news1 from "../../Images/news/news1.jpg";
-import news2 from "../../Images/news/news2.jpg";
-import news3 from "../../Images/news/news3.png";
-import news4 from "../../Images/news/news4.png";
-import news5 from "../../Images/news/news5.jpg";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import PaginationControlled from "../../components/Pagination/Pagination";
+import axios from "axios";
+import { ClipLoader } from "react-spinners";
 
-
-const news = [
-  {
-    id: 1,
-    image: news1,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 2,
-    image: news2,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 3,
-    image: news3,
-    title: "Santa Monica",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 4,
-    image: news4,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 5,
-    image: news5,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 6,
-    image: news1,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 7,
-    image: news2,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 8,
-    image: news3,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-  {
-    id: 9,
-    image: news4,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui.",
-    info: `Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. 
-    Fusce interdum dui pellentesque gravida lacus, 
-    ultrices at elementum. Pellentesque dictum risus 
-    ultrices tortor. Sapien morbi sagittis quis cursus. 
-    Sit tellus neque ornare mauris. Ut cras at tempus metus. `,
-    due: "August 9,2022",
-  },
-];
-
-const News = () => {
+const News = ({exchangeInfo}) => {
   const navigate = useNavigate();
-  const {pathname} = useLocation();
-  const { t } = useTranslation()
-  const changeLocal = (id) => {
-    navigate(`/news/${id}`);
-  }
+  const { t } = useTranslation();
+  const T = useTranslation();
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [id, setId] = useState(1);
+
+  const plitka = (value = id) => {
+    setId(value);
+  };
+  const changeLocal = (news__innovation) => {
+    exchangeInfo(news__innovation);
+    navigate(`/news/${news__innovation.id}`)
+  };
+
+  const getAllNews = async () => {
+    if(T.i18n.language === 'uz'){
+      setLoading(true);
+      const res = await axios.get(
+      `https://uzbekinvest.herokuapp.com/uz/news/list-news/?page=${id}`
+      );
+      console.log(res.data);
+      setNews(res.data.results);
+      setLoading(false);
+    }
+    else{
+      setLoading(true);
+      const res = await axios.get(
+      `https://uzbekinvest.herokuapp.com/ru/news/list-news/?page=${id}`
+      );
+      setNews(res.data.results);
+      setLoading(false);
+    }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname])
+    getAllNews();
+  }, [id, T.i18n.language]);
+
   return (
     <div className="news__box">
       <div className="container">
-        <h2>{t('news')}</h2>
+        <h2>{t("news")}</h2>
         <div className="news">
-          {news.map((element) => {
-            return (
-              <div
-                className="new"
-                key={element.id}
-                onClick={() => changeLocal(element.id)}
-              >
-                <div className="new_img">
-                  <img src={element.image} alt="new_img" />
+          {!loading &&
+            news?.map((element) => {
+              return (
+                <div
+                  className="new"
+                  key={element.id}
+                  onClick={() => changeLocal(element)}
+                >
+                  <div className="new_img">
+                    <img src={element.image} alt="new_img" />
+                  </div>
+                  <div className="new_info">
+                    <div className="new_info_date">{element.created_at.substring(0, 10)+" "+ element.created_at.substring(11, 16)}</div>
+                    <div className="new_info_title">{element.subtitle}</div>
+                    <div className="new_info_info">{element.content.substring(0,100)+" ..."}</div>
+                  </div>
                 </div>
-                <div className="new_info">
-                  <div className="new_info_date">{element.due}</div>
-                  <div className="new_info_title">{element.title}</div>
-                  <div className="new_info_info">{element.info}</div>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          <div className="spinner">
+            <ClipLoader size={50} loading={loading} />
+          </div>
+          <PaginationControlled plitka={plitka} id={id} />
         </div>
       </div>
     </div>

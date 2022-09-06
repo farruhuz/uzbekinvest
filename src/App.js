@@ -18,6 +18,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationsRu from "./locale/translationsRu";
 import translationsUz from "./locale/translationsUz";
+import { useState } from "react";
 
 
 i18n.use(initReactI18next).init({
@@ -30,6 +31,10 @@ i18n.use(initReactI18next).init({
 });
 
 function App() {
+  const [innovation, setInnovation] = useState({});
+  const exchangeInfo = (value) =>{
+    setInnovation(value)
+  }
   const changeLang = (value)=>{
     i18n.changeLanguage(value) 
   }
@@ -38,8 +43,8 @@ function App() {
       <Navbar changeLang={changeLang} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="news" element={<News />}/>
-        <Route path="news/:id" element={<NewCard />} />
+        <Route path="news" element={<News exchangeInfo={exchangeInfo} />}/>
+        <Route path="news/:id" element={<NewCard innovation={innovation}/>} />
         <Route path="services" element={<Affair />} />
         <Route path="servic" element={<Servic />} />
         <Route path="about" element={<About />} />

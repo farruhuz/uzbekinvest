@@ -3,7 +3,7 @@ const translationsUz = {
   news: "Yangiliklar",
   services: "Xizmatlar",
   about: "Biz haqimizda",
-  contact: "Aloqa",
+  contact: "Bog’lanish",
   partners: "Hamkorlar",
   help: "Yordam",
   login: "Kirish",
@@ -13,6 +13,8 @@ const translationsUz = {
   view__more__btn: "Batafsil",
   read__more__btn: "ko'proq o'qish",
   send: "Yuborish",
+  // USEFULL links
+  useFull__links:"Foydali havolalar",
   // Lasted Components
   last__news: "So'ngi Yangiliklar",
   // Tempus
@@ -51,6 +53,7 @@ const translationsUz = {
   “Global Voyadger Assistance”, “Remed Assistance” va “Balt Assistance” va boshqalar 
   kabi assistans kompaniyalari hisoblanadi.`,
   about__2:`2000 yilda tashkil etilgan “O‘zbekinvest Assistance” MCHJ O‘zbekiston Respublikasidagi asosiy assistans kompaniyalardan biri hisoblanadi.`,
+  about__3:`Kompaniyaning asosiy afzalliklari`,
   //Footer component
    adress:"O‘zbekiston Respublikasi, Toshkent, 100017, ko‘ch. Chupon ota, 6.",
    // Kontakt page
@@ -66,6 +69,14 @@ const translationsUz = {
     founders__2:`“O‘zbekinvest Assistans” mas’uliyati cheklangan jamiyati ichki bozordan tashqari xorijiy assistans kompaniyalarga ham xizmat ko‘rsatadi. Bugungi kunda bizning hamkorlarimiz “Euroasia Assistance”, “Inter Assist”, “Missadena”, “Jiang Tai Global Assistance”, “VMA” LLC, “AP Companies” Ltd, “Global Voyadger Assistance”, “Remed Assistance” va “Balt Assistance” va boshqalar kabi assistans kompaniyalari hisoblanadi.`,
     founders__3:"Hikoyalar",
     founders__4:"Hamkorlar",
+  // PARTNERS Page
+    partners__title__1:`• Assistans xizmatlari - texnik, tibbiy va yuridik yordam ko'rsatish bo'yicha 21 yildan ortiq tajriba.`,
+    partners__title__2:`• Noyob ma'lumotlar bazasi, telefon suhbatlarini yozib olish bilan integratsiyalashgan IP-telefoniya bilan jihozlangan kechayu kunduz ishlaydigan dispetcherlik markazi.`,
+    partners__title__3:`• Ish kechayu-kunduz, tanaffussiz, dam olish va bayramlarsiz amalga oshiriladi.`,
+    partners__title__4:`• Kasbiy tayyorgarlikka ega kadrlar, jumladan, yuqori malakali shifokorlar va huquqshunoslar.`,
+    partners__title__5:`• Kasalxonaga yotqizishni tashkil etish.`,
+    partners__title__6:`• Repatriatsiyani tashkil etish.`,
+   
 };
 
 export default translationsUz;

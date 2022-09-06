@@ -1,0 +1,37 @@
+.paginations {
+  width: 100%;
+}
+
+.paginationCount {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiPagination-ul {
+  transform: scale(1.4); 
+}
+.MuiPagination-ul > li > button {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #171b1e;
+}
+.MuiPagination-ul > li:nth-child(1) > button {
+  color: tomato;
+  opacity: 1;
+}
+.MuiPagination-ul > li:last-child > button {
+  color: tomato;
+  opacity: 1;
+}
+.MuiButtonBase-root {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 0.2em;
+  color: #171b1e;
+}

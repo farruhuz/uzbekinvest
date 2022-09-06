@@ -33,11 +33,11 @@ export default function Est() {
           </div>
 
           <div className="est-info__blog middle_esst-info__blog">
-            <div className="est-info__blogs3">Партнерам</div>
+            <div className="est-info__blogs3">{t('partners')}</div>
 
             <div className="est-info__blogs4">
               <h3 className="est-info__blogs4-title">
-                Основными преимуществами компании являются
+                {t('about__3')}
               </h3>
             </div>
           </div>
@@ -46,25 +46,12 @@ export default function Est() {
             <img src={Img2} alt="" className="voluputate-info__blog__img" />
             <div className="voluputate-info__blogs etiam">
               <ul>
-                <li>
-                  • Более чем 21-летний опыт работы в сфере предоставления услуг
-                  ассистанс - технической, медицинской и юридической помощи.
-                </li>
-                <li>
-                  • Круглосуточный диспетчерский центр, оснащенный
-                  IP-телефонией, интегрированной с уникальной базой данных,
-                  запись телефонных разговоров.{" "}
-                </li>
-                <li>
-                  • Работа ведется круглосуточно, без перерывов, выходных и
-                  праздничных дней.
-                </li>
-                <li>
-                  • Профессионально подготовленный кадровый состав, включая
-                  высококвалифицированных врачей и юристов.{" "}
-                </li>
-                <li>• Организация госпитализации. </li>
-                <li>• Организация репатриации.</li>
+                <li>{t('partners__title__1')}</li>
+                <li>{t('partners__title__2')}</li>
+                <li>{t('partners__title__3')}</li>
+                <li>{t('partners__title__4')}</li>
+                <li>{t('partners__title__5')}</li>
+                <li>{t('partners__title__6')}</li>
               </ul>
               <div className="est-info__blogs-info__links">
                 <Link className="est-info__blogs-info__link" to="/partners">

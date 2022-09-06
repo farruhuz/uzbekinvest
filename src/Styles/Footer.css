@@ -109,7 +109,6 @@ footer {
 @media (max-width: 1367px) {
   footer .container{
     width: 98%;
-    border: 1px solid red;
   }
   .footer-info {
     display: block;

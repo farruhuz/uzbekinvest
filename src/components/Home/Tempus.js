@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../Styles/Tempus.css";
 import {Link, useLocation} from "react-router-dom"
 import firstImg from "../../Images/tempus/med.png";
-import secondImg from "../../Images/tempus/yur.png";
+import secondImg from "../../Images/tempus/yur.jpg";
 import thirdtImg from "../../Images/tempus/images.png";
 import fourImg from "../../Images/tempus/4.png";
 import { useTranslation } from "react-i18next";
@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 export default function Tempus() {
   const { t } = useTranslation()
   const {pathname} = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname])

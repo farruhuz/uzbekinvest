@@ -1,7 +1,7 @@
-.partners {
+/* .partners {
 }
 .partners__box {
-}
+} */
 .partners__h2 {
   font-family: "Playfair Display";
   font-style: normal;
@@ -43,7 +43,7 @@
   color: #171b1e;
   margin-bottom: 15px;
 }
-.partners__box__1__info ul li:last-child {
+.partners__box__1__info ul li:last-child .us{
   color: #ea5942;
   cursor: pointer;
 }

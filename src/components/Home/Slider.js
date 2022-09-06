@@ -6,8 +6,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Sliderimage from "../../Images/slider-img.jpg";
 import { Navigation } from "swiper";
+import { useTranslation } from "react-i18next";
 
 const Slider = ()=> {
+  const {t} = useTranslation()
   return (
     <div className="slider">
       <div className="container">
@@ -24,7 +26,7 @@ const Slider = ()=> {
                 modules={[Navigation]}
                 className="mySwiper"
               >
-                <h3 className="swiper-title">Useful links</h3>
+                <h3 className="swiper-title">{t('useFull__links')}</h3>
                 <SwiperSlide className="slide-page">
                   <img src={Sliderimage} alt="" />
                 </SwiperSlide>
