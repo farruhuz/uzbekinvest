@@ -40,7 +40,11 @@
 .slide-page{
   margin-top: 40px;
 }
-
+.slide-page img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
 
 .swiper-button-prev::after{

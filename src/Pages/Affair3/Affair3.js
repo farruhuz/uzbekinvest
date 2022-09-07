@@ -13,7 +13,7 @@ const Affair3 = () => {
     }, [pathname]);
   return (
     <>
-          <div className="med__affiar">
+      <div className="med__affiar">
         <div className="container">
           <div className="med__affiar__name">{t("technical__assistance")}</div>
           <div className="med__affiar__cards">

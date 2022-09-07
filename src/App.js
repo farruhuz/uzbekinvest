@@ -52,7 +52,7 @@ function App() {
     setOtdelInfo(value)
   }
   const catchDepartTempus = (value) =>{
-    // setTempus(value)
+    setTempus(value)
     console.log(value);
   }
   return (
@@ -62,7 +62,7 @@ function App() {
         <Route path="/" element={<Home catchDepart={catchDepart} catchDepartTempus={catchDepartTempus}/>} />
         <Route path="news" element={<News exchangeInfo={exchangeInfo} />}/>
         <Route path="news/:id" element={<NewCard innovation={innovation}/>} />
-        {/* <Route path="services" element={<Affair />} /> */}
+        <Route path="services" element={<Affair />} />
         <Route path="services/1" element={<Affair1 />} />
         <Route path="services/2" element={<Affair2 />} />
         <Route path="services/3" element={<Affair3 />} />

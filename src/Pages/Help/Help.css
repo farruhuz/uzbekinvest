@@ -13,45 +13,11 @@
   margin-bottom: 50px;
 }
 
-.accordion {
-  max-width: 100%;
-  margin: 2rem auto;
-}
-.accordion-item {
-  border-top: 1px solid #848488;
-}
-.accordion-item:last-child {
-  border-bottom: 1px solid #848488;
-}
-.accordion-title {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: all 0.5s linear;
-  padding: 1rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.accordion-content_1 {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 35px;
-  color: #171b1e;
-}
-.accordion-content {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #606060;
-  padding-right: 580px;
-  margin-bottom: 100px;
+.documentlar{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 700px) {
