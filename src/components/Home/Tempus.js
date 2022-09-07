@@ -3,7 +3,7 @@ import "../../Styles/Tempus.css";
 import {Link, useLocation} from "react-router-dom"
 import firstImg from "../../Images/tempus/med.png";
 import secondImg from "../../Images/tempus/yur.jpg";
-import thirdtImg from "../../Images/tempus/images.png";
+import thirdtImg from "../../Images/tempus/images.jpg";
 import fourImg from "../../Images/tempus/4.png";
 import { useTranslation } from "react-i18next";
 

@@ -5,7 +5,7 @@ const translationsUz = {
   about: "Biz haqimizda",
   contact: "Bog’lanish",
   partners: "Hamkorlar",
-  help: "Yordam",
+  help: "Xujjatlar",
   login: "Kirish",
   ru: "Ru",
   uz: "Uz",

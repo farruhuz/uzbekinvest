@@ -6,6 +6,7 @@ import PaginationControlled from "../../components/Pagination/Pagination";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
 
+
 const News = ({exchangeInfo}) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -25,18 +26,13 @@ const News = ({exchangeInfo}) => {
   const getAllNews = async () => {
     if(T.i18n.language === 'uz'){
       setLoading(true);
-      const res = await axios.get(
-      `https://uzbekinvest.herokuapp.com/uz/news/list-news/?page=${id}`
-      );
-      console.log(res.data);
+      const res = await axios.get(`https://uzbekinvest.herokuapp.com/uz/news/list-news/?page=${id}`);
       setNews(res.data.results);
       setLoading(false);
     }
     else{
       setLoading(true);
-      const res = await axios.get(
-      `https://uzbekinvest.herokuapp.com/ru/news/list-news/?page=${id}`
-      );
+      const res = await axios.get(`https://uzbekinvest.herokuapp.com/ru/news/list-news/?page=${id}`);
       setNews(res.data.results);
       setLoading(false);
     }
