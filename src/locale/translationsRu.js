@@ -9,6 +9,7 @@ const translationsRu = {
     login:"Войти",
     ru:"Ру",
     uz:"Уз",
+    contact__info:"Адреса нашей организации в различных сферах, чтобы вы могли связаться с нами",
     // BTNS words
     view__more__btn:"посмотреть больше",
     read__more__btn:"читать далее",

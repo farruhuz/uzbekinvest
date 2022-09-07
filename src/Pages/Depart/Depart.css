@@ -42,7 +42,11 @@
 }
 .affair__hero__box2__depart {
   height: 650px;
-  background-color: #171b1e;
+}
+.affair__hero__box2__depart img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .med__affiar__depart > .container {

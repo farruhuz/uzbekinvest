@@ -34,12 +34,12 @@ const Map = () => {
                   <p className="contact-addres-title__map">{t('follow_us__map')}</p>
                   <p className="contact-addres-text__map contact-addres-text__map__links">
                     <div>
-                      <a href="https://www.instagram.com/uzbekinvest_/">Instagram</a>
-                      <a href="https://t.me/uzbekinvest">Telegramm</a>
+                      <a terget='_blank' href="https://www.instagram.com/assistance.uzb/?igshid=YmMyMTA2M2Y%3D">Instagram</a>
+                      <a target="_blank" href="https://t.me/assistance_uzb">Telegramm</a>
                     </div>
                     <div>
-                      <a href="https://www.facebook.com/Uzbekinvest">Facebook</a>
-                      <a href="https://www.youtube.com/channel/UC6hHH4wLKLutWTNZPjx_zew">YouTube</a>
+                      <a target="_blank" href="https://www.facebook.com/assistanceuzb">Facebook</a>
+                      <a target="_blank" href="https://www.youtube.com/channel/UC1iuUOmZnP1LCce8_b7WIlg">YouTube</a>
                     </div>
                   </p>
                 </div>

@@ -9,6 +9,7 @@ const translationsUz = {
   login: "Kirish",
   ru: "Ru",
   uz: "Uz",
+  contact__info:"Biz bilan bog'lanishinggiz uchun bizning tashkilotimizning turli sohalardagi manzillari",
   // BTNS words
   view__more__btn: "Batafsil",
   read__more__btn: "ko'proq o'qish",

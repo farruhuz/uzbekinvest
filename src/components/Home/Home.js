@@ -8,13 +8,13 @@ import Newslatter from "./Newslatter";
 import Slider from "./Slider";
 import Tempus from "./Tempus";
 
-const Home = () => {
+const Home = ({catchDepart}) => {
   return (
     <>
       <Lectus />
       <Lastesnews />
       <Tempus />
-      <Departments/>
+      <Departments catchDepart={catchDepart}/>
       <Newslatter />
       <Est />
       <Slider />

@@ -11,11 +11,7 @@ const Contact = () => {
           <div className="contact-info__info">
             <div className="contact-texts">
               <h3 className="contact-info__info-title">{t('contact')}</h3>
-              <p className="contact-info__info-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
-                  vitae volutpat, ultricies justo cursus. Vel, vitae, commodo
-                  bibendum tellus, et laoreet.
-              </p>
+              <p className="contact-info__info-text">{t('contact__info')}</p>
             </div>
 
             <div className="contact-contact">

@@ -19,6 +19,10 @@ import { initReactI18next } from "react-i18next";
 import translationsRu from "./locale/translationsRu";
 import translationsUz from "./locale/translationsUz";
 import { useState } from "react";
+import Otdel from "./Pages/Otdel/Otdel";
+import Otdel2 from "./Pages/Otdel2/Otdel2";
+import Otdel3 from "./Pages/Otdel3/Otdel3";
+import Otdel4 from "./Pages/Otdel4/Oidel4";
 
 
 i18n.use(initReactI18next).init({
@@ -32,17 +36,21 @@ i18n.use(initReactI18next).init({
 
 function App() {
   const [innovation, setInnovation] = useState({});
-  const exchangeInfo = (value) =>{
+  const [otdelInfo, setOtdelInfo] = useState({});
+  const exchangeInfo = (value) => {
     setInnovation(value)
   }
-  const changeLang = (value)=>{
+  const changeLang = (value) => {
     i18n.changeLanguage(value) 
+  }
+  const catchDepart = (value) =>{
+    setOtdelInfo(value)
   }
   return (
     <>
       <Navbar changeLang={changeLang} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home catchDepart={catchDepart} />} />
         <Route path="news" element={<News exchangeInfo={exchangeInfo} />}/>
         <Route path="news/:id" element={<NewCard innovation={innovation}/>} />
         <Route path="services" element={<Affair />} />
@@ -53,6 +61,10 @@ function App() {
         <Route path="partners/:id" element={<Partner />} />
         <Route path="help" element={<Help />} />
         <Route path="depart" element={<Depart />} />
+        <Route path="depart/1" element={<Otdel otdelInfo={otdelInfo}/>} />
+        <Route path="depart/2" element={<Otdel2 otdelInfo={otdelInfo}/>} />
+        <Route path="depart/3" element={<Otdel3 otdelInfo={otdelInfo}/>} />
+        <Route path="depart/4" element={<Otdel4 otdelInfo={otdelInfo}/>} />
       </Routes>
       <Footer />
     </>

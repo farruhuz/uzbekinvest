@@ -1,36 +1,57 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "../../Styles/Departments.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const Departments = () => {
+const Departments = ({catchDepart}) => {
   const { t } = useTranslation();
-
+  const navigate = useNavigate();
+  const changeLocal = (el) => {
+      catchDepart(el);
+      navigate(`depart/${el.id}`)
+  }
   const depart = [
     {
       id: 1,
       name:t("depart__international"),
-      title:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Ullamcorper senectus gravida amet.` ,
+      title:``,
+      title__1:`${t("depart__international__1")}`,
+      title__2:`${t("depart__international__2")}`,
+      title__3:`${t("depart__international__3")}`,
+      title__4:`${t("depart__international__4")}`,
+      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ullamcorper senectus gravida amet.`,
     },
     {
       id: 2,
       name:t("depart__car"),
-      title:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title:``,
+      title__1:`${t("depart__car__1")}`,
+      title__2:`${t("depart__car__2")}`,
+      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Ullamcorper senectus gravida amet.`,
     },
     {
       id: 3,
       name:t("depart__may"),
-      title:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title:``,
+      title__1:`${t("depart__may__1")}`,
+      title__2:`${t("depart__may__2")}`,
+      title__3:`${t("depart__may__3")}`,
+      title__4:`${t("depart__may__4")}`,
+      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Ullamcorper senectus gravida amet.`,
     },
     {
       id: 4,
       name:  t("depart__legal"),
-      title:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title:``,
+      title__1:`${t("depart__legal__1")}`,
+      title__2:`${t("depart__legal__2")}`,
+      title__3:`${t("depart__legal__3")}`,
+      title__4:`${t("depart__legal__4")}`,
+      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Ullamcorper senectus gravida amet.`,
     },
   ];
@@ -52,11 +73,11 @@ const Departments = () => {
               return (
                 <div className="departments__box2__child" key={el.id}>
                   <h4>{el.name}</h4>
-                  <p>{el.title}</p>
+                  <p>{el.subtitle}</p>
                   <div>
-                    <Link to="/depart" className="link">
+                    <span onClick={() => changeLocal(el)} className="link">
                       {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               );
