@@ -83,12 +83,13 @@
 .card__img {
   width: 1440px;
   height: 675px;
+  object-fit: cover;
   display: block;
   background-color: #d9d9d9;
   margin-bottom: 45px;
 }
 .card__info {
-  width: 804px;
+  width: 100%;
   margin: 0 auto;
 }
 .card__info h2 {
@@ -97,7 +98,6 @@
   font-weight: 600;
   font-size: 56px;
   line-height: 67px;
-  text-align: center;
   color: #13976e;
 }
 .card__info h4 {
@@ -107,14 +107,15 @@
   font-size: 28px;
   line-height: 39px;
   color: #000000;
+  text-align: center;
   margin-bottom: 30px;
 }
 .card__info p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 35px;
   color: #000000;
 }
 

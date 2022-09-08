@@ -42,11 +42,13 @@ function App() {
   const [innovation, setInnovation] = useState({});
   const [otdelInfo, setOtdelInfo] = useState({});
   const [tampus, setTempus] = useState({});
+  const [language, setLanguage] = useState('ru')
   const exchangeInfo = (value) => {
     setInnovation(value)
   }
   const changeLang = (value) => {
     i18n.changeLanguage(value) 
+    setLanguage(value)
   }
   const catchDepart = (value) =>{
     setOtdelInfo(value)
@@ -59,7 +61,7 @@ function App() {
     <>
       <Navbar changeLang={changeLang} />
       <Routes>
-        <Route path="/" element={<Home catchDepart={catchDepart} catchDepartTempus={catchDepartTempus}/>} />
+        <Route path="/" element={<Home catchDepart={catchDepart} catchDepartTempus={catchDepartTempus} setLanguage={setLanguage}/>} />
         <Route path="news" element={<News exchangeInfo={exchangeInfo} />}/>
         <Route path="news/:id" element={<NewCard innovation={innovation}/>} />
         <Route path="services" element={<Affair />} />

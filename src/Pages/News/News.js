@@ -26,13 +26,13 @@ const News = ({exchangeInfo}) => {
   const getAllNews = async () => {
     if(T.i18n.language === 'uz'){
       setLoading(true);
-      const res = await axios.get(`https://uzbekinvest.herokuapp.com/uz/news/list-news/?page=${id}`);
+      const res = await axios.get(`https://uzbekinvest.kokoagency.uz/uz/news/list-news/?page=${id}`);
       setNews(res.data.results);
       setLoading(false);
     }
     else{
       setLoading(true);
-      const res = await axios.get(`https://uzbekinvest.herokuapp.com/ru/news/list-news/?page=${id}`);
+      const res = await axios.get(`https://uzbekinvest.kokoagency.uz/ru/news/list-news/?page=${id}`);
       setNews(res.data.results);
       setLoading(false);
     }
@@ -59,9 +59,9 @@ const News = ({exchangeInfo}) => {
                     <img src={element.image} alt="new_img" />
                   </div>
                   <div className="new_info">
-                    <div className="new_info_date">{element.created_at.substring(0, 10)+" "+ element.created_at.substring(11, 16)}</div>
-                    <div className="new_info_title">{element.subtitle}</div>
-                    <div className="new_info_info">{element.content.substring(0,100)+" ..."}</div>
+                    <div className="new_info_date">{element?.created_at?.substring(0, 10)+" "+ element?.created_at?.substring(11, 16)}</div>
+                    <div className="new_info_title">{element?.subtitle?.substring(0,100)+" ..."}</div>
+                    <div className="new_info_info">{element?.content?.substring(0,200)+" ..."}</div>
                   </div>
                 </div>
               );

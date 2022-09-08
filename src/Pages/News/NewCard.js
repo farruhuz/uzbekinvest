@@ -7,6 +7,7 @@ import { ClipLoader } from "react-spinners";
 import invest from "../../Images/news/invest.png";
 
 const NewCard = ({ innovation }) => {
+  console.log(innovation.id);
   const { pathname } = useLocation();
   const [loading, setLoading] = useState(false);
   const [newobj, setNewObj] = useState(innovation)
@@ -15,13 +16,15 @@ const NewCard = ({ innovation }) => {
   const changeLanguageInfo = async() => {
     if(T.i18n.language === 'uz'){
       setLoading(true)
-      const res = await axios.get(`https://uzbekinvest.herokuapp.com/uz/news/news-detail/${innovation.id}/`);
+      const res = await axios.get(`https://uzbekinvest.kokoagency.uz/uz/news/news-detail/${innovation.id}/`);
+      console.log("1 ", res.data );
       setNewObj(res.data)
       setLoading(false)
     }
     else{
       setLoading(true)
-      const res = await axios.get(`https://uzbekinvest.herokuapp.com/ru/news/news-detail/${innovation.id}/`);
+      const res = await axios.get(`https://uzbekinvest.kokoagency.uz/ru/news/news-detail/${innovation.id}/`);
+      console.log("2 ", res.data );
       setNewObj(res.data)
       setLoading(false)
     }
@@ -38,7 +41,7 @@ const NewCard = ({ innovation }) => {
         <div className="container">
           {!loading &&
             <div className="card">
-              <img className="card__img" src={invest} alt="" />
+              <img className="card__img" src={newobj.image} alt={newobj.title} />
               <div className="card__info">
                 <h2>{newobj?.title}</h2>
                 <h4>{newobj?.subtitle}</h4>
