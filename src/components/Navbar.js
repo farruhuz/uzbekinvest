@@ -50,7 +50,7 @@ export default function Navbar({changeLang}) {
           </ul>
           <ul className="navbar-info">
             <li className="navbar-info__link">
-              <a className="exit" target="_blank" href="https://uzbekinvest.herokuapp.com/admin/eco/news/">{t('login')}</a>
+              <a className="exit" target="_blank" href="https://uzbekinvest.kokoagency.uz/uz/admin/">{t('login')}</a>
             </li>
             <select className="navbar-info__language" name="language" id="language" onClick={changeLanguageHandler}>
               <option className="language" value="ru">{t('ru')}</option>

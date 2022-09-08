@@ -83,7 +83,7 @@
 .card__img {
   width: 1440px;
   height: 675px;
-  object-fit: cover;
+  object-fit:cover;
   display: block;
   background-color: #d9d9d9;
   margin-bottom: 45px;
