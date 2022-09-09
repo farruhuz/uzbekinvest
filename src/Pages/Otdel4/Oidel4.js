@@ -3,8 +3,10 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import yrudik from "../../Images/otdel/yurudik.jpg";
+import yrudik2 from "../../Images/otdel/yurudik2.jpg";
+import Swipers from "../Swiper/Swipers";
 
-const Otdel4 = ({otdelInfo}) => {
+const Otdel4 = () => {
   const {pathname} = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,9 +15,7 @@ const Otdel4 = ({otdelInfo}) => {
   return (
     <div className="depart">
       <div className="affair__hero__depart">
-        <div className="affair__hero__box2__depart">
-          <img src={yrudik} alt={otdelInfo.name} />
-        </div>
+        <div className="affair__hero__box2__depart"><Swipers xalqaro={yrudik} xalqaro2={yrudik2}/></div>
       </div>
       <div className="med__affiar__depart">
         <div className="container">

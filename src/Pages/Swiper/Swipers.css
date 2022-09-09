@@ -1,0 +1,19 @@
+.slayder {
+  height: 600px;
+  overflow: hidden !important;
+}
+.slayder > .mySwiper > .swiper-button-next::before {
+  display: none !important;
+}
+.slayder > .mySwiper > .swiper-button-prev::before {
+  display: none !important;
+}
+.slayder > .swiper {
+  margin-bottom: 0px;
+  height: 100%;
+}
+.slayder .mySwiper .swiper-slide img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: initial !important;
+}

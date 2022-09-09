@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import ixtiyoriy from "../../Images/otdel/ixtiyoriy.jpg";
+import ixtiyoriy2 from "../../Images/otdel/ixtiyoriy2.jpg";
+import Swipers from "../Swiper/Swipers";
 
 const Otdel3 = ({otdelInfo}) => {
   const {pathname} = useLocation();
@@ -14,7 +16,7 @@ const Otdel3 = ({otdelInfo}) => {
     <div className="depart">
       <div className="affair__hero__depart">
         <div className="affair__hero__box2__depart">
-          <img src={ixtiyoriy} alt={otdelInfo.name} />
+          <Swipers xalqaro={ixtiyoriy} xalqaro2={ixtiyoriy2}/>
         </div>
       </div>
       <div className="med__affiar__depart">
