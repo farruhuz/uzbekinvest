@@ -1,4 +1,5 @@
-.about {
+.about > .container{
+  /* border: 1px solid red; */
 }
 
 .about__about__title {
@@ -13,11 +14,7 @@
 }
 /* Founders */
 .founders {
-  margin-left: 230px;
   margin-top: 135px;
-  width: 1000px;
-  gap: 100px;
-  display: flex;
 }
 .founders h2 {
   font-family: "Open Sans";
@@ -35,10 +32,18 @@
   line-height: 25px;
   color: #171b1e;
 }
+.founders ul li {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: #171b1e;
+}
 /* Stories */
 .stories {
   margin-bottom: 55px;
-  gap: 185px;
+  gap: 100px;
 }
 /* Stoires__IMAGE */
 .stories__image {
@@ -46,6 +51,8 @@
 }
 .stories__image img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /* Partners */
 .parners {

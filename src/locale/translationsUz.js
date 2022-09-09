@@ -135,6 +135,11 @@ const translationsUz = {
   parners__four__2:"“Avtoritet Group” kompaniyalar guruhining hamkorlari o'z faoliyatlarini quyidagi yo'nalishlarda olib boradilar: avtomobillarni sotish, transport vositalariga kafolatli va texnik xizmat ko'rsatish, yuk tashish, ehtiyot qismlarni etkazib berish",
   parners__four__3:"“O‘zbekinvest” eksport-import aksiyadorlik jamiyati sug'urta kompaniyasi umumiy sug'urta bozorida o‘z faoliyatini olib boradi ва sug'urta faoliyati klassifikatoriga ko‘ra mavjud 17 turdagi sug‘urtaning barchasi билан shug‘ullanadi",
   parners__four__4:"INGO-UZBEKISTAN kompaniyasi – biznes manfaatlarining kompleks himoya dasturlari hamda xususiy shaxslar uchun sug‘urta mahsulotlarinnig keng qamrovini o‘z ichiga olgan universal xizmat portfeliga ega O‘zbekistonnning eng yirik sug‘urtachilaridan biridir.",
+  // Rahbariyat
+  d:"Direktor",
+  d__o:"o'rinbosari",
+  direktor:"Maxmudov Avzal Mamadjanovich",
+  direktor__orinbosari:"Yakubov Toxir Yusufjanovich",
 };
 
 export default translationsUz;
