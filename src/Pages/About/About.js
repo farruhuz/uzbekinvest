@@ -23,7 +23,6 @@ const About = () => {
         <h2>{t('founders')}</h2>
         <p>{t('founders__1')} <br/><br/> {t('founders__2')}</p>
       </div>
-      <SliderImg />
       <div className="founders stories">
         <h2>{t('founders__3')}</h2>
         <p>

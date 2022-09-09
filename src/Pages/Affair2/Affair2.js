@@ -17,78 +17,14 @@ const Affair2 = () => {
         <div className="container">
           <div className="med__affiar__name">{t("legal__assistance")}</div>
           <div className="med__affiar__cards">
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
+            <p>{t('yurudik__assistance__info__1')}</p>
+            <p>{t('yurudik__assistance__info__2')}</p>
+            <p>{t('yurudik__assistance__info__3')}</p>
+            <p>{t('yurudik__assistance__info__4')}</p>
+            <p>{t('yurudik__assistance__info__5')}</p>
+            <p>{t('yurudik__assistance__info__6')}</p>
+            <p>{t('yurudik__assistance__info__7')}</p>
+            <p>{t('yurudik__assistance__info__8')}</p>
           </div>
         </div>
       </div>

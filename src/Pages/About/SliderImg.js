@@ -21,7 +21,9 @@ const SliderImg = () => {
           className="mySwiper__about"
         >
           <SwiperSlide className="slide-page__about">
-            <img src={Sliderimage} alt="" />
+            <a target="_blank" href="https://ariainsurance.uz/">
+              <img src={Sliderimage} alt="" />
+            </a>
           </SwiperSlide>
           <SwiperSlide className="slide-page__about">
             <img src={Sliderimage} alt="" />

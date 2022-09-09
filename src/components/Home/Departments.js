@@ -21,7 +21,6 @@ const Departments = ({catchDepart}) => {
       title__2:`${t("depart__international__2")}`,
       title__3:`${t("depart__international__3")}`,
       title__4:`${t("depart__international__4")}`,
-      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ullamcorper senectus gravida amet.`,
     },
     {
       id: 2,
@@ -29,8 +28,6 @@ const Departments = ({catchDepart}) => {
       title:``,
       title__1:`${t("depart__car__1")}`,
       title__2:`${t("depart__car__2")}`,
-      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Ullamcorper senectus gravida amet.`,
     },
     {
       id: 3,
@@ -40,8 +37,6 @@ const Departments = ({catchDepart}) => {
       title__2:`${t("depart__may__2")}`,
       title__3:`${t("depart__may__3")}`,
       title__4:`${t("depart__may__4")}`,
-      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Ullamcorper senectus gravida amet.`,
     },
     {
       id: 4,
@@ -51,8 +46,6 @@ const Departments = ({catchDepart}) => {
       title__2:`${t("depart__legal__2")}`,
       title__3:`${t("depart__legal__3")}`,
       title__4:`${t("depart__legal__4")}`,
-      subtitle:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Ullamcorper senectus gravida amet.`,
     },
   ];
   return (
@@ -73,7 +66,7 @@ const Departments = ({catchDepart}) => {
               return (
                 <div className="departments__box2__child" key={el.id}>
                   <h4>{el.name}</h4>
-                  <p>{el.subtitle}</p>
+                  <p>{el.title__1.substring(0,150)+" ... "}</p>
                   <div>
                     <span onClick={() => changeLocal(el)} className="link">
                       {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />

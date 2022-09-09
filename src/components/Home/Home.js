@@ -4,7 +4,6 @@ import Departments from "./Departments";
 import Est from "./Est";
 import Lastesnews from "./Lastesnews";
 import Lectus from "./Lectus";
-import Newslatter from "./Newslatter";
 import Slider from "./Slider";
 import Tempus from "./Tempus";
 
@@ -15,7 +14,6 @@ const Home = ({catchDepart, catchDepartTempus, setLanguage}) => {
       <Lastesnews setLanguage={setLanguage} />
       <Tempus catchDepartTempus={catchDepartTempus}/>
       <Departments catchDepart={catchDepart}/>
-      <Newslatter />
       <Est />
       <Slider />
       <Contact />

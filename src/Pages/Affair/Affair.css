@@ -18,24 +18,26 @@
 
 /* MED affair */
 .med__affiar > .container {
-  display: flex;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
 .med__affiar__name {
-  width: 30%;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 62px;
   color: #171b1e;
+  margin-bottom: 100px;
 }
 .med__affiar__cards {
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #171b1e;
+  margin-bottom: 100px;
 }
 .med__affiar__cards > .departments__box2__child {
   width: 32%;

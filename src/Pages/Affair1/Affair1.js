@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import arrowRed from "../../Images/link_red_arrow.png";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Slider from "../../components/Home/Slider";
 
@@ -17,78 +15,9 @@ const Affair1 = () => {
         <div className="container">
           <div className="med__affiar__name">{t("medical__assistance")}</div>
           <div className="med__affiar__cards">
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
+            <p>{t('medical__assistance__info__1')}</p>
+            <p>{t('medical__assistance__info__2')}</p>
+            <p>{t('medical__assistance__info__3')}</p>
           </div>
         </div>
       </div>

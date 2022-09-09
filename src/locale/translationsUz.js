@@ -21,9 +21,13 @@ const translationsUz = {
   last__news: "So'ngi Yangiliklar",
   // Tempus
   medical__assistance: "Tibbiy assistans",
+  medical__assistance__info:"sayohat paytida tibbiy va transport yordamini tashkil etish bo'yicha xizmatlar to'plami. Turistga xizmatlar sug'urta polisi bo'yicha taqdim etiladi.",
   legal__assistance: "Yuridik assistans",
+  legal__assistance__info:"fuqarolik, iqtisodiy, jinoiy, ma’muriy ish yuritishda ishtirok etmagan holda da’vo arizalari, apellyatsiya va kassatsiya shikoyatlarini, shuningdek boshqa protsessual hujjatlarni rasmiylashtirish;",
   technical__assistance: "Texnik assistans",
+  technical__assistance__info:"Texnik komissarning xizmatlari (voqea joyiga jo'nab ketish, tekshirish, sug'urta tovonining miqdorini aniqlash, sug'urtalovchi (sug'urta qildiruvchi) uchun ekspert xulosasini tuzish, zararni qoplashda ishtirok etish).",
   personal__assistance: "Shaxsiy assistans",
+  personal__assistance__info:"Mehmonxonalarda joylarni bron qilish, havo va temir yo'l transportiga chiptalar taqdim etish, tarjima xizmatlarini ko'rsatish, taksi xizmatlarini ko'rsatish, boshqa xizmatlar, dori vositalarini qidirish va etkazib berish.", 
   // Department Component
   depart: "Bo'limlar",
   depart__international: "Xalqaro hamkorlik bo’limi",
@@ -69,7 +73,7 @@ const translationsUz = {
   founders: "Ta'sischilar",
   founders__1: `2000 yilda tashkil etilgan “O‘zbekinvest Assistance” MCHJ O‘zbekiston Respublikasidagi asosiy assistans kompaniyalardan biri hisoblanadi.`,
   founders__2: `“O‘zbekinvest Assistans” mas’uliyati cheklangan jamiyati ichki bozordan tashqari xorijiy assistans kompaniyalarga ham xizmat ko‘rsatadi. Bugungi kunda bizning hamkorlarimiz “Euroasia Assistance”, “Inter Assist”, “Missadena”, “Jiang Tai Global Assistance”, “VMA” LLC, “AP Companies” Ltd, “Global Voyadger Assistance”, “Remed Assistance” va “Balt Assistance” va boshqalar kabi assistans kompaniyalari hisoblanadi.`,
-  founders__3: "Hikoyalar",
+  founders__3: "Rahbariyat",
   founders__4: "Hamkorlar",
   // PARTNERS Page
   partners__title__1: `• Assistans xizmatlari - texnik, tibbiy va yuridik yordam ko'rsatish bo'yicha 21 yildan ortiq tajriba.`,
@@ -108,6 +112,29 @@ const translationsUz = {
     sug'urtachilar tovon to'lash bo'yicha muzokaralar olib borish uchun ishga kelishadi.`,
   otdel__2__subtitle__2:`Yo‘l-transport hodisasi sodir bo‘lganligi to‘g‘risida ichki ishlar 
     organi xodimlari ishtirokisiz`,
+
+  medical__assistance__info__1: "Tibbiy yordam - Tibbiy yordam - sayohat paytida tibbiy va transport yordamini tashkil etish bo'yicha xizmatlar to'plami. Turistga xizmatlar sug'urta polisi bo'yicha taqdim etiladi.",  
+  medical__assistance__info__2: "Ba'zida sug'urta yordami va sug'urta xizmati kabi terminologiya qo'llaniladi.", 
+  medical__assistance__info__3: "Ushbu faoliyat bilan shug'ullanuvchi xizmat ko'rsatuvchi kompaniya tibbiy muassasani topish, kerakli mutaxassisning qabuliga yozilish, xizmatlar uchun haq to'lash va sug'urtalanganni doimiy yashash mamlakatiga olib borish bilan shug'ullanadi.", 
+  yurudik__assistance__info__1:"huquqiy yordam bo'limi:",
+  yurudik__assistance__info__2:"og'zaki va yozma yuridik maslahatlar berish;",
+  yurudik__assistance__info__3:"fuqarolik, iqtisodiy, jinoiy, ma’muriy ish yuritishda ishtirok etmagan holda da’vo arizalari, apellyatsiya va kassatsiya shikoyatlarini, shuningdek boshqa protsessual hujjatlarni rasmiylashtirish;",
+  yurudik__assistance__info__4:"surishtiruv organlarida va sudda ma'muriy ish yuritish jarayonida manfaatlarni ifodalash. Ma'muriy javobgarlik to'g'risidagi qarorlar ustidan shikoyat qilish;",
+  yurudik__assistance__info__5:"baxtsiz hodisa natijasida yetkazilgan moddiy va ma’naviy zararni qoplash to‘g‘risidagi da’volar bo‘yicha har qanday instansiya sudida fuqarolik, xo‘jalik protsessida manfaatlarni ifodalash;",
+  yurudik__assistance__info__6:"baxtsiz hodisa natijasida etkazilgan moddiy va ma'naviy zararni qoplash to'g'risidagi fuqarolik da'volari bo'yicha har qanday instansiya sudida jinoyat protsessida manfaatlarni ifodalash;",
+  yurudik__assistance__info__7:"sug'urta tovonini to'lash to'g'risidagi da'volar bo'yicha har qanday instansiya sudida fuqarolik, xo'jalik protsessida manfaatlarni ifodalash;",
+  yurudik__assistance__info__8:"moddiy zararni minimallashtirish maqsadida avtotovar tadqiqotlari/ekspertizalarini huquqiy tekshirish.",
+  techno__assitance__info__1:"Texnik komissarning xizmatlari (voqea joyiga jo'nab ketish, tekshirish, sug'urta tovonining miqdorini aniqlash, sug'urtalovchi (sug'urta qildiruvchi) uchun ekspert xulosasini tuzish, zararni qoplashda ishtirok etish).",
+  techno__assitance__info__2:"Evakuator xizmatlari: yo‘l-transport hodisasida texnik nosozlik yoki shikastlanganda avtomobilni texnik xizmat ko‘rsatish shoxobchasiga tashish (O‘zbekiston Respublikasining butun hududi bo‘ylab).",
+  techno__assitance__info__3:"- O'zbekiston Respublikasining istalgan mintaqasidagi xizmat ko'rsatish shoxobchalarida, polis berilgan joydan qat'i nazar, ta'mirlash ishlarini qamrab olish.",
+  techno__assitance__info__4:"- sug'urta kompaniyasining sug'urtalangan shaxs oldidagi kafolat majburiyatlari.",
+  personal__assistance__info__1:"Mehmonxonalarda joylarni bron qilish, havo va temir yo'l transportiga chiptalar taqdim etish, tarjima xizmatlarini ko'rsatish, taksi xizmatlarini ko'rsatish, boshqa xizmatlar, dori vositalarini qidirish va etkazib berish.",
+
+  // partners PArtners
+  parners__four__1:"Biz ARIA jamoasi, sizni jamiyatimizning bir qismi bo'lishingizni xohlaymiz. Bizning jamoamiz xotirjamlik va isonchni taqdim etadi. Bu esa mijozlarga biznesni yanada rivojlantirish masalalariga e’tibor qaratishga imkon yaratadi.",
+  parners__four__2:"“Avtoritet Group” kompaniyalar guruhining hamkorlari o'z faoliyatlarini quyidagi yo'nalishlarda olib boradilar: avtomobillarni sotish, transport vositalariga kafolatli va texnik xizmat ko'rsatish, yuk tashish, ehtiyot qismlarni etkazib berish",
+  parners__four__3:"“O‘zbekinvest” eksport-import aksiyadorlik jamiyati sug'urta kompaniyasi umumiy sug'urta bozorida o‘z faoliyatini olib boradi ва sug'urta faoliyati klassifikatoriga ko‘ra mavjud 17 turdagi sug‘urtaning barchasi билан shug‘ullanadi",
+  parners__four__4:"INGO-UZBEKISTAN kompaniyasi – biznes manfaatlarining kompleks himoya dasturlari hamda xususiy shaxslar uchun sug‘urta mahsulotlarinnig keng qamrovini o‘z ichiga olgan universal xizmat portfeliga ega O‘zbekistonnning eng yirik sug‘urtachilaridan biridir.",
 };
 
 export default translationsUz;

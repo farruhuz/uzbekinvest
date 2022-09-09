@@ -23,25 +23,25 @@ export default function Tempus({catchDepartTempus}) {
       id: 1,
       image: firstImg,
       title: t("medical__assistance"),
-      info: "",
+      info: t("medical__assistance__info"),
     },
     {
       id: 2,
       image: secondImg,
       title: t("legal__assistance"),
-      info: "",
+      info: t("legal__assistance__info"),
     },
     {
       id: 3,
       image: thirdtImg,
       title: t("technical__assistance"),
-      info: "",
+      info: t("legal__assistance__info"),
     },
     {
       id: 4,
       image: fourImg,
       title: t("personal__assistance"),
-      info: "",
+      info: t("personal__assistance__info"),
     },
   ];
   return (
@@ -58,12 +58,7 @@ export default function Tempus({catchDepartTempus}) {
                 <div className="tempus-info__card">
                   <div>
                     <h3 className="tempus-info__card-title">{element.title}</h3>
-                    <p className="tempus-info__card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Dictum quam turpis justo, morbi ut id enim. Maecenas
-                      facilisis ultrices commodo, sociis. Rhoncus, viverra
-                      pharetra urna in malesuada nulla.
-                    </p>
+                    <p className="tempus-info__card-text">{element.info}</p>
                   </div>
                   <button className="tempus-info__card-btn" onClick={()=>{changeLocal(element)}}>
                     {t("read__more__btn")}

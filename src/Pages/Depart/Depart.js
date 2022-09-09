@@ -14,23 +14,6 @@ const Depart = () => {
   }, [pathname]);
   return (
     <div className="depart">
-      <div className="affair__hero__depart">
-        <div className="affair__hero__box1__depart">
-          <h2 className="affair__lectus-title__depart">
-            Lectus elit odio <br/> nisl nec sit proin.
-          </h2>
-          <div>
-            <p className="affair__lectus-info__depart">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              ullamcorper ultrices ante imperdiet a in amet, et nibh. Rutrum
-              dictumst ultricies consectetur dictumst quisque.
-            </p>
-            <button className="affair__lectus-btn__depart">{t('view__more__btn')}</button>
-          </div>
-        </div>
-        <div className="affair__hero__box2__depart"></div>
-      </div>
-      {/*  */}
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
@@ -44,57 +27,35 @@ const Depart = () => {
           </div>
           <div className="med__affiar__cards__depart">
             <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
+              <h4>{t("otdel__1__title__1")}</h4>
+              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__1')}</p>
               <div>
                 <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
+                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
                 </Link>
               </div>
             </div>
             <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
+              <h4>{t('otdel__1__title__2')}</h4>
+              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__2')}</p>
               <div>
                 <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
+                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
                 </Link>
               </div>
             </div>
             <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
+              <h4>{t('otdel__1__title__3')}</h4>
+              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__3')}</p>
               <div>
                 <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
+                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/*  */}
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
@@ -103,57 +64,26 @@ const Depart = () => {
           </div>
           <div className="med__affiar__cards__depart">
             <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
+              <h4>{t("otdel__2__title__1")}</h4>
+              <p className="departments__box2__child__depart__p">{t('otdel__2__subtitle__1__2')}</p>
               <div>
                 <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
+                  {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />
                 </Link>
               </div>
             </div>
             <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
+              <h4>{t('otdel__2__title__2')}</h4>
+              <p className="departments__box2__child__depart__p">{t('otdel__2__subtitle__2__2')}</p>
               <div>
                 <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
+                  {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/*  */}
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
@@ -244,29 +174,21 @@ const Depart = () => {
           </div>
         </div>
       </div>
-      {/*  */}
       <div className="med__affiar__depart">
         <div className="container">
           <div className="med__affiar__name__depart">
-            <h3>Юридическим лицам</h3>
+          <h3>{t('depart__legal')}</h3>
             <p>
-              В соответствии с требованиями законодательства в целях возврата
-              государственных средств истребовать и (или) взыскать в судебном
-              порядке материальный ущерб, причиненный в порядке регресса, с лиц,
-              виновных в страховом случае.
+              {t('depart__legal__1')}
               <br />
-              <br /> Представляет в установленном порядке интересы ООО
-              “Узбекинвест Ассистанс” и клиентов Ассистанса в хозяйственном,
-              гражданском, уголовном судах, а также в других органах при
-              осуществлении права регрессного требования к виновным в нанесении
-              ущерба лицам и защите интересов ООО “Узбекинвест Ассистанс” и его
-              клиентов. <br />
-              <br /> Анализирует и обобщает результаты рассмотрения
-              претензионных и судебных дел, а также изучает практику заключения
-              и исполнения договоров <br />
-              <br /> Проводит правовую экспертизу документации, а также
-              визирование договоров и других документов заключаемых
-              (составляемых) ООО “Узбекинвест Ассистанс” и его клиентами.
+              <br />
+              {t('depart__legal__2')}
+              <br />
+              <br />
+              {t('depart__legal__3')}
+              <br />
+              <br />
+              {t('depart__legal__4')}
             </p>
           </div>
           <div className="med__affiar__cards__depart">
@@ -321,7 +243,6 @@ const Depart = () => {
           </div>
         </div>
       </div>
-      {/*  */}
       <div className="affair__slider">
         <Slider />
       </div>
