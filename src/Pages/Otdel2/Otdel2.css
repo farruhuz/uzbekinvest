@@ -1,0 +1,13 @@
+.departments__box2__child__depart{
+    display: flex;
+    flex-direction: column;
+}
+.departments__box2__child__depart h4{
+    height: 30%;
+}
+.departments__box2__child__depart p{
+    height: 50%;
+}
+.departments__box2__child__depart div{
+    height: 20%;
+}

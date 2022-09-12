@@ -3,7 +3,7 @@ import Slider from "../../components/Home/Slider";
 import "./Partners.css";
 import arrowRed from "../../Images/link_red_arrow.png";
 import ArrowRed from "../../Images/arrow__RED.png";
-import partners from "../../Images/partners/part.png";
+import partners from "../../Images/partners/part.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

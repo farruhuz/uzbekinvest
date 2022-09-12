@@ -2,7 +2,7 @@ import React from "react";
 import "../../Styles/Est.css";
 import Arrow from "../../Images/link_white_arrow.png";
 import Img1 from "../../Images/est/1.png";
-import Img2 from "../../Images/partners/part.png";
+import Img2 from "../../Images/partners/part.jpg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

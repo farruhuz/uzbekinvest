@@ -27,6 +27,7 @@ import Affair2 from "./Pages/Affair2/Affair2";
 import Affair3 from "./Pages/Affair3/Affair3";
 import Affair1 from "./Pages/Affair1/Affair1";
 import Affair4 from "./Pages/Affair4/Affair4";
+import Card from "./Pages/Card/Card";
 
 
 i18n.use(initReactI18next).init({
@@ -41,6 +42,7 @@ i18n.use(initReactI18next).init({
 function App() {
   const [innovation, setInnovation] = useState({});
   const [otdelInfo, setOtdelInfo] = useState({});
+  const [cardInfo, setCardInfo] = useState({});
   const [tampus, setTempus] = useState({});
   const [language, setLanguage] = useState('ru')
   const exchangeInfo = (value) => {
@@ -55,7 +57,9 @@ function App() {
   }
   const catchDepartTempus = (value) =>{
     setTempus(value)
-    console.log(value);
+  }
+  const changeInfoLocal = (value)=>{
+    setCardInfo(value);
   }
   return (
     <>
@@ -76,10 +80,12 @@ function App() {
         <Route path="partners/:id" element={<Partner />} />
         <Route path="help" element={<Help />} />
         <Route path="depart" element={<Depart />} />
-        <Route path="depart/1" element={<Otdel otdelInfo={otdelInfo}/>} />
-        <Route path="depart/2" element={<Otdel2 otdelInfo={otdelInfo}/>} />
-        <Route path="depart/3" element={<Otdel3 otdelInfo={otdelInfo}/>} />
-        <Route path="depart/4" element={<Otdel4 otdelInfo={otdelInfo}/>} />
+        <Route path="depart/1" element={<Otdel changeInfoLocal={changeInfoLocal}/>} />
+        <Route path="depart/1/:id" element={<Card cardInfo={cardInfo}/>} />
+        <Route path="depart/2" element={<Otdel2 changeInfoLocal={changeInfoLocal} otdelInfo={otdelInfo}/>} />
+        <Route path="depart/2/:id" element={<Card cardInfo={cardInfo} />} />
+        <Route path="depart/3" element={<Otdel3 changeInfoLocal={changeInfoLocal} otdelInfo={otdelInfo} />} />
+        <Route path="depart/4" element={<Otdel4 changeInfoLocal={changeInfoLocal} otdelInfo={otdelInfo} />} />
       </Routes>
       <Footer />
     </>

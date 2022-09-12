@@ -2,14 +2,8 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Slider from "../../components/Home/Slider";
 import "./Affair.css";
-import arrowRed from "../../Images/link_red_arrow.png";
-import { Link } from "react-router-dom";
-import uslug from "../../Images/uslug/uslug.png";
+import uslug from "../../Images/uslug/uslugi.jpg";
 import { useTranslation } from "react-i18next";
-import Affair1 from "../Affair1/Affair1";
-import Affair2 from "../Affair2/Affair2";
-import Affair3 from "../Affair3/Affair3";
-import Affair4 from "../Affair4/Affair4";
 
 const Affair = () => {
   const { pathname } = useLocation();

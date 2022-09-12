@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import "./Swipers.css";
 
 const Swipers = ({xalqaro, xalqaro2, xalqaro3}) => {
-  console.log(xalqaro3);
   return (
     <div className="slayder">
       <Swiper spaceBetween={30} centeredSlides={true} autoplay={{delay: 2500, disableOnInteraction: false,}}

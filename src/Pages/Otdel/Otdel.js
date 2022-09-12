@@ -1,20 +1,48 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import xalqaro from "../../Images/otdel/xalqaro.jpg";
 import Swipers from "../Swiper/Swipers";
+import "./Otdel.css";
 
-const Otdel = ({ otdelInfo }) => {
+const Otdel = ({ changeInfoLocal }) => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
   const { t } = useTranslation();
+  const changeLocal = (value) =>{
+    changeInfoLocal(value);
+    navigate(`${value.id}`)
+  }
+  const arrInfo = [
+    {
+      id:1,
+      title: `${t("otdel__1__title__1")}`,
+      subtitle: `${t("otdel__1__subtitle__1")}`,
+      button: `${t("read__more__btn")}`,
+    },
+    {
+      id:2,
+      title: `${t("otdel__1__title__2")}`,
+      subtitle: `${t("otdel__1__subtitle__2")}`,
+      button: `${t("read__more__btn")}`,
+    },
+    {
+      id:3,
+      title: `${t("otdel__1__title__3")}`,
+      subtitle: `${t("otdel__1__subtitle__3")}`,
+      button: `${t("read__more__btn")}`,
+    },
+  ];
   return (
     <div className="depart">
       <div className="affair__hero__depart">
-        <Swipers xalqaro={xalqaro}/>
+        <Swipers xalqaro={xalqaro} />
       </div>
       <div className="med__affiar__depart">
         <div className="container">
@@ -34,33 +62,17 @@ const Otdel = ({ otdelInfo }) => {
             </p>
           </div>
           <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>{t("otdel__1__title__1")}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__1')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>{t('otdel__1__title__2')}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__2')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>{t('otdel__1__title__3')}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__3')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
+            {arrInfo.map((el) => {
+              return (
+                <div className="departments__box2__child__depart" key={el.id}>
+                  <h4>{el.title}</h4>
+                  <p className="departments__box2__child__depart__p">{el.subtitle}</p>
+                  <div>
+                    <span  className="link" onClick={()=>changeLocal(el)}>{el.button}<img src={arrowRed} alt="red arrow" /></span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
