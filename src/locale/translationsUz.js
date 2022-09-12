@@ -95,7 +95,7 @@ const translationsUz = {
   otdel__1__title__3: "Sugurta kompaniyalar orasidagi hamkorlarimiz",
   otdel__1__subtitle__3: `“O‘zbekinvest EISK” AJ, “ARIA” sug‘urta tashkiloti, “Ingo Uzbekistan” sug‘urta kompaniyasi.`,
   // Boxses OTDEL 2 Majburiy
-  otdel__2__title__1: "OSGOVTS",
+  otdel__2__title__1: "ОСГОВТС",
   otdel__2__subtitle__1: `transport vositalari yegalarining fuqarolik javobgarligini majburiy sug‘urta qilish’ siyosatini anglatadi. Ushbu turdagi avtoulov sug‘urtasi avtomobilning har bir yegasi uchun zarurdir va tegishli hujjatlarning yo‘qligi jarimaga olib kelishi mumkin. 
     OSGO VTS siyosati faqat uchinchi shaxslarning mol-mulkiga yoki sog‘lig‘iga yetkazilgan zararni qoplashiga ye’tibor qaratish lozim. OSAGO sug‘urtasi yegasining transport vositalariga yoki avtohalokat natijasida olingan jarohatlarga yetkazilgan zarar uchun kompensatsiya bermaydi. Voqea sodir bo‘lgan taqdirda, fuqarolik javobgarligini sug‘urta qilish polisi buzilgan mol-mulk yegalari tomonidan moddiy da’volardan himoya qiladi, shuningdek, hodisa paytida zarar ko‘rgan odamlarning sog‘lig‘iga zarar yetkazadi.
     Agar transport vositasini boshqarish uchun bir nechta shaxs yo‘l qo‘yilgan bo‘lsa, OSAGO sug‘urta shartnomasi har bir haydovchi uchun alohida-alohida berilishi kerak. OSGOVTS siyosatida sug‘urta tariflari barcha sug‘urtalovchilarga qonun hujjatlarida belgilangan yagona qoidalar bo‘yicha qo‘llaniladi. Ushbu sug‘urta turi bo‘yicha sug‘urta summasi 40 million so‘m miqdorida belgilanadi. Shu bilan birga, sug‘urta summasini ajratish qonun bilan quyidagi chegaralar doirasida belgilanadi: hayot va sog‘liqqa yetkazilgan zararni qoplash uchun – 65%; jabrlanuvchilarning mol – mulkiga yetkazilgan zararni qoplash uchun-35%.

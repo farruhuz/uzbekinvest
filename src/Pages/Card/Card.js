@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./Card.css";
 
 const Card = ({ cardInfo }) => {
+  console.log(cardInfo);
   const { t } = useTranslation();
   const internatinalInfo = [
     {
@@ -75,10 +76,9 @@ const Card = ({ cardInfo }) => {
     },
   ];
   useEffect(() => {
-    console.log("em : " , window.scrollTo(0, 0));
     window.scrollTo(0, 0);
   }, []);
-  if (cardInfo.title === "YEVROPROTOKOL" || cardInfo.title === "ЕВРОПЕЙСКИЙ ПРОТОКОЛ") {
+  if (cardInfo.title === "Yo’l  transport hodisasi tog’risidagi xabarnoma" || cardInfo.title === "ЕВРО ПРОТОКОЛ") {
     return (
       <div className="cards__Net">
         <div className="container">
@@ -101,7 +101,7 @@ const Card = ({ cardInfo }) => {
       </div>
     );
   } 
-  else if (cardInfo.title === "OSGOVTS" || cardInfo.title === "ОСГОВТС") {
+  else if (cardInfo.title === "TVEFJMS" || cardInfo.title === "ОСГОВТС") {
     return (
       <div className="cards__Net">
         <div className="container">

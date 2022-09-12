@@ -22,13 +22,13 @@ const Otdel2 = ({ otdelInfo, changeInfoLocal }) => {
   const arrInfo = [
     {
       id: 1,
-      title: `${t("otdel__2__title__1")}`,
+      title: `${t("avto__s__1__title")}`,
       subtitle: `${t("otdel__2__subtitle__1__2")}`,
       button: `${t("read__more__btn")}`,
     },
     {
       id: 2,
-      title: `${t("otdel__2__title__2")}`,
+      title: `${t("avto__s__2__title")}`,
       subtitle: `${t("otdel__2__subtitle__2__2")}`,
       button: `${t("read__more__btn")}`,
     },
