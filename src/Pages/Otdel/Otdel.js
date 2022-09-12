@@ -3,14 +3,15 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import xalqaro from "../../Images/otdel/xalqaro.jpg";
+import xalqaro2 from "../../Images/otdel/xalqaro2.jpg";
+import xalqaro3 from "../../Images/otdel/xalqaro3.jpg";
 import Swipers from "../Swiper/Swipers";
 import "./Otdel.css";
 
 const Otdel = ({ changeInfoLocal }) => {
   const { pathname } = useLocation();
+
   const navigate = useNavigate();
-  const location = useLocation();
-  console.log(location);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -42,7 +43,7 @@ const Otdel = ({ changeInfoLocal }) => {
   return (
     <div className="depart">
       <div className="affair__hero__depart">
-        <Swipers xalqaro={xalqaro} />
+        <Swipers xalqaro={xalqaro} xalqaro2={xalqaro2} xalqaro3={xalqaro3}/>
       </div>
       <div className="med__affiar__depart">
         <div className="container">

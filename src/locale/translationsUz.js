@@ -30,6 +30,7 @@ const translationsUz = {
   personal__assistance__info:"Mehmonxonalarda joylarni bron qilish, havo va temir yo'l transportiga chiptalar taqdim etish, tarjima xizmatlarini ko'rsatish, taksi xizmatlarini ko'rsatish, boshqa xizmatlar, dori vositalarini qidirish va etkazib berish.", 
   // Department Component
   depart: "Bo'limlar",
+  depart__info__message:`«O'zbekinvest assistans» MCHJ tashkiloti bugungi kunda 4 bolimdan iborat va ular quyidagilar.`,
   depart__international: "Xalqaro hamkorlik bo’limi",
   depart__international__1: `«O‘zbekinvest Assistans» MCHJning Xalqaro hamkorlik bo‘limi jamiyatning xalqaro aloqalarini tashkillashtirish va uzviy davomiyligini ta’minlash uchun ma’suldir.`,
   depart__international__2: `Bo‘lim yangi hamkorlar bilan hamkorlikni o‘rnatish bilan bir qatorda, trevel polisi bilan O‘zbekiston Respublikasi hududiga kelgan sayyoxlarga kerakli assistans xizmatlarini tashkil etish uchun xam ma’suldir.`,
@@ -139,8 +140,10 @@ const translationsUz = {
   // Rahbariyat
   d:"Direktor",
   d__o:"o'rinbosari",
+  d__2:`Иҳтиёрий суғурта турлари бўйича даъво ишларини кўрибчиқиш бўлими менежери`,
   direktor:"Maxmudov Avzal Mamadjanovich",
   direktor__orinbosari:"Yakubov Toxir Yusufjanovich",
+  menejer:"Аxmetov Qobul Atayevich",
   // Horihiy hamkorlarimiz
   friend__1__1__title:"Allianz Global Assistance (sobiq Mondial Assistance)",
   friend__1__1__subtitle:"Allianz o'z tarixini 1890 yilga borib taqaladi. U Myunxenda tashkil etilgan, asoschisi Myunxen qayta sug'urta jamiyati rahbari - Karl fon Thieme, u ham Europaische Reiseversicherung Aktiengesellschaft (ERV) asoschisi edi.",

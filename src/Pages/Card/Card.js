@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Card.css";
 
 const Card = ({ cardInfo }) => {
-  console.log(cardInfo);
   const { t } = useTranslation();
-
   const internatinalInfo = [
     {
       title: t("friend__1__1__title"),
@@ -76,8 +74,11 @@ const Card = ({ cardInfo }) => {
       subtitle__5: t("avto__s__2__subtitle__5") || " ",
     },
   ];
-
-  if (cardInfo.title === "YEVROPROTOKOL") {
+  useEffect(() => {
+    console.log("em : " , window.scrollTo(0, 0));
+    window.scrollTo(0, 0);
+  }, []);
+  if (cardInfo.title === "YEVROPROTOKOL" || cardInfo.title === "ЕВРОПЕЙСКИЙ ПРОТОКОЛ") {
     return (
       <div className="cards__Net">
         <div className="container">
@@ -100,7 +101,7 @@ const Card = ({ cardInfo }) => {
       </div>
     );
   } 
-  else if (cardInfo.title === "OSGOVTS") {
+  else if (cardInfo.title === "OSGOVTS" || cardInfo.title === "ОСГОВТС") {
     return (
       <div className="cards__Net">
         <div className="container">

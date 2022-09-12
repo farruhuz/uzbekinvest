@@ -34,56 +34,6 @@ const Otdel4 = () => {
               {t('depart__legal__4')}
             </p>
           </div>
-          {/* <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

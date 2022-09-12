@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,7 +18,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationsRu from "./locale/translationsRu";
 import translationsUz from "./locale/translationsUz";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Otdel from "./Pages/Otdel/Otdel";
 import Otdel2 from "./Pages/Otdel2/Otdel2";
 import Otdel3 from "./Pages/Otdel3/Otdel3";
@@ -40,6 +40,10 @@ i18n.use(initReactI18next).init({
 });
 
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const [innovation, setInnovation] = useState({});
   const [otdelInfo, setOtdelInfo] = useState({});
   const [cardInfo, setCardInfo] = useState({});

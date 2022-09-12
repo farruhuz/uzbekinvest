@@ -54,12 +54,7 @@ const Departments = ({catchDepart}) => {
         <div className="departments__con">
           <div className="departments__box1">
             <h2>{t("depart")}</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ullamcorper senectus gravida amet, pellentesque egestas. Nisl
-              dignissim nulla nunc nulla a volutpat in dapibus nec. Orci eu enim
-              vitae mollis sit commodo nullam auctor. Purus.
-            </p>
+            <p>{t('depart__info__message')}</p>
           </div>
           <div className="departments__box2">
             {depart.map((el) => {
