@@ -43,6 +43,8 @@
   line-height: 140%;
   color: #171b1e;
   padding-bottom: 121px;
+  padding-right: 40px;
+  text-align: justify;
 }
 
 .tempus-info__card-btn {

@@ -1,7 +1,4 @@
-/* .partners {
-}
-.partners__box {
-} */
+
 .partners__h2 {
   font-family: "Playfair Display";
   font-style: normal;
@@ -42,6 +39,7 @@
   line-height: 25px;
   color: #171b1e;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .partners__box__1__info ul li:last-child .us{
   color: #ea5942;
@@ -71,6 +69,7 @@
   justify-content: space-between;
   gap: 180px;
   border-bottom: 1px solid #606060;
+  text-align: justify;
 }
 .partners__div:nth-child(1){
   border-top: 1px solid #606060;

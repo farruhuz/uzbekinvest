@@ -6,6 +6,9 @@ import "./Help.css";
 import document1 from "../../Images/file/doc1.doc";
 import document2 from "../../Images/file/doc2.doc";
 import document3 from "../../Images/file/habarnoma.pdf";
+import document4 from "../../Images/file/guvohnoma.pdf";
+import document5 from "../../Images/file/OZBEKINVEST.pdf";
+import document6 from "../../Images/file/fuqarolik__kodeksi.pdf";
 
 const Help = () => {
   const {t} = useTranslation();
@@ -18,6 +21,9 @@ const Help = () => {
             <li><a href={document1}>O‘RQ-684 22.04.2021</a></li>
             <li><a href={document2}>O‘RQ-730 23.11.2021</a></li>
             <li><a href={document3}>YTH xabarnoma blankasi</a></li>
+            <li><a href={document4}>Guvohnoma Assistans</a></li>
+            <li><a href={document5}>OZBEKINVEST ASS ISTANS Аудит.отчет</a></li>
+            <li><a href={document6}>Fuqarolik kodeksi</a></li>
           </ul>
         </div>
       </div>

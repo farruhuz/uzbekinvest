@@ -36,9 +36,7 @@ export default function Est() {
             <div className="est-info__blogs3">{t('partners')}</div>
 
             <div className="est-info__blogs4">
-              <h3 className="est-info__blogs4-title">
-                {t('about__3')}
-              </h3>
+              <h3 className="est-info__blogs4-title">{t('about__3')}</h3>
             </div>
           </div>
 

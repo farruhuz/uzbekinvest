@@ -7,3 +7,6 @@
 .card__Net__box > .card__info{
     margin: 50px 0px;
 }
+.card__info p{
+    text-align: justify;
+}
