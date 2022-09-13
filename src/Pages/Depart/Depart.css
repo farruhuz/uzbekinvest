@@ -12,7 +12,7 @@
 }
 .affair__lectus-title__depart {
   width: 50%;
-  font-family: "Playfair Display";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -89,7 +89,7 @@
   margin-bottom: 20px;
 }
 .departments__box2__child__depart h4 {
-  font-family: "Playfair Display";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -127,4 +127,8 @@
 .departments__box2__child__depart:hover div img {
   content: url("../../Images/link_white_arrow.png");
   width: 27px;
+}
+
+.med__affiar__3{
+  width: 100%;
 }

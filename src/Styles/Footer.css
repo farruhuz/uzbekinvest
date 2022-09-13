@@ -10,7 +10,7 @@ footer{
 }
 
 .footer-text{
-  font-family: 'Inter';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -38,7 +38,7 @@ footer {
 }
 
 .footer-text {
-  font-family: "Inter";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -48,7 +48,7 @@ footer {
   margin-bottom: 33px;
 }
 .footer-sedcras-link {
-  font-family: "Inter";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -62,7 +62,7 @@ footer {
 }
 .footer-sedcras-link::placeholder {
   color: #fff;
-  font-family: "Inter";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

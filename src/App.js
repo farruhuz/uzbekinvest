@@ -83,7 +83,7 @@ function App() {
         <Route path="partners" element={<Partners />} />
         <Route path="partners/:id" element={<Partner />} />
         <Route path="help" element={<Help />} />
-        <Route path="depart" element={<Depart />} />
+        <Route path="depart" element={<Depart changeInfoLocal={changeInfoLocal}/>} />
         <Route path="depart/1" element={<Otdel changeInfoLocal={changeInfoLocal}/>} />
         <Route path="depart/1/:id" element={<Card cardInfo={cardInfo}/>} />
         <Route path="depart/2" element={<Otdel2 changeInfoLocal={changeInfoLocal} otdelInfo={otdelInfo}/>} />

@@ -3,7 +3,7 @@
   margin-bottom: 166px;
 }
 .help h2 {
-  font-family: "Playfair Display";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -24,7 +24,6 @@
   body {
     font-size: 18px;
   }
-
   .accordion {
     width: 90%;
   }

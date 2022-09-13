@@ -1,9 +1,6 @@
-.about > .container{
-  /* border: 1px solid red; */
-}
 
 .about__about__title {
-  font-family: "Playfair Display";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 64px;

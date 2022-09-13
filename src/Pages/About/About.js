@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import direktor from "../../Images/file/direktor.pdf";
 import orinbosar from "../../Images/file/orinbosar.pdf";
 import menejer from "../../Images/file/menejer.pdf";
+
 const About = () => {
   const { pathname } = useLocation();
   const { t } = useTranslation();

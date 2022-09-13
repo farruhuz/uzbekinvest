@@ -1,14 +1,57 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Slider from "../../components/Home/Slider";
 import { Link } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "./Depart.css";
 import { useTranslation } from "react-i18next";
 
-const Depart = () => {
+const Depart = ({changeInfoLocal}) => {
   const { pathname } = useLocation();
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const changeLocal = (value) =>{
+    changeInfoLocal(value);
+    navigate(`${1}/${value.id}`)
+  }
+  const changeLocation2 = (value)=>{
+    changeInfoLocal(value);
+    navigate(`${2}/${value.id}`)
+  }
+  const arrInfo = [
+    {
+      id:1,
+      title: `${t("otdel__1__title__1")}`,
+      subtitle: `${t("otdel__1__subtitle__1")}`,
+      button: `${t("read__more__btn")}`,
+    },
+    {
+      id:2,
+      title: `${t("otdel__1__title__2")}`,
+      subtitle: `${t("otdel__1__subtitle__2")}`,
+      button: `${t("read__more__btn")}`,
+    },
+    {
+      id:3,
+      title: `${t("otdel__1__title__3")}`,
+      subtitle: `${t("otdel__1__subtitle__3")}`,
+      button: `${t("read__more__btn")}`,
+    },
+  ];
+  const arrInfo2 = [
+    {
+      id: 1,
+      title: `${t("avto__s__1__title")}`,
+      subtitle: `${t("otdel__2__subtitle__1__2")}`,
+      button: `${t("read__more__btn")}`,
+    },
+    {
+      id: 2,
+      title: `${t("avto__s__2__title")}`,
+      subtitle: `${t("otdel__2__subtitle__2__2")}`,
+      button: `${t("read__more__btn")}`,
+    },
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -26,33 +69,17 @@ const Depart = () => {
             </p>
           </div>
           <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>{t("otdel__1__title__1")}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__1')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>{t('otdel__1__title__2')}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__2')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>{t('otdel__1__title__3')}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__1__subtitle__3')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t("read__more__btn")} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
+            {arrInfo.map((el) => {
+              return (
+                <div className="departments__box2__child__depart" key={el.id}>
+                  <h4>{el.title}</h4>
+                  <p className="departments__box2__child__depart__p">{el.subtitle}</p>
+                  <div>
+                    <span  className="link" onClick={()=>changeLocal(el)}>{el.button}<img src={arrowRed} alt="red arrow" /></span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -63,30 +90,23 @@ const Depart = () => {
             <p>{t('depart__car__1')}<br/><br/>{t('depart__car__2')}</p>
           </div>
           <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>{t("otdel__2__title__1")}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__2__subtitle__1__2')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>{t('otdel__2__title__2')}</h4>
-              <p className="departments__box2__child__depart__p">{t('otdel__2__subtitle__2__2')}</p>
-              <div>
-                <Link to="/servic" className="link">
-                  {t('read__more__btn')} <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
+            {arrInfo2.map((el) => {
+              return (
+                <div className="departments__box2__child__depart">
+                  <h4>{el.title}</h4>
+                  <p className="departments__box2__child__depart__p">{el.subtitle}</p>
+                  <div>
+                    <span className="link" onClick={()=>changeLocation2(el)}>{t("read__more__btn")}<img src={arrowRed} alt="red arrow" /></span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-      <div className="med__affiar__depart">
+      <div className="med__affiar__depart ">
         <div className="container">
-          <div className="med__affiar__name__depart">
+          <div className="med__affiar__name__depart med__affiar__3">
             <h3>{t('depart__may')}</h3>
             <p>
               {t('depart__may__1')}<br/><br/> 
@@ -98,85 +118,11 @@ const Depart = () => {
               {t('depart__may__7')}
             </p>
           </div>
-          <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div className="med__affiar__depart">
+      <div className="med__affiar__depart ">
         <div className="container">
-          <div className="med__affiar__name__depart">
+          <div className="med__affiar__name__depart med__affiar__3">
           <h3>{t('depart__legal')}</h3>
             <p>
               {t('depart__legal__1')}
@@ -190,56 +136,6 @@ const Depart = () => {
               <br />
               {t('depart__legal__4')}
             </p>
-          </div>
-          <div className="med__affiar__cards__depart">
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
-            <div className="departments__box2__child__depart">
-              <h4>Diam hac nulla vulputate vivamus</h4>
-              <p className="departments__box2__child__depart__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ullamcorper senectus gravida amet.
-              </p>
-              <div>
-                <Link to="/servic" className="link">
-                  Lorem Ipsum <img src={arrowRed} alt="red arrow" />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
