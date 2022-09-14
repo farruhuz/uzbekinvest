@@ -78,7 +78,7 @@ const translationsRu = {
   follow_us__map: "Подписывайтесь на нас",
   email__map: "Почта",
   // ABOUT Page
-  founders: "Основатели",
+  founders: "О нас",
   founders__1: `Основанное в 2000 году, ООО «Узбекинвест Ассистанс» является одним из главных ассистанс компании в Республике Узбекистан.`,
   founders__2: `Кроме отечественного рынка ООО «Узбекинвест Ассистанс» оказывает услуги и зарубежным ассистанс компаниям. На сегодняшний день нашими партнёрами являются такие ассистанс компании как: Euroasia Assistance, Inter Assist, Мissadena, Jiang Tai Global Assistance, VMA LLC, AP Companies Ltd, Global Voyadger Assistance, Remed Assistance, и Balt Assistance и др`,
   founders__3: "Руководство",

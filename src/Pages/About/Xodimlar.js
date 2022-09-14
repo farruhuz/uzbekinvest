@@ -1,8 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import direktor from "../../Images/file/direktor.pdf";
-import orinbosar from "../../Images/file/orinbosar.pdf";
-import menejer from "../../Images/file/menejer.pdf";
 import "./About.css";
 
 const Xodimlar = () => {
@@ -38,7 +35,7 @@ const Xodimlar = () => {
     {
       name: t("direktor__name__3"),
       image: "https://uzbekinvest.uz/uploads/employee/1.jpg",
-      position: t("direktor__position__2"),
+      position: t("direktor__position__3"),
       phone__1: t("direktor__phone"),
       phone__2: "(78) 120 03 51",
       reception__day__1: t("direktor__reception__day"),

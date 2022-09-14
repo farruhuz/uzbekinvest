@@ -71,7 +71,7 @@ const translationsUz = {
   follow_us__map: "Obuna bo'ling",
   email__map: "Elektron pochta",
   //  ABOUT Page
-  founders: "Ta'sischilar",
+  founders: "Biz haqimizda",
   founders__1: `2000 yilda tashkil etilgan “O‘zbekinvest Assistance” MCHJ O‘zbekiston Respublikasidagi asosiy assistans kompaniyalardan biri hisoblanadi.`,
   founders__2: `“O‘zbekinvest Assistans” mas’uliyati cheklangan jamiyati ichki bozordan tashqari xorijiy assistans kompaniyalarga ham xizmat ko‘rsatadi. Bugungi kunda bizning hamkorlarimiz “Euroasia Assistance”, “Inter Assist”, “Missadena”, “Jiang Tai Global Assistance”, “VMA” LLC, “AP Companies” Ltd, “Global Voyadger Assistance”, “Remed Assistance” va “Balt Assistance” va boshqalar kabi assistans kompaniyalari hisoblanadi.`,
   founders__3: "Rahbariyat",
