@@ -5,9 +5,7 @@ import Slider from "../../components/Home/Slider";
 import "./About.css";
 import stories from "../../Images/about/stories.png";
 import { useTranslation } from "react-i18next";
-import direktor from "../../Images/file/direktor.pdf";
-import orinbosar from "../../Images/file/orinbosar.pdf";
-import menejer from "../../Images/file/menejer.pdf";
+import Xodimlar from "./Xodimlar";
 
 const About = () => {
   const { pathname } = useLocation();
@@ -27,11 +25,7 @@ const About = () => {
         </div>
         <div className="founders stories">
           <h2>{t("founders__3")}</h2>
-          <ul>
-            <li>{t('d')}: <a href={direktor}> {t('direktor')} </a></li>
-            <li>{t('d')} {t('d__o')}:<a href={orinbosar}> {t('direktor__orinbosari')} </a></li>
-            <li>{t('d__2')}:<a href={menejer}> {t('menejer')} </a></li>
-          </ul>
+          <Xodimlar/>
         </div>
         <div className="stories__image">
             <img src={stories} alt="" />

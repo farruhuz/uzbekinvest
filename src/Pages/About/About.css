@@ -52,6 +52,10 @@
   width: 100%;
   object-fit: cover;
 }
+.stories h2{
+  text-align: center;
+  margin-bottom: 5rem;
+}
 /* Partners */
 .parners {
   margin-bottom: 200px;
@@ -140,3 +144,34 @@
 .swiper__about {
   overflow: hidden !important;
 }
+.text__h3{
+  color: #13976e;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+}
+.xodimlar__ul li{
+  margin-bottom: 5rem;
+}
+.position__box p {
+  color: #999;
+}
+.position__box > .position__box__1 > div > p > span {
+  padding-right: 1rem;
+  font-weight: 700;
+  color: #171b1e;
+}
+.position__box > .position__box__2 > p > span {
+  padding-right: 1rem;
+  font-weight: 700;
+  color: #171b1e;
+}
+.position__box > .position__box__1 > div > .positon__positon{
+  font-size: 2rem;
+  color: #171b1e;
+  padding-right: 1rem;
+  font-weight: 700;
+}
+

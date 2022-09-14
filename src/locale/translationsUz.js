@@ -136,14 +136,7 @@ const translationsUz = {
   parners__four__1:"Biz ARIA jamoasi, sizni jamiyatimizning bir qismi bo'lishingizni xohlaymiz. Bizning jamoamiz xotirjamlik va isonchni taqdim etadi. Bu esa mijozlarga biznesni yanada rivojlantirish masalalariga e’tibor qaratishga imkon yaratadi.",
   parners__four__2:"“Avtoritet Group” kompaniyalar guruhining hamkorlari o'z faoliyatlarini quyidagi yo'nalishlarda olib boradilar: avtomobillarni sotish, transport vositalariga kafolatli va texnik xizmat ko'rsatish, yuk tashish, ehtiyot qismlarni etkazib berish",
   parners__four__3:"“O‘zbekinvest” eksport-import aksiyadorlik jamiyati sug'urta kompaniyasi umumiy sug'urta bozorida o‘z faoliyatini olib boradi ва sug'urta faoliyati klassifikatoriga ko‘ra mavjud 17 turdagi sug‘urtaning barchasi билан shug‘ullanadi",
-  parners__four__4:"INGO-UZBEKISTAN kompaniyasi – biznes manfaatlarining kompleks himoya dasturlari hamda xususiy shaxslar uchun sug‘urta mahsulotlarinnig keng qamrovini o‘z ichiga olgan universal xizmat portfeliga ega O‘zbekistonnning eng yirik sug‘urtachilaridan biridir.",
-  // Rahbariyat
-  d:"Direktor",
-  d__o:"o'rinbosari",
-  d__2:`Иҳтиёрий суғурта турлари бўйича даъво ишларини кўрибчиқиш бўлими менежери`,
-  direktor:"Maxmudov Avzal Mamadjanovich",
-  direktor__orinbosari:"Yakubov Toxir Yusufjanovich",
-  menejer:"Аxmetov Qobul Atayevich",
+  parners__four__4:`INGO-UZBEKISTAN kompaniyasi – biznes manfaatlarining kompleks himoya dasturlari hamda xususiy shaxslar uchun sug‘urta mahsulotlarinnig keng qamrovini o‘z ichiga olgan universal xizmat portfeliga ega O‘zbekistonnning eng yirik sug‘urtachilaridan biridir.`,
   // Horihiy hamkorlarimiz
   friend__1__1__title:"Allianz Global Assistance (sobiq Mondial Assistance)",
   friend__1__1__subtitle:"Allianz o'z tarixini 1890 yilga borib taqaladi. U Myunxenda tashkil etilgan, asoschisi Myunxen qayta sug'urta jamiyati rahbari - Karl fon Thieme, u ham Europaische Reiseversicherung Aktiengesellschaft (ERV) asoschisi edi.",
@@ -190,6 +183,38 @@ const translationsUz = {
   avto__s__2__subtitle__3:`Shuningdek, «Evroprotokol» joriy etilishi bilan yoʼl harakati xavfsizligi xodimlari va haydovchilar oʼrtasidagi bevosita muloqotni amalga oshirishda “inson omili”ga va ortiqcha qogʼozbozlikka va fuqarolarni ortiqcha sarson boʼlishiga chek qoʼyishga, shu bilan birga har bir sodir etilgan yoʼl-transport hodisasini rasmiylashtirish uchun yoʼl-patrulь xizmati inspektorlarining oʼrtacha 2-3 soat vaqti tejalishi orqali tan jarohati bilan bogʼliq yoʼl transport hodisasini koʼrib chiqishda sifat darajasini oshirish hamda avtomobil yoʼllarida tirbandliklarning oldini olishda samara beradi.`,
   avto__s__2__subtitle__4:`Eng katta oʼzgarishlardan biri bu — haydovchilar tomonidan xabarnomani rasmiylashtirish maʼmuriy javobgarlikka tortilishni istisno etuvchi holat etib belgilanligi hisoblanadi. Endilikda xabarnomani rasmiylashtirgan haydovchilar maʼmuriy javobgarlikka tortilmaydi.`,
   avto__s__2__subtitle__5:"Tomonlarning o'zaro kelishuvi bilan inspektorlar ishtirokisiz baxtsiz hodisani rasmiylashtirish mumkin bo'ladi.",
+  // Rahbariyat
+  direktor__name__1:"Maxmudov Avzal Mamadjanovich",
+  direktor__name__2:"Yakubov Toxir Yusufjanovich",
+  direktor__name__3:"Axmetov Kabul Ataevich",
+  direktor__position__1:"Direktor",
+  direktor__position__2:"Direktor o'rinbosari",
+  direktor__position__3:`“O’zbekinvest Assistans” MCHJ Bosh menejeri`,
+  direktor__phone:"Telefon: ",
+  direktor__reception__day:"Qabul kunlari: ",
+  direktor__reception__day__1:"Dushanba 8:00-11:00, Chorshanba 8:00-11:00, Juma 8:00-11:00",
+  direktor__reception__day__2:"Seshanba 8:00-11:00, Payshanba 8:00-11:00, Shanba 8:00-11:00",
+  direktor__reception__day__3:"Dushanba 8:00-11:00, Chorshanba 8:00-11:00, Juma 8:00-11:00",
+  direktor__email:"Elektron manzil: ",
+  direktor__content__1__1:`
+  Maxmudov Avzal Mamajanovich 1988 yil 6 avgust kuni Toshkent shahrida tug’ilgan. 
+  Ma’lumoti oliy. 2009 yil Toshkent davlat iqtisodiyot universiteti bakalavr darajasi 
+  va 2011 yil Toshkent davlat iqtisodiyot universiteti magistraturani ta’momlagan.`,
+  direktor__content__1__2:`2021 yil 6 sentyabrdan “O’zbekinvest Assistans” MCHJ Direktori`,
+
+  direktor__content__2__1:`
+  Yakubov Toxir Yusufjanovich 1989 yil 22 oktyabr kuni Toshkent shahrida tug’ilgan. 
+  Ma’lumoti magistr. 2013 yil Toshkent davlat iqtisodiyot universiteti bakalavr va 
+  2015 yil Toshkent davlat iqtisodiyot universiteti magistr unvonini olgan.`,
+  direktor__content__2__2:`2021 yil 6 sentyabrdan “O’zbekinvest Assistans” MCHJ Direktor o’rinbosari`,
+
+  direktor__content__3__1:`
+  Axmetov Kabul Ataevich 1964 yil 18 avgust kuni Toshkent shahrida tug’ilgan. 
+  Ma’lumoti oliy. 1986 yil Toshkent davlat universiteti bakalavr va 1995 yil 
+  Toshkent davlat iqtisodiyot universiteti magistr unvonini olgan.`,
+  direktor__content__3__2:`2021 yil 6 sentyabrdan “O’zbekinvest Assistans” MCHJ Ixtiyoriy sug’urta turlari bo’yicha da’vo ishlarini ko’rib chiqish bo’limi bosh menejeri`,
+
+
 };
 
 export default translationsUz;
