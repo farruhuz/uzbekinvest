@@ -2,11 +2,11 @@
   background: #3f3f3f;
   height: 830px;
   padding-top: 178px;
-  background-image: url("../Images/img/menu.png");
-  background-position: top;
+  background-image: url("../Images/img/assistance.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.7; */
+  opacity: 0.9;
 }
 
 .lectus-title {
