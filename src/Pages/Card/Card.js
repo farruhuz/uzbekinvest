@@ -52,6 +52,7 @@ const Card = ({ cardInfo }) => {
       subtitle__6: t("friendss__1__1__subtitle__6") || " ",
       subtitle__7: t("friendss__1__1__subtitle__7") || " ",
       subtitle__8: t("friendss__1__1__subtitle__8") || " ",
+      subtitle__9: t("friendss__1__1__subtitle__9") || " ",
     },
   ];
   const internatinalInfo4 = [
@@ -169,6 +170,8 @@ const Card = ({ cardInfo }) => {
                   <p>{el.subtitle__5}</p>
                   <p>{el.subtitle__6}</p>
                   <p>{el.subtitle__7}</p>
+                  <p>{el.subtitle__8}</p>
+                  <p>{el.subtitle__9}</p>
                 </div>
               );
             })}

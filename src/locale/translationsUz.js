@@ -171,6 +171,7 @@ const translationsUz = {
   friendss__1__1__subtitle__6:`Kompaniya Ustav jamgʼarmasi: 282,2 mlrd soʼm.`,
   friendss__1__1__subtitle__7:`Kompaniya taʼsischilari: Oʼzbekiston Respublikasi Investitsiyalar va tashqi savdo vazirligi (83,33%)`,
   friendss__1__1__subtitle__8:`Kompaniya missiyasi – Maqbul narxlardagi yuqori sifatli sugʼurta xizmatlarini taqdim etish orqali Oʼzbekiston Respublikasi sugʼurta bozorining rivojlanishiga koʼmaklashish.`,
+  friendss__1__1__subtitle__9:`"Ўзбекистон Республикаси Ташқи иқтисодий алоқалар миллий банки" АЖ (16,67%).`,
   // Avto sugurta
   avto__s__1__title:`TVEFJMS`,
   avto__s__1__subtitle:`Avtotransport vositalari egalarining uchinchi shaxslarning javobgarligini majburiy sug‘urtasi (TVEFJMS) – yo‘l-transport hodisasi natijasida jabrlangan shaxslarga tovon to‘lashga qaratilgan qonun hujjatlarida belgilangan sug‘urta turi.`,
