@@ -50,10 +50,10 @@ export default function Lastesnews({setLanguage}) {
                       {arr[4].created_at.substring(0, 10) + " " + arr[4].created_at.substring(11, 16)}
                     </p>
                     <h3 className="lastes-info__title">
-                      {arr[4].title.substring(0, 20)+ "..."}
+                      {arr[4].title.substring(0, 80)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[4].content.substring(0, 200)}
+                      {arr[4].content.substring(0, 500)}
                     </p>
                   </div>
                 </div>
