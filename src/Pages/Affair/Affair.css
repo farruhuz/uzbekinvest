@@ -50,12 +50,69 @@
   color: #fff;
 }
 
+/* laptop width hp for 1440px */
+@media (max-width: 1441px){ 
+  .affair__hero > .container{
+    width: 90%;
+  }
+  .med__affiar > .container{
+    width: 90%;
+  }
+  .med__affiar__cards{
+    text-align: start;
+  }
 
+}
+/* laptop width NEST HUB MAX 1280px */
+@media (max-width: 1281px){
+  .affair__hero__box2 {
+    width: 100%;
+    height: 600px;
+  }
+  .affair__hero__box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1081px){
+  .med__affiar > .container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .affair__hero__box2 {
+    width: 100%;
+    height: 100%;
+  }
+  .affair__hero__box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .med__affiar__name{
+    margin-bottom: 20px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .med__affiar__cards {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+  }
+}
 
-
-
-
-
+@media (max-width: 400px){
+  .med__affiar__name{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .med__affiar__cards {
+    font-size: 15px;
+    line-height: 15px;
+    text-align: justify;
+  }
+}
 
 
 

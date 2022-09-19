@@ -1,29 +1,21 @@
 .swiper{
   margin-bottom: 200px;
-  
 }
-
 .slider{
   border-top: 1px solid #13976E;
   border-bottom: 1px solid #13976E;
   margin-bottom: 200px;
 }
-
-
 .mySwiper{
   display: flex;
   height: 200px;
-  padding: 140px 0px 0 0;  
-  
+  padding: 140px 0px 0px 0px;  
   align-items: center;
 }
-
 .swiper-info{
   width: 1440px;
   margin: 0 auto;
-  /* margin-bottom: 30px; */
 }
-
 .swiper-title{
   font-family: 'Open Sans';
   font-style: normal;
@@ -34,9 +26,7 @@
   position: absolute;
   left: 0;
   top: -100px;
-  
 }
-
 .slide-page{
   margin-top: 40px;
 }
@@ -45,32 +35,129 @@
   height: 300px;
   object-fit: cover;
 }
-
-
 .swiper-button-prev::after{
   display: none;
 }
-
 .swiper-button-next::after{
   display: none;
 }
-
 .swiper-button-prev::before {
   position: absolute;
   content: url('../Images//slider-left-arrow.png');
   left: 1150px;
   top: -135px;
-
 }
-
 .swiper-button-next::before {
   position: absolute;
   right: 30px;
   content: url('../Images//slider-right-arrow.png');
   top: -135px;
 }
-
 .swiper-initialized, .swiper {
   overflow: visible !important; 
 }
-
+/* laptop width hp for 1440px */
+@media (max-width: 1441px){ 
+  .slider > .container{
+    width: 90%;
+  }
+  .swiper-button-prev::before {
+    left: 1050px;
+    top: -135px;
+  }
+  .swiper-button-next::before {
+    right: 30px;
+    top: -135px;
+  }
+}
+/* laptop width Acer Aspire for 1366px */
+@media (max-width: 1367px){
+  .swiper-button-prev::before {
+    left: 900px;
+    top: -135px;
+  }
+  .swiper-button-next::before {
+    right: 30px;
+    top: -135px;
+  }
+  .swiper-title{
+    font-size: 54px;
+    line-height: 54px;
+    position: absolute;
+    left: 0;
+    top: -100px;
+  }
+  .slide-page{
+    margin-top: 20px;
+  }
+  .slide-page img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .swiper{
+    margin-bottom: 50px;
+  }
+ }
+/* laptop width Grid Bootstrap 1200px */
+@media (max-width: 1201px){
+  .swiper-button-prev::before {
+    left: 800px;
+    top: -135px;
+  }
+  .swiper-button-next::before {
+    right: 30px;
+    top: -135px;
+  }
+  .swiper-title{
+    font-size: 44px;
+    line-height: 44px;
+    position: absolute;
+    left: 0;
+    top: -90px;
+  }
+  .slide-page{
+    margin-top: 20px;
+  }
+  .slide-page img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+ }
+/* laptop width HDTV 1080px */
+@media (max-width: 1081px){
+  .swiper-button-prev::before {
+    left: 700px;
+    top: -135px;
+    font-size: 1rem;
+  }
+  .swiper-button-next::before {
+    right: 30px;
+    top: -135px;
+  }
+  .swiper-title{
+    font-size: 34px;
+    line-height: 34px;
+    position: absolute;
+    left: 0;
+    top: -90px;
+  }
+  .slide-page{
+    margin-top: 20px;
+  }
+  .slide-page img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .swiper{
+    margin-bottom: 0px;
+  }
+ }
+/* laptop width SURFACE DUO PRO 912px */
+@media (max-width: 913px){
+  .slider{
+    display: none;
+  }
+ }

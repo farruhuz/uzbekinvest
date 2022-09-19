@@ -79,7 +79,11 @@
   line-height: 29px;
   color: #171b1e;
 }
-
+@media (max-width: 1440px) {
+  .Contact > .container{
+    width: 90%;
+  }
+}
 /* laptop width HDTV 1080px */
 @media (max-width: 1081px) {
   .contact-info {
@@ -107,6 +111,21 @@
     width: 100%;
     height: 350px;
   }
+  .contact-info__info-title{
+    margin-bottom: 0px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .contact-info__info-text{
+    padding-bottom: 0px;
+    margin-right: 0px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+  }
+
 }
 /* laptop width Grid Bootstrap 992px */
 @media (max-width: 577px) {

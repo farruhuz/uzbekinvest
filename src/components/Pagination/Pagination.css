@@ -1,12 +1,10 @@
 .paginations {
   width: 100%;
 }
-
 .paginationCount {
   display: flex;
   justify-content: center;
 }
-
 .MuiPagination-ul {
   transform: scale(1.4); 
 }
@@ -34,4 +32,26 @@
   line-height: 50px;
   letter-spacing: 0.2em;
   color: #171b1e;
+}
+
+@media (max-width: 500px){
+  .paginations {
+    border: 1px solid red;
+  }
+  .MuiPagination-ul {
+    transform: scale(1.2); 
+  }
+}
+
+
+@media (max-width: 450px){
+  .MuiPagination-ul {
+    transform: scale(1); 
+  }
+}
+
+@media (max-width: 400px){
+  .MuiPagination-ul {
+    transform: scale(0.9); 
+  }
 }

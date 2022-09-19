@@ -39,7 +39,7 @@ export default function Lastesnews({setLanguage}) {
           {!loading && news?.map((el, index, arr) => {
             if (index === 0) {
               return (
-                <div className="lastes-info" key={el.index}>
+                <div className="lastes-info lastes-info__1" key={el.index}>
                   <img
                     className="lastes-news-img1 lastes-news-img"
                     src={arr[4].image}
@@ -50,17 +50,17 @@ export default function Lastesnews({setLanguage}) {
                       {arr[4].created_at.substring(0, 10) + " " + arr[4].created_at.substring(11, 16)}
                     </p>
                     <h3 className="lastes-info__title">
-                      {arr[4].title.substring(0, 80)+ "..."}
+                      {arr[4].title.substring(0, 80) + "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[4].content.substring(0, 500)}
+                      {arr[4].content.substring(0, 500) + "..."}
                     </p>
                   </div>
                 </div>
               );
             } else if (index === 1) {
               return (
-                <div className="lastes-info">
+                <div className="lastes-info media__media__1">
                   <img
                     className="lastes-news-img2 lastes-news-img"
                     src={arr[3].image}
@@ -74,11 +74,11 @@ export default function Lastesnews({setLanguage}) {
                       {arr[3].title.substring(0, 20)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[3].content.substring(0, 200)}
+                      {arr[3].content.substring(0, 200) + "..."}
                     </p>
                   </div>
 
-                  <div className="lastes-info__texts">
+                  <div className="lastes-info__texts lastes-info__3">
                     <p className="lastes-info__data">
                       {arr[2].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
                     </p>
@@ -86,15 +86,15 @@ export default function Lastesnews({setLanguage}) {
                       {arr[2].title.substring(0, 20)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[2].content.substring(0, 200)}
+                      {arr[2].content.substring(0, 200) + "..."}
                     </p>
                   </div>
                 </div>
               );
             } else if (index === 2) {
               return (
-                <div className="lastes-info">
-                  <div className="lastes-info__texts mb-81">
+                <div className="lastes-info media__media">
+                  <div className="lastes-info__texts mb-81 lastes-info__3">
                     <p className="lastes-info__data">
                       {arr[1].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
                     </p>
@@ -102,7 +102,7 @@ export default function Lastesnews({setLanguage}) {
                       {arr[1].title.substring(0, 20)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[1].content.substring(0, 200)}
+                      {arr[1].content.substring(0, 200) + "..."}
                     </p>
                   </div>
                   <img className="lastes-news-img3 lastes-news-img" src={arr[0].image}/>
@@ -114,20 +114,20 @@ export default function Lastesnews({setLanguage}) {
                       {arr[0].title.substring(0, 20)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[0].content.substring(0, 200)}
+                      {arr[0].content.substring(0, 200) + "..."}
                     </p>
                   </div>
                 </div>
               );
             }
           })}
-          <div className="spinner">
-            <ClipLoader size={50} loading={loading} />
-          </div>
         </div>
         <Link to="/news">
           <button className="view-more-btn">{t("view__more__btn")}</button>
         </Link>
+        <div className="spinner">
+            <ClipLoader size={50} loading={loading} />
+        </div>
       </div>
     </section>
   );

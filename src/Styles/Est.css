@@ -185,3 +185,187 @@
 .est-info__blogs4-title {
   text-align: start;
 }
+
+@media (max-width: 1530px){ 
+  .Est > .container{
+    width: 90%;
+  }
+  .top_esst-info__blog{
+    display: block;
+  }
+  .est-info__blogs{
+    width: 100%;
+  }
+  .est-info__blogs-info {
+    height: 300px;
+  }
+  .est-info__blogs2{
+    width: 100%;
+  }
+  .middle_esst-info__blog{
+    display: block;
+  }
+  .est-info__blogs3{
+    border-right: none;
+    padding: 20px 43px;
+    width: 100%;
+  }
+  .est-info__blogs4{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 43px;
+  }
+  .voluputate-info__blog{
+    display: block;
+  }
+  .voluputate-info__blog__img{
+    width: 100%;
+    height: 100%;
+  }
+  .etiam{
+    width: 100%;
+  }
+}
+
+/* laptop width HDTV 1080px */
+@media (max-width: 1081px){ 
+  .est-info__blogs-info {
+    height: 400px;
+  }
+  .est-info__blogs3{
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .est-info__blogs4-title{
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+}
+
+/* laptop width iPAD MINI 768px */
+@media (max-width: 769px){
+  .est-info__blogs-info {
+    height: 450px;
+  }
+ }
+@media (max-width: 650px){
+  .est-info__blogs-info {
+    height: 520px;
+  }
+  .est-info__blog-title{
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .est-info__blogs-info{
+    padding: 39px 24px 12px;
+    height: 100%;
+  }
+  .est-info__blogs-info__text{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .est-info__blogs2-text{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: justify;
+    border-left: none;
+  }
+  .est-info__blogs-info__link{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .est-info__blogs3{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .est-info__blogs4-title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .est-info__blogs4{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 577px){ }
+/* laptop width SURFACE DUO 540px */
+@media (max-width: 541px){
+  .etiam ul li{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+ }
+/* laptop width (IPHONE XR) 414px */
+@media (max-width: 415px){ }
+/* laptop width (GALAXY A51/71) && (GLAXY S20 ULTRA) 412px */
+@media (max-width: 413px){ }
+/* laptop width (PIXEL 5) 393px */
+@media (max-width: 394px){
+  .etiam ul li{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .est-info__blogs-info__links{
+    margin-top: 30px;
+  }
+  .est-info__blogs-info__links a{
+    margin-bottom: 0px;
+  }
+ }
+/* laptop width (IPHONE 12 PRO) 390px */
+@media (max-width: 391px){ }
+/* laptop width (GALAXY S8+) 360px */
+@media (max-width: 361px){ }
+/* laptop width (IPHONE SE) 375px */
+@media (max-width: 376px){ }
+/* laptop width Galaxy FOLD 280px */
+@media (max-width: 281px){
+  .est-info__blogs3{
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .est-info__blogs4-title{
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .est-info__blogs4{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ }

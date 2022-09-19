@@ -122,6 +122,9 @@
 }
 
 @media (max-width: 1366px) {
+  .departments > .container{
+    width: 90%;
+  }
   .departments__con {
     display: block;
   }

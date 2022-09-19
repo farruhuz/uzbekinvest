@@ -79,12 +79,16 @@
   .navbar-list {
     gap: 49px;
   }
+  .navbar > .container{
+    width: 95%;
+  }
 }
 /* laptop width Acer Aspire for 1366px */
 @media (max-width: 1367px) {
   .navbar-list {
     gap: 39px;
   }
+
 }
 /* laptop width Grid Bootstrap 1200px */
 @media (max-width: 1201px) {
@@ -155,6 +159,9 @@
 }
 /* laptop width (IPHONE 12 PRO) 390px */
 @media (max-width: 391px) {
+  .navbar > .container{
+    width: 90%;
+  }
   .navbar-logo{
     width: 100px;
     height: 100px;

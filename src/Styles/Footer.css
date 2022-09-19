@@ -108,7 +108,7 @@ footer {
 /* laptop width Acer Aspire for 1366px */
 @media (max-width: 1367px) {
   footer .container{
-    width: 98%;
+    width: 90%;
   }
   .footer-info {
     display: block;
@@ -123,27 +123,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
-}
-/* laptop width NEST HUB MAX 1280px */
-@media (max-width: 1281px) {
-}
-/* laptop width Grid Bootstrap 1200px */
-@media (max-width: 1201px) {
-}
-/* laptop width HDTV 1080px */
-@media (max-width: 1081px) {
-}
-/* laptop width NEST HUB 1024px */
-@media (max-width: 1025px) {
-}
-/* laptop width Grid Bootstrap 992px */
-@media (max-width: 993px) {
-}
-/* laptop width SURFACE DUO PRO 912px */
-@media (max-width: 913px) {
-}
-/* laptop width iPAD AIR 820px */
-@media (max-width: 821px) {
+  .footer-sedcras-links{
+    width: 100%;
+  }
 }
 /* laptop width iPAD MINI 768px */
 @media (max-width: 769px) {
@@ -151,13 +133,12 @@ footer {
     display: flex;
     gap: 50px;
   }
+  .footer-info-text{
+    display: none;
+  }
 }
 /* laptop width Grid Bootstrap 992px */
 @media (max-width: 577px) {
-  footer .container{
-    border: 1px solid red;
-    width: 98%;
-  }
   .footer-info {
     display: block;
   }
@@ -183,6 +164,20 @@ footer {
     justify-content: space-between;
     padding-bottom: 15px;
     border-bottom: 1px solid #fff;
+  }
+  .footer-text{
+    font-size: 18px;
+    line-height: 18px;
+    width: 100%;
+  }
+  .footer-info-text{
+    margin-top: 0px;
+  }
+  .footer-info__box2{
+    padding-top: 20px;
+  }
+  .footer-links{
+    gap: 10px;
   }
 }
 /* laptop width (IPHONE SE) 375px */
