@@ -20,11 +20,19 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    font-size: 18px;
-  }
-  .accordion {
+@media screen and (max-width: 1440px) {
+  .help > .container {
     width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .help h2 {
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 50px;
+  }
+  .documentlar{
+    gap: 20px;
+    font-size: 1.5rem;
   }
 }

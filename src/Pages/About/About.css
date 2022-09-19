@@ -175,3 +175,51 @@
   font-weight: 700;
 }
 
+/* laptop width hp for 1440px */
+@media (max-width: 1441px){ 
+  .about > .container{
+    width: 90%;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 577px){
+  .founders{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .founders h2 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .founders p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  .text__h3{
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .position__box > .position__box__1 > div > .positon__positon{
+    font-size: 1.5rem;
+    padding-right: 0rem;
+  }
+  .stories__image{
+    margin-bottom: 0px;
+  }
+}
+/* laptop width (IPHONE XR) 414px */
+@media (max-width: 415px){
+  .text__h3{
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+/* laptop width (GALAXY S8+) 360px */
+@media (max-width: 361px){
+  .text__h3{
+    font-size: 30px;
+    line-height: 34px;
+    width: 100%;
+  }
+}
