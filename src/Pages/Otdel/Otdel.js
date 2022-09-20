@@ -45,7 +45,7 @@ const Otdel = ({ changeInfoLocal }) => {
       <div className="affair__hero__depart">
         <Swipers xalqaro={xalqaro} xalqaro2={xalqaro2} xalqaro3={xalqaro3}/>
       </div>
-      <div className="med__affiar__depart">
+      <div className="med__affiar__depart hello__menejer">
         <div className="container">
           <div className="med__affiar__name__depart">
             <h3>{t("depart__international")}</h3>

@@ -11,3 +11,9 @@
 .departments__box2__child__depart div{
     height: 20%;
 }
+
+@media (max-width: 1441px){
+    .affair__hero__depart {
+      display: none;
+    }
+  }

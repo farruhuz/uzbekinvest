@@ -9,7 +9,9 @@ import "./Swipers.css";
 const Swipers = ({xalqaro, xalqaro2, xalqaro3}) => {
   return (
     <div className="slayder">
-      <Swiper spaceBetween={30} centeredSlides={true} autoplay={{delay: 2500, disableOnInteraction: false,}}
+      <div className="container">
+        <Swiper
+         spaceBetween={30} centeredSlides={true} autoplay={{delay: 2500, disableOnInteraction: false,}}
         pagination={{
           clickable: true,
         }}
@@ -20,7 +22,8 @@ const Swipers = ({xalqaro, xalqaro2, xalqaro3}) => {
         <SwiperSlide><img src={xalqaro} alt={xalqaro} /> </SwiperSlide>
         {xalqaro2 && <SwiperSlide><img src={xalqaro2} alt={xalqaro2} /> </SwiperSlide>}
         {xalqaro3 && <SwiperSlide><img src={xalqaro3} alt={xalqaro3} /> </SwiperSlide>}
-      </Swiper>
+        </Swiper>
+      </div>
     </div>
   );
 };
