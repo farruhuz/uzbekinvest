@@ -3,7 +3,7 @@ import {useLocation } from "react-router-dom";
 import Contact from "../../components/Home/Contact";
 import Slider from "../../components/Home/Slider";
 import "./About.css";
-import stories from "../../Images/about/stories.png";
+import stories from "../../Images/about/stories.jpg";
 import { useTranslation } from "react-i18next";
 import Xodimlar from "./Xodimlar";
 

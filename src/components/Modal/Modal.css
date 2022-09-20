@@ -8,33 +8,75 @@
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgb(19, 151, 110, 0.2);
+    transition: all 0.5s linear;
+    visibility: hidden;
   }
-  
+  .modal__2 {
+    display: block; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(19, 151, 110, 0.2);
+    transition: all 0.5s linear;
+    visibility: unset;
+  }
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(19, 151, 110);
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 90%;
-    height: 40vh;
     border-radius: 12px;
-    transition: all 0.3ms linear;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-600px);
+    transition: all 0.4s linear;  
   }
-  
+  .modal-content__2 {
+    background-color: #13976e;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10px);
+    transition: all 0.4s linear;
+  }
   /* The Close Button */
   .close {
-    color: #aaaaaa;
-    float: right;
+    color: #fff;
     font-size: 28px;
     font-weight: bold;
+    display: flex;
+    justify-content: end;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+  .modal-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .modal-menu > li{
+    margin-bottom: 30px;
+  }
+  .modal-menu > li > .navbar-link{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+   .modal-menu > li > .navbar-link:hover{
+    transform: translateY(2);  
   }

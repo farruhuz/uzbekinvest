@@ -8,18 +8,15 @@ import { useTranslation } from "react-i18next";
 
 export default function Navbar({changeLang}) {
   const { t } = useTranslation();
-  const [isModal, setIsModal] = useState(false);
-
+  const [isBoll, setIsBool] = useState(false);
+  
   const changeLanguageHandler = (e) =>{
     changeLang(e.target.value);
   }
-  const changeIsModal = (event)=>{
-    if(event){
-      event ? setIsModal(false) : setIsModal(true)
-    }
-    isModal ? setIsModal(false) : setIsModal(true)
+  const changeIsModal = (bool)=>{
+    setIsBool(bool);
   }
-  
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -57,8 +54,8 @@ export default function Navbar({changeLang}) {
               <option className="language" value="uz">{t('uz')}</option>
             </select>
           </ul>
-          <img className="false" src={burger} onClick={changeIsModal} alt="burger"/>
-         {isModal && <Modal changeIsModal={changeIsModal}/>}
+          <img className="false" src={burger} onClick={()=>changeIsModal(true)} alt="burger"/>
+         <Modal changeIsModal={changeIsModal} isBoll={isBoll}/>
         </section>
       </div>
     </nav>
