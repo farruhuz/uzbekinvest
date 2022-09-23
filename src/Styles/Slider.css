@@ -56,6 +56,9 @@
 .swiper-initialized, .swiper {
   overflow: visible !important; 
 }
+.swiper-initialized, .swiper .mySwiper {
+  padding-top: 0px;
+}
 /* laptop width hp for 1440px */
 @media (max-width: 1441px){ 
   .slider > .container{

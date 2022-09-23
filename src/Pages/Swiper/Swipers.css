@@ -23,7 +23,7 @@
 .slayder .mySwiper .swiper-slide img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: initial !important;
+  object-fit: cover !important;
 }
 @media (max-width: 1530px) {
 
@@ -34,39 +34,3 @@
     display: none;
   }
 }
-/* laptop width Acer Aspire for 1366px */
-@media (max-width: 1367px){ }
-/* laptop width NEST HUB MAX 1280px */
-@media (max-width: 1281px){ }
-/* laptop width Grid Bootstrap 1200px */
-@media (max-width: 1201px){ }
-/* laptop width HDTV 1080px */
-@media (max-width: 1081px){ }
-/* laptop width NEST HUB 1024px */
-@media (max-width: 1025px){ }
-/* laptop width Grid Bootstrap 992px */
-@media (max-width: 993px){ }
-/* laptop width SURFACE DUO PRO 912px */
-@media (max-width: 913px){ }
-/* laptop width iPAD AIR 820px */
-@media (max-width: 821px){ }
-/* laptop width iPAD MINI 768px */
-@media (max-width: 769px){ }
-/* laptop width Grid Bootstrap 992px */
-@media (max-width: 577px){ }
-/* laptop width SURFACE DUO 540px */
-@media (max-width: 541px){ }
-/* laptop width (IPHONE XR) 414px */
-@media (max-width: 415px){ }
-/* laptop width (GALAXY A51/71) && (GLAXY S20 ULTRA) 412px */
-@media (max-width: 413px){ }
-/* laptop width (PIXEL 5) 393px */
-@media (max-width: 394px){ }
-/* laptop width (IPHONE 12 PRO) 390px */
-@media (max-width: 391px){ }
-/* laptop width (GALAXY S8+) 360px */
-@media (max-width: 361px){ }
-/* laptop width (IPHONE SE) 375px */
-@media (max-width: 376px){ }
-/* laptop width Galaxy FOLD 280px */
-@media (max-width: 281px){ }

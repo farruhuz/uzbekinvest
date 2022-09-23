@@ -1,8 +1,9 @@
 .navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  border: 1px solid inherit;
 }
 
 .nav-bar {
@@ -64,6 +65,7 @@
 .navbar-info__language {
   border: none;
   margin-top: 3px;
+  background-color: inherit;
 }
 
 .navbar-info__language:focus-visible {
@@ -182,4 +184,11 @@
     gap: 10px;
   }
 }
-
+.fixed{
+  transition: all 0.5s linear;
+  background-color: inherit;
+  border-bottom: 1px solid #808080;
+  position: fixed;  
+  width: 100%;
+  z-index: 999;
+}

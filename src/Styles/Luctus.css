@@ -1,15 +1,84 @@
 .Lectus {
   background: #fff;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
-.Lectus > .container > img{
+.Lectus > .slayder2 {
+  overflow: hidden !important;
   width: 100%;
+}
+.Lectus > .slayder2 {
+  height: 800px;
+  overflow: hidden !important;
+}
+.Lectus > .slayder2 > .mySwiper{
+  height: 100%; 
+  width: 100%;  
+  padding-top: 0px;
+}
+.Lectus > .slayder2 > .mySwiper > .swiper-button-next::before {
+  display: none !important;
+}
+.Lectus > .slayder2 > .mySwiper > .swiper-button-prev::before {
+  display: none !important;
+}
+.Lectus > .slayder2 > .swiper {
+  margin-bottom: 0px;
   height: 100%;
-} 
+}
+.Lectus > .slayder2  .mySwiper  .swiper-slide  img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 
 @media (max-width: 1530px){ 
-  .Lectus > .container{
-    width: 90%;
+  .Lectus > .slayder2 {
+    height: 750px;
+  }
+}
+/* laptop width hp for 1440px */
+@media (max-width: 1441px){ 
+  .Lectus {
+    padding-bottom: 0px;
+  }
+  .Lectus > .slayder2 {
+    height: 700px;
+  }
+}
+/* laptop width Grid Bootstrap 992px */
+@media (max-width: 993px){
+  .Lectus > .slayder2 {
+    height: 600px;
+  }
+ }
+/* laptop width iPAD MINI 768px */
+@media (max-width: 769px){
+  .Lectus > .slayder2 {
+    height: 500px;
+  }
+ }
+/* laptop width (GALAXY A51/71) && (GLAXY S20 ULTRA) 412px */
+@media (max-width: 413px){
+  .Lectus > .slayder2 {
+    height: 350px;
+  }
+ }
+/* laptop width (IPHONE 12 PRO) 390px */
+@media (max-width: 391px){
+  .Lectus > .slayder2 {
+    height: 350px;
+  }
+ }
+/* laptop width (IPHONE SE) 375px */
+@media (max-width: 376px){ 
+  .Lectus > .slayder2 {
+    height: 300px;
+  }
+}
+/* laptop width Galaxy FOLD 280px */
+@media (max-width: 281px){ 
+  .Lectus > .slayder2 {
+    height: 200px;
   }
 }

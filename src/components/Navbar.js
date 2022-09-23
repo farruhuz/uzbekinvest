@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavbarLogo from "../Images/navbar-logo.png";
 import "../Styles/Navbar.css";
 import burger from "../Images/burger.png";
@@ -9,7 +9,17 @@ import { useTranslation } from "react-i18next";
 export default function Navbar({changeLang}) {
   const { t } = useTranslation();
   const [isBoll, setIsBool] = useState(false);
+  const [fix , setFix] = useState(false);
   
+  const setFixced = () => {
+    if(window.scrollY > 650){
+      setFix(true);
+    }else{
+      setFix(false);
+    }
+  } 
+  window.addEventListener("scroll", setFixced);
+
   const changeLanguageHandler = (e) =>{
     changeLang(e.target.value);
   }
@@ -18,7 +28,7 @@ export default function Navbar({changeLang}) {
   }
 
   return (
-    <nav className="navbar">
+    <nav className={fix ? "fixed navbar" : "navbar"}>
       <div className="container">
         <section className="nav-bar">
           <ul className="navbar-list">

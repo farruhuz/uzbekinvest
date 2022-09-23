@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../Styles/Luctus.css'
-import galv from "../../Images/img/assistance.jpg"
+import galavni__1 from "../../Images/lectus/02.jpg";
+import galavni__2 from "../../Images/lectus/03.jpg";
+import galavni__3 from "../../Images/lectus/01.jpg";
+import Swiper2 from '../../Pages/Swiper/Swiper2';
 export default function Lectus() {
   return (
     <section className='Lectus'>
-      <div className="container">
-        <img src={galv} alt="" />
-      </div>
+      <Swiper2 xalqaro={galavni__1} xalqaro2={galavni__2} xalqaro3={galavni__3}/>
     </section>
   )
 }

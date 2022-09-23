@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../../Styles/Tempus.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import firstImg from "../../Images/tempus/med.png";
-import secondImg from "../../Images/tempus/yur.jpg";
-import thirdtImg from "../../Images/tempus/images.jpg";
-import fourImg from "../../Images/tempus/4.png";
+import firstImg from "../../Images/tempus/medical__assistance.jpg";
+import secondImg from "../../Images/tempus/legal__assistance.jpg";
+import thirdtImg from "../../Images/tempus/technical__assistance.jpg";
+import fourImg from "../../Images/tempus/personal__assistance.webp";
 import { useTranslation } from "react-i18next";
 
 export default function Tempus({catchDepartTempus}) {
