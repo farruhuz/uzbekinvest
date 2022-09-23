@@ -26,7 +26,7 @@ const Modal = ({ changeIsModal, isBoll }) => {
               <Link to="/services" onClick={()=>changeModal(false)} className="navbar-link">{t('services')}</Link>
             </li>
             <li className="navbar-item">
-              <a to="/about" onClick={()=>changeModal(false)} className="navbar-link">{t('about')}</a>
+              <Link to="/about" onClick={()=>changeModal(false)} className="navbar-link">{t('about')}</Link>
             </li>
             <li className="navbar-item">
               <Link to="/contact" onClick={()=>changeModal(false)} className="navbar-link">{t('contact')}</Link>
