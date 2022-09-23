@@ -71,22 +71,10 @@ export default function Lastesnews({setLanguage}) {
                       {arr[3].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
                     </p>
                     <h3 className="lastes-info__title">
-                      {arr[3].title.substring(0, 20)+ "..."}
+                      {arr[3].title.substring(0, 80)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[3].content.substring(0, 200) + "..."}
-                    </p>
-                  </div>
-
-                  <div className="lastes-info__texts lastes-info__3">
-                    <p className="lastes-info__data">
-                      {arr[2].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
-                    </p>
-                    <h3 className="lastes-info__title">
-                      {arr[2].title.substring(0, 20)+ "..."}
-                    </h3>
-                    <p className="lastes-info__info">
-                      {arr[2].content.substring(0, 200) + "..."}
+                      {arr[3].content.substring(0, 500) + "..."}
                     </p>
                   </div>
                 </div>
@@ -94,27 +82,16 @@ export default function Lastesnews({setLanguage}) {
             } else if (index === 2) {
               return (
                 <div className="lastes-info media__media">
-                  <div className="lastes-info__texts mb-81 lastes-info__3">
-                    <p className="lastes-info__data">
-                      {arr[1].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
-                    </p>
-                    <h3 className="lastes-info__title">
-                      {arr[1].title.substring(0, 20)+ "..."}
-                    </h3>
-                    <p className="lastes-info__info">
-                      {arr[1].content.substring(0, 200) + "..."}
-                    </p>
-                  </div>
                   <img className="lastes-news-img3 lastes-news-img" src={arr[0].image}/>
                   <div className="lastes-info__texts">
                     <p className="lastes-info__data">
                       {arr[0].created_at.substring(0, 10)+ " " + arr[4].created_at.substring(11, 16)}
                     </p>
                     <h3 className="lastes-info__title">
-                      {arr[0].title.substring(0, 20)+ "..."}
+                      {arr[0].title.substring(0, 80)+ "..."}
                     </h3>
                     <p className="lastes-info__info">
-                      {arr[0].content.substring(0, 200) + "..."}
+                      {arr[0].content.substring(0, 500) + "..."}
                     </p>
                   </div>
                 </div>

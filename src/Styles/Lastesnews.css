@@ -24,6 +24,7 @@
   background-color: #EA5942;
 }
 .lastes-info{
+  padding-bottom: 200px;
   border-bottom: 1px solid #848488;
 }
 .lastes-info__texts{
@@ -95,6 +96,7 @@
   background: #fff;
   cursor: pointer;
   width: 100%;
+  margin-top: 100px;
 }
 .lastes-news-img{
   width: 470px;
@@ -174,9 +176,6 @@
   .lastes-info__texts p{
     text-align: justify;
   }
-  .lastes-info__1{
-    margin-bottom: 200px;
-  }
   .lastes-info__title{
     text-align: justify;
     font-size: 27px;
@@ -189,9 +188,6 @@
   .lastes-info__texts{
     height: 350px;
   }
-  .lastes-info__1{
-    margin-bottom: 250px;
-  }
   .lastes-info__title{
     font-size: 22px;
     line-height: 140%;
@@ -201,9 +197,6 @@
 @media (max-width: 415px){
   .lastes-info__texts{
     height: 400px;
-  }
-  .lastes-info__1{
-    margin-bottom: 350px;
   }
   .lastes-info__texts{
     margin-bottom: 0px !important;
@@ -218,6 +211,15 @@
   .lastes-info__title{
     font-size: 24px;
     line-height: 140%;
+  }
+  .media__media{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .view-more-btn{
+    margin-top: 0px;
+    margin-bottom: 100px;
   }
  }
 /* laptop width (PIXEL 5) 393px */
@@ -236,8 +238,8 @@
     margin-top: 700px;
   }
   .media__media{
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 400px;
+    margin-bottom: 250px;
   }
 }
 /* laptop width (IPHONE SE) 375px */
@@ -250,10 +252,13 @@
   }
   .media__media{
     margin-top: 400px;
-    margin-bottom: 400px;
+    margin-bottom: 250px;
   }
   .media__media__1{
-    margin-top: 700px;
+    margin-top: 450px
+  }
+  .Lastesnews{
+    margin-bottom: 50px;
   }
  }
 /* laptop width Galaxy FOLD 280px */
@@ -274,6 +279,5 @@
   .media__media__1{
     margin-top: 800px;
   }
-
 }
 
