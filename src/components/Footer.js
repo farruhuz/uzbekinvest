@@ -8,20 +8,12 @@ import { useTranslation } from "react-i18next";
 export default function Footer() {
   const { t } = useTranslation()
   return (
+    <>
     <footer>
       <div className="container">
         <div className="footer-info">
           <div className="footer-info__box1">
             <img src={Footerlogo} alt="" className="img__1"/>
-            <p className="footer-text">
-              {t('adress')}
-            </p>
-            <div className="footer-sedcras-links">
-              <input className="footer-sedcras-link" placeholder="Send message"/>
-              <a target="_blank"  rel="noreferrer" href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=info@besthouse.uz">
-                <img src={Footerarrow} alt="Footerarrow"/>
-              </a>
-            </div>
           </div>
 
           <div className="footer-info__box2">
@@ -66,5 +58,11 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+      <div className="koko">
+        <a target="_blank" rel="noreferrer" href="https://kokoagency.uz/">
+          © 2022 by <span>Koko Digital Agency</span> 
+        </a>
+      </div>
+    </>
   );
 }
