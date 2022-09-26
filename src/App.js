@@ -11,7 +11,6 @@ import Partners from "./Pages/Partners/Partners";
 import Help from "./Pages/Help/Help";
 import Kontact from "./Pages/Kontact/Kontact";
 import NewCard from "./Pages/News/NewCard";
-import Servic from "./Pages/Affair/Servic";
 import Depart from "./Pages/Depart/Depart";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -68,7 +67,7 @@ function App() {
     <>
       <Navbar changeLang={changeLang} />
       <Routes>
-        <Route path="/" element={<Home catchDepart={catchDepart} catchDepartTempus={catchDepartTempus} setLanguage={setLanguage}/>} />
+        <Route path="/" element={<Home catchDepart={catchDepart} catchDepartTempus={catchDepartTempus} />} />
         <Route path="news" element={<News exchangeInfo={exchangeInfo} />}/>
         <Route path="news/:id" element={<NewCard innovation={innovation}/>} />
         <Route path="services" element={<Affair />} />
@@ -76,7 +75,6 @@ function App() {
         <Route path="services/2" element={<Affair2 />} />
         <Route path="services/3" element={<Affair3 />} />
         <Route path="services/4" element={<Affair4 />} />
-        <Route path="servic" element={<Servic />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Kontact />} />
         <Route path="partners" element={<Partners />} />

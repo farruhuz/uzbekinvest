@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NavbarLogo from "../Images/navbar-logo.png";
 import "../Styles/Navbar.css";
 import burger from "../Images/burger.png";
@@ -12,7 +12,7 @@ export default function Navbar({changeLang}) {
   const [fix , setFix] = useState(false);
   
   const setFixced = () => {
-    if(window.scrollY > 650){
+    if(window.scrollY > 500){
       setFix(true);
     }else{
       setFix(false);
@@ -32,7 +32,9 @@ export default function Navbar({changeLang}) {
       <div className="container">
         <section className="nav-bar">
           <ul className="navbar-list">
-            <img className="navbar-logo" src={NavbarLogo} alt="" />
+            <Link to="/">
+              <img className="navbar-logo" src={NavbarLogo} alt="" />
+            </Link>
             <li className="navbar-item">
               <Link to="/" className="navbar-link">{t('home')}</Link>
             </li>
@@ -56,9 +58,6 @@ export default function Navbar({changeLang}) {
             </li>
           </ul>
           <ul className="navbar-info">
-            <li className="navbar-info__link">
-              <a className="exit" target="_blank" href="https://uzbekinvest.kokoagency.uz/uz/admin/">{t('login')}</a>
-            </li>
             <select className="navbar-info__language" name="language" id="language" onClick={changeLanguageHandler}>
               <option className="language" value="ru">{t('ru')}</option>
               <option className="language" value="uz">{t('uz')}</option>

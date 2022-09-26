@@ -7,7 +7,10 @@ const Contact = () => {
   return (
     <section className="Contact">
       <div className="container">
-        <div className="contact-info">
+        <div className="contact-info" 
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <div className="contact-info__info">
             <div className="contact-texts">
               <h3 className="contact-info__info-title">{t('contact')}</h3>

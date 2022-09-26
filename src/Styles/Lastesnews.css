@@ -192,6 +192,9 @@
     font-size: 22px;
     line-height: 140%;
   }
+  .Lastesnews{
+    margin-bottom: 100px;
+  }
 }
 /* laptop width (IPHONE XR) 414px */
 @media (max-width: 415px){
@@ -252,13 +255,10 @@
   }
   .media__media{
     margin-top: 400px;
-    margin-bottom: 250px;
+    margin-bottom: 650px;
   }
   .media__media__1{
     margin-top: 450px
-  }
-  .Lastesnews{
-    margin-bottom: 50px;
   }
  }
 /* laptop width Galaxy FOLD 280px */

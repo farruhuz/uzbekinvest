@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-info">
           <div className="footer-info__box1">
-            <img src={Footerlogo} alt="" />
+            <img src={Footerlogo} alt="" className="img__1"/>
             <p className="footer-text">
               {t('adress')}
             </p>
@@ -62,7 +62,6 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <p className="footer-info-text">{t('adress')}</p>
           </div>
         </div>
       </div>

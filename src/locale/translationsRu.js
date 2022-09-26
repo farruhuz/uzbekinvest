@@ -4,7 +4,7 @@ const translationsRu = {
   services: "Услуги",
   about: "О нас",
   contact: "Контакты",
-  partners: "Партнерам",
+  partners: "Нашим партнерам",
   help: "Документы",
   login: "Войти",
   ru: "Ру",

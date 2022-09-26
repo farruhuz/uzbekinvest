@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../../Styles/Tempus.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import firstImg from "../../Images/tempus/medical__assistance.jpg";
 import secondImg from "../../Images/tempus/legal__assistance.jpg";
 import thirdtImg from "../../Images/tempus/technical__assistance.jpg";
@@ -53,10 +53,10 @@ export default function Tempus({catchDepartTempus}) {
             return (
               <div className="tempus-info" key={element.id}>
                 <div className="tempus-info__img">
-                  <img src={element.image} alt="" />
+                  <img src={element.image} alt="" data-aos="zoom-in"/>
                 </div>
-                <div className="tempus-info__card">
-                  <div>
+                <div className="tempus-info__card" data-aos="fade-left">
+                  <div >
                     <h3 className="tempus-info__card-title">{element.title}</h3>
                     <p className="tempus-info__card-text">{element.info}</p>
                   </div>
@@ -68,9 +68,9 @@ export default function Tempus({catchDepartTempus}) {
             );
           })}
         </div>
-        <Link to="/services">
+        {/* <Link to="/services">
           <button className="view-more-btn">{t("view__more__btn")}</button>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

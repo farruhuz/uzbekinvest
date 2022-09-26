@@ -49,9 +49,9 @@ const Departments = ({catchDepart}) => {
     },
   ];
   return (
-    <div className="departments">
+    <div className="departments" >
       <div className="container">
-        <div className="departments__con">
+        <div className="departments__con" data-aos="fade-up" data-aos-duration="1000">
           <div className="departments__box1">
             <h2>{t("depart")}</h2>
             <p>{t('depart__info__message')}</p>
