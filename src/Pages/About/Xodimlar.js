@@ -18,6 +18,7 @@ const Xodimlar = () => {
       email__2: "assist@uzbekinvest.uz",
       content__1: t("direktor__content__1__1"),
       content__2: t("direktor__content__1__2"),
+      data__aos:"fade-left",
     },
     {
       name: t("direktor__name__2"),
@@ -31,6 +32,7 @@ const Xodimlar = () => {
       email__2: "assist@uzbekinvest.uz",
       content__1: t("direktor__content__2__1"),
       content__2: t("direktor__content__2__2"),
+      data__aos:"fade-right",
     },
     {
       name: t("direktor__name__3"),
@@ -44,13 +46,14 @@ const Xodimlar = () => {
       email__2: "assist@uzbekinvest.uz",
       content__1: t("direktor__content__3__1"),
       content__2: t("direktor__content__3__2"),
+      data__aos:"fade-left",
     },
   ];
   return (
     <ul className="xodimlar__ul">
       {arr.map((el) => {
         return (
-          <li key={el.name}>
+          <li key={el.name} data-aos={el.data__aos}>
             <h3 className="text__h3">{el.name}</h3>
             <div className="position__box">
               <div className="position__box__1">

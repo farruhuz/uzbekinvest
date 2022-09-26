@@ -14,9 +14,9 @@ const About = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="about">
+    <div className="about" >
       <div className="container">
-        <div className="founders">
+        <div className="founders" data-aos="fade-right">
           <h2>{t("founders")}</h2>
           <p>
             {t("founders__1")} <br />

@@ -46,11 +46,12 @@ const News = ({exchangeInfo}) => {
     <div className="news__box">
       <div className="container">
         <h2>{t("news")}</h2>
-        <div className="news">
+        <div className="news" >
           {!loading &&
             news?.map((element) => {
               return (
                 <div
+                  data-aos="fade-right"
                   className="new"
                   key={element.id}
                   onClick={() => changeLocal(element)}

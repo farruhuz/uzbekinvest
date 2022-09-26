@@ -187,8 +187,8 @@
 .fixed{
   transition: all 0.5s linear;
   background-color: inherit;
-  border-bottom: 1px solid #808080;
   position: fixed;  
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid #808080;
 }

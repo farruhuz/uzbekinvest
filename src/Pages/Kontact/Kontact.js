@@ -6,10 +6,10 @@ import Map from "./Map";
 const Kontact = () => {
   return (
     <>
-      <div className="map">
+      <div className="map" data-aos="flip-left">
         <Map />
       </div>
-      <div className="spinner">
+      <div className="spinner" data-aos="flip-up">
         <Slider/>
       </div>
     </>

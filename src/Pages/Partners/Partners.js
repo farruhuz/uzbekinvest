@@ -16,7 +16,7 @@ const Partners = () => {
   return (
     <div className="partners">
       <div className="container">
-        <div className="partners__box">
+        <div className="partners__box" data-aos="fade-up">
           <h2 className="partners__h2">{t("partners")}</h2>
           <div className="partners__box__1">
             <div className="partners__box__1__info">
@@ -40,7 +40,7 @@ const Partners = () => {
             </div>
           </div>
         </div>
-        <div className="partners__box__div">
+        <div className="partners__box__div" data-aos="fade-down">
           <div className="partners__div">
             <h3>Aria</h3>
             <p>{t('parners__four__1')}</p>
