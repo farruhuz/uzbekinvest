@@ -12,7 +12,7 @@ export default function Navbar({changeLang}) {
   const [fix , setFix] = useState(false);
   
   const setFixced = () => {
-    if(window.scrollY > 500){
+    if(window.scrollY > 700){
       setFix(true);
     }else{
       setFix(false);
