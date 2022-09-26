@@ -27,7 +27,7 @@ const Help = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div data-aos="flip-down">
         <Slider />
       </div>
       <div>

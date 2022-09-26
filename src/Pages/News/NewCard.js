@@ -40,8 +40,8 @@ const NewCard = ({ innovation }) => {
       <div className="cards">
         <div className="container">
           {!loading &&
-            <div className="card">
-              <img className="card__img" src={newobj.image} alt={newobj.title} />
+            <div className="card" data-aos="fade-up-right">
+              <img className="card__img" data-aos="flip-down" src={newobj.image} alt={newobj.title} />
               <div className="card__info">
                 <h2>{newobj?.title}</h2>
                 <h4>{newobj?.subtitle}</h4>

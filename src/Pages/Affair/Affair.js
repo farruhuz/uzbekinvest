@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Slider from "../../components/Home/Slider";
 import "./Affair.css";
-import uslug from "../../Images/uslug/uslugi.jpg";
+import uslug from "../../Images/uslug/assistance.jpg";
 import { useTranslation } from "react-i18next";
 
 const Affair = () => {
@@ -15,12 +15,12 @@ const Affair = () => {
     <>
       <div className="affair__hero">
         <div className="container">
-          <div className="affair__hero__box2">
+          <div className="affair__hero__box2" data-aos="flip-left">
             <img src={uslug} alt="" />
           </div>
         </div>
       </div>
-      <div className="med__affiar">
+      <div className="med__affiar" data-aos="fade-right">
         <div className="container">
           <div className="med__affiar__name">{t("medical__assistance")}</div>
           <div className="med__affiar__cards">
@@ -30,7 +30,7 @@ const Affair = () => {
           </div>
         </div>
       </div>
-      <div className="med__affiar">
+      <div className="med__affiar" data-aos="fade-left">
         <div className="container">
           <div className="med__affiar__name">{t("legal__assistance")}</div>
           <div className="med__affiar__cards">
@@ -45,7 +45,7 @@ const Affair = () => {
           </div>
         </div>
       </div>
-      <div className="med__affiar">
+      <div className="med__affiar" data-aos="fade-right">
         <div className="container">
           <div className="med__affiar__name">{t("technical__assistance")}</div>
           <div className="med__affiar__cards">
@@ -56,7 +56,7 @@ const Affair = () => {
           </div>
         </div>
       </div>
-      <div className="med__affiar">
+      <div className="med__affiar" data-aos="fade-left">
         <div className="container">
           <div className="med__affiar__name">{t("personal__assistance")}</div>
           <div className="med__affiar__cards">
@@ -64,7 +64,7 @@ const Affair = () => {
           </div>
         </div>
       </div>
-      <div className="affair__slider">
+      <div className="affair__slider" data-aos="fade-right">
         <Slider />
       </div>
     </>

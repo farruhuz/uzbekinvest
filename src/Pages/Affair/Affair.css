@@ -6,6 +6,7 @@
 .affair__hero__box2 {
   width: 100%;
   height: 800px;
+  margin-top: 10px;
 }
 .affair__hero__box2 img {
   width: 100%;
@@ -18,7 +19,7 @@
 
 /* MED affair */
 .med__affiar > .container {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 .med__affiar__name {
