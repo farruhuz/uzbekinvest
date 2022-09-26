@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
-import invest from "../../Images/news/invest.png";
 
 const NewCard = ({ innovation }) => {
   console.log(innovation.id);
