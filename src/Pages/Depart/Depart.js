@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Slider from "../../components/Home/Slider";
-import { Link } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
 import "./Depart.css";
 import { useTranslation } from "react-i18next";

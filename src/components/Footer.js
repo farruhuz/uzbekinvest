@@ -1,7 +1,6 @@
 import React from "react";
 import "../Styles/Footer.css";
 import Footerlogo from "../Images/footer-logo.png";
-import Footerarrow from "../Images/footer-arrow.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import arrowRed from "../../Images/link_red_arrow.png";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Slider from "../../components/Home/Slider";
+import Swipers from "../Swiper/Swipers";
+import legal__1 from "../../Images/legal/judicial_assist_1.jpg";
+import legal__2 from "../../Images/legal/judicial_assist_2.jpeg";
+import legal__3 from "../../Images/legal/judicial_assist_3.jpg";
 
 const Affair2 = () => {
   const { pathname } = useLocation();
@@ -13,6 +15,7 @@ const Affair2 = () => {
   }, [pathname]);
   return (
     <>
+      <Swipers xalqaro={legal__1} xalqaro2={legal__2} xalqaro3={legal__3}/>
       <div className="med__affiar">
         <div className="container">
           <div className="med__affiar__name">{t("legal__assistance")}</div>

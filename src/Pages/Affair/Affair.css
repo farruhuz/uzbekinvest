@@ -18,6 +18,9 @@
 }
 
 /* MED affair */
+.med__affiar {
+  margin-top: 20px;
+}
 .med__affiar > .container {
   padding-top: 10px;
   padding-bottom: 10px;

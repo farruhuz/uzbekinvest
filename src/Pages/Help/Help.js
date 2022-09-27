@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../../components/Home/Contact";
 import Slider from "../../components/Home/Slider";
