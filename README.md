@@ -4,9 +4,6 @@
 ###### React js Taxnologiyasi asosida yaratildi.
 
 ## Installation (O'rnatish)
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```bash
 npm i 
 npm start
