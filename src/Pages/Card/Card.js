@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import "./Card.css";
 
 const Card = ({ cardInfo }) => {
-  console.log(cardInfo);
   const { t } = useTranslation();
   const internatinalInfo = [
     {

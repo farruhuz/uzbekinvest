@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 
 const NewCard = ({ innovation }) => {
-  console.log(innovation.id);
   const { pathname } = useLocation();
   const [loading, setLoading] = useState(false);
   const [newobj, setNewObj] = useState(innovation)
@@ -16,14 +15,12 @@ const NewCard = ({ innovation }) => {
     if(T.i18n.language === 'uz'){
       setLoading(true)
       const res = await axios.get(`https://uzbekinvest.kokoagency.uz/uz/news/news-detail/${innovation.id}/`);
-      console.log("1 ", res.data );
       setNewObj(res.data)
       setLoading(false)
     }
     else{
       setLoading(true)
       const res = await axios.get(`https://uzbekinvest.kokoagency.uz/ru/news/news-detail/${innovation.id}/`);
-      console.log("2 ", res.data );
       setNewObj(res.data)
       setLoading(false)
     }
@@ -35,7 +32,6 @@ const NewCard = ({ innovation }) => {
   }, [pathname, T.i18n.language]);
 
   return (
-    <>
       <div className="cards">
         <div className="container">
           {!loading &&
@@ -53,7 +49,6 @@ const NewCard = ({ innovation }) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

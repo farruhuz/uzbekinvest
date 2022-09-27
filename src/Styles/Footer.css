@@ -114,6 +114,9 @@ footer {
   .footer-info__box1 {
     width: 100%;
   }
+  .footer-info__box2{
+    width: 100%;
+  }
   .footer-sedcras-links{
     width: 100%;
   }
@@ -129,14 +132,6 @@ footer {
 @media (max-width: 577px) {
   .footer-info {
     display: block;
-  }
-  .footer-info__box1 {
-    width: 100%;
-  }
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
   }
   .footer-sedcras-links {
     display: flex;
@@ -155,13 +150,29 @@ footer {
     padding-top: 20px;
   }
   .footer-links{
-    gap: 10px;
+    width: 100%;
+    gap: 0px;
+  }
+  .footer-link {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 /* laptop width (IPHONE SE) 375px */
 @media (max-width: 376px) {
-  
+  .footer-info__box1 {
+    text-align: center;
+  }
+  .footer-info__box1 img{
+    width: 150px;
+    height: 150px;
+  }
+  .footer-link {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 /* laptop width Galaxy FOLD 280px */
 @media (max-width: 281px) {
+
 }
