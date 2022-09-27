@@ -18,12 +18,30 @@ const Help = () => {
         <div className="container">
           <h2>{t('help')}</h2>
           <ul className="documentlar">
-            <li><a href={document1}>O‘RQ-684 22.04.2021</a></li>
-            <li><a href={document2}>O‘RQ-730 23.11.2021</a></li>
-            <li><a href={document3}>YTH xabarnoma blankasi</a></li>
-            <li><a href={document4}>Guvohnoma Assistans</a></li>
-            <li><a href={document5}>OZBEKINVEST ASS ISTANS Аудит.отчет</a></li>
-            <li><a href={document6}>Fuqarolik kodeksi</a></li>
+            <li>
+              <a href={document1}>O‘RQ-684 22.04.2021 </a>
+              <p>{t('help__1')}</p>
+            </li>
+            <li>
+              <a href={document2}>O‘RQ-730 23.11.2021 </a> 
+              <p>{t('help__2')}</p>
+            </li>
+            <li>
+              <a href={document3}>YTH xabarnoma blankasi </a> 
+              <p>{t('help__3')}</p> 
+            </li>
+            <li>
+              <a href={document4}>Guvohnoma Assistans</a> 
+              <p>{t('help__4')}</p> 
+            </li>
+            <li>
+              <a href={document5}>OZBEKINVEST ASS ISTANS Аудит.отчет </a> 
+              <p>{t('help__5')}</p> 
+            </li>
+            <li>
+              <a href={document6}>Fuqarolik kodeksi </a> 
+              <p>{t('help__6')}</p> 
+            </li>
           </ul>
         </div>
       </div>

@@ -4,7 +4,7 @@ const translationsUz = {
   services: "Xizmatlar",
   about: "Biz haqimizda",
   contact: "Bog’lanish",
-  partners: "Hamkorlar",
+  partners: "Hamkorlarimiz",
   help: "Xujjatlar",
   login: "Kirish",
   ru: "Ru",
@@ -214,8 +214,13 @@ const translationsUz = {
   Ma’lumoti oliy. 1986 yil Toshkent davlat universiteti bakalavr va 1995 yil 
   Toshkent davlat iqtisodiyot universiteti magistr unvonini olgan.`,
   direktor__content__3__2:`2021 yil 6 sentyabrdan “O’zbekinvest Assistans” MCHJ Ixtiyoriy sug’urta turlari bo’yicha da’vo ishlarini ko’rib chiqish bo’limi bosh menejeri`,
-
-
+  // help
+  help__1:"( Davlat xaridlari to’g’risidagi O’zbekiston Respublikasi qonuni )",
+  help__2:"( Sug’urta faoliyati to’grisidagi O’zbekiston Respublikasi qonuni )",
+  help__3:"( Yo’l transport hodisasi to’g’risidagi xabarnoma )",
+  help__4:"( “O’zbekinvest Assistans” MCHJ guvohnomasi )",
+  help__5:"( “O’zbekinvest Assistans” MCHJ 2021 yil uchun auditorlik hisoboti )",
+  help__6:"( O’zbekiston Respublikasining fuqarolik kodeksi. )"
 };
 
 export default translationsUz;

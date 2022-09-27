@@ -19,6 +19,9 @@
   gap: 30px;
   font-size: 2rem;
 }
+.documentlar li p{
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 1440px) {
   .help > .container {
