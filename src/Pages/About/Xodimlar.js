@@ -1,6 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./About.css";
+import xodim__1 from "../../Images/about/Avzal.png";
+import xodim__2 from "../../Images/about/Tohir.jpg";
+import xodim__3 from "../../Images/about/Qobul.jpg";
 
 const Xodimlar = () => {
   const { t } = useTranslation();
@@ -19,6 +22,7 @@ const Xodimlar = () => {
       content__1: t("direktor__content__1__1"),
       content__2: t("direktor__content__1__2"),
       data__aos:"fade-left",
+      img:xodim__1
     },
     {
       name: t("direktor__name__2"),
@@ -33,6 +37,7 @@ const Xodimlar = () => {
       content__1: t("direktor__content__2__1"),
       content__2: t("direktor__content__2__2"),
       data__aos:"fade-right",
+      img:xodim__2
     },
     {
       name: t("direktor__name__3"),
@@ -47,6 +52,7 @@ const Xodimlar = () => {
       content__1: t("direktor__content__3__1"),
       content__2: t("direktor__content__3__2"),
       data__aos:"fade-left",
+      img:xodim__3
     },
   ];
   return (
@@ -68,6 +74,9 @@ const Xodimlar = () => {
                 <p>{el.content__1}</p>
                 <p>{el.content__2}</p>
               </div>
+            </div>
+            <div className="div__img">
+              <img src={el.img} alt="" />
             </div>
           </li>
         );

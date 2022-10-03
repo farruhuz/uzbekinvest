@@ -137,6 +137,14 @@ const translationsUz = {
   parners__four__2:"“Avtoritet Group” kompaniyalar guruhining hamkorlari o'z faoliyatlarini quyidagi yo'nalishlarda olib boradilar: avtomobillarni sotish, transport vositalariga kafolatli va texnik xizmat ko'rsatish, yuk tashish, ehtiyot qismlarni etkazib berish",
   parners__four__3:"“O‘zbekinvest” eksport-import aksiyadorlik jamiyati sug'urta kompaniyasi umumiy sug'urta bozorida o‘z faoliyatini olib boradi ва sug'urta faoliyati klassifikatoriga ko‘ra mavjud 17 turdagi sug‘urtaning barchasi билан shug‘ullanadi",
   parners__four__4:`INGO-UZBEKISTAN kompaniyasi – biznes manfaatlarining kompleks himoya dasturlari hamda xususiy shaxslar uchun sug‘urta mahsulotlarinnig keng qamrovini o‘z ichiga olgan universal xizmat portfeliga ega O‘zbekistonnning eng yirik sug‘urtachilaridan biridir.`,
+  parners__four__5:
+    `Eurasia Assistance Rossiya va butun dunyoda tibbiy, yo'l bo'yida yordam va konsyerj xizmatlarini tashkil qiladi va muvofiqlashtiradi. Biz insonning hayoti va sog'lig'i, uning oilasi, shuningdek mol-mulki: kvartira / uy, mashina va boshqalar haqida g'amxo'rlik qilish uchun kutilmagan vaziyatlarda eng yaxshi echimlarni topishga yordam beramiz.`,
+  parners__four__6:
+    `Remed Assistance butun dunyo bo'ylab xizmatlar ko'rsatuvchi o'sib borayotgan yordam kompaniyasidir. Remed brendi tajriba, ishonchlilik va samaradorlikning sinonimiga aylandi.`,
+  parners__four__7:
+    `Global Voyager Assistance - 1998 yilda tashkil etilgan xalqaro tibbiy yordam kompaniyasi. GVA ning asosiy faoliyati butun dunyo bo'ylab sayohatchilar, chet elliklar, dengizchilar va xalqaro tashkilotlarga tibbiy va texnik yordam ko'rsatishdir. Ochilish vaqtida kompaniyaning boshqaruv xodimlari tibbiy yordam ko'rsatish sohasida ko'p yillik tajribaga ega edi.`,
+  parners__four__8:
+    `Missadena - bu inson hayotining turli sohalarida xizmatlarni tashkil etishda professional xizmat ko'rsatishni ta'minlovchi ko'p tarmoqli tibbiy kompaniya (litsenziya № LO 61-01-007-715).`,   
   // Horihiy hamkorlarimiz
   friend__1__1__title:"Allianz Global Assistance (sobiq Mondial Assistance)",
   friend__1__1__subtitle:"Allianz o'z tarixini 1890 yilga borib taqaladi. U Myunxenda tashkil etilgan, asoschisi Myunxen qayta sug'urta jamiyati rahbari - Karl fon Thieme, u ham Europaische Reiseversicherung Aktiengesellschaft (ERV) asoschisi edi.",

@@ -35,9 +35,6 @@ const Partners = () => {
                 </li>
               </ul>
             </div>
-            <div className="partners__box__1__img">
-              <img src={partners} alt="" />
-            </div>
           </div>
         </div>
         <div className="partners__box__div" data-aos="fade-down">
@@ -73,6 +70,43 @@ const Partners = () => {
             <p>{t('parners__four__4')}</p>
             <div>
               <a href="https://ingo.uz/">
+                <img src={ArrowRed} alt="" />
+              </a>
+            </div>
+          </div>
+          {/*  */}
+          <div className="partners__div">
+            <h3>"EURASIA ASSISTANCE"</h3>
+            <p>{t('parners__four__5')}</p>
+            <div>
+              <a href="https://www.eurasia-assistance.com/">
+                <img src={ArrowRed} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="partners__div">
+            <h3>REMED ASSISTANCE</h3>
+            <p>{t('parners__four__6')}</p>
+            <div>
+              <a href="https://www.remedassistance.com/ru">
+                <img src={ArrowRed} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="partners__div">
+            <h3>GLOBAL VOYAGER ASSISTANCE</h3>
+            <p>{t('parners__four__7')}</p>
+            <div>
+              <a href="https://gvassistance.com/">
+                <img src={ArrowRed} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="partners__div">
+            <h3>MISSADENA Co ltd</h3>
+            <p>{t('parners__four__8')}</p>
+            <div>
+              <a href="http://www.missadena.com/">
                 <img src={ArrowRed} alt="" />
               </a>
             </div>

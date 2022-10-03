@@ -27,9 +27,6 @@ const About = () => {
           <h2>{t("founders__3")}</h2>
           <Xodimlar/>
         </div>
-        <div className="stories__image">
-            <img src={stories} alt="" />
-        </div>
       </div>
       <div className="slider__about">
         <Slider />
