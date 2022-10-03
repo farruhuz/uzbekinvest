@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
-import ixtiyoriy from "../../Images/otdel/ixtiyoriy.jpg";
-import ixtiyoriy2 from "../../Images/otdel/ixtiyoriy2.jpg";
+import ixtiyoriy from "../../Images/otdel/ix__1.png";
+import ixtiyoriy2 from "../../Images/otdel/ix__2.png";
 import Swipers from "../Swiper/Swipers";
 import "./Otdel3.css";
 
