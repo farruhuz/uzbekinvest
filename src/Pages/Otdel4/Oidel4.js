@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
-import yrudik from "../../Images/otdel/yurudik.jpg";
-import yrudik2 from "../../Images/otdel/yurudik2.jpg";
+import yrudik from "../../Images/otdel/yurudik.png";
+import yrudik2 from "../../Images/otdel/yurudik2.png";
 import Swipers from "../Swiper/Swipers";
 import "./Otdel4.css";
 

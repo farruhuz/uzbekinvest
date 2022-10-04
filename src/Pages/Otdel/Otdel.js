@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import arrowRed from "../../Images/link_red_arrow.png";
-import xalqaro from "../../Images/otdel/xalqaro.jpg";
-import xalqaro2 from "../../Images/otdel/xalqaro2.jpg";
-import xalqaro3 from "../../Images/otdel/xalqaro3.jpg";
+import xalqaro from "../../Images/otdel/xalqaro.png";
+import xalqaro2 from "../../Images/otdel/xalqaro2.png";
+import xalqaro3 from "../../Images/otdel/xalqaro3.png";
 import Swipers from "../Swiper/Swipers";
 import "./Otdel.css";
 
